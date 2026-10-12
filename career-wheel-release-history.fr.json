@@ -1,0 +1,738 @@
+[
+  {
+    "id": "release-2-1-1",
+    "version": "2.1.1",
+    "title": "Corrections du démarrage local",
+    "summary": "Démarrage depuis le dossier plus fiable, export des cartes corrigé et URL des emojis réparées.",
+    "sections": [
+      {
+        "title": "Application locale",
+        "items": [
+          "Ajout d’instructions et d’un lancement via serveur local pour les comptes et les sauvegardes sur l’appareil.",
+          "Les cartes utilisent des arrière-plans locaux exportables sans dépendre d’images externes.",
+          "Chargement des emojis des roues corrigé."
+        ]
+      }
+    ],
+    "date": "2026-10-12",
+    "historical": false
+  },
+  {
+    "id": "release-2-1-0",
+    "version": "2.1.0",
+    "title": "Le Tour des légendes",
+    "summary": "18 médailles de scénarios, records à améliorer et corrections des aperçus, archives et sauvegardes.",
+    "sections": [
+      {
+        "title": "Un défi entre les carrières",
+        "items": [
+          "Six scénarios proposent des médailles Bronze, Argent et Or : 18 exploits aux objectifs de plus en plus exigeants.",
+          "Chaque nouvelle carrière Solo compte, même libre. Les médailles restent dans le profil ; aperçus, archives et duels locaux ne les attribuent pas.",
+          "Chaque scénario affiche la prochaine médaille et la meilleure tentative vers l’or, en conservant une seule carrière complète.",
+          "Les nouvelles médailles apparaissent dans le résumé final. Le Tour reste dans Scénarios, sans section doublonnée ni XP répétables.",
+          "La progression est incluse dans les sauvegardes du compte local et les backups, avec fusion des résultats et validation des imports."
+        ]
+      },
+      {
+        "title": "Corrections du jeu",
+        "items": [
+          "L’ouverture des archives pendant une vraie carrière demande confirmation avant de la remplacer ; tours et choix en attente sont protégés.",
+          "Aperçus après une carrière terminée, animation de rareté et étiquettes des secteurs étroits cohérents et lisibles.",
+          "Passer du défi quotidien à un scénario ou code avant le premier tour efface correctement le défi précédent.",
+          "Les résultats quotidiens restent après minuit et disparaissent des exemples et archives.",
+          "Classements compatibles avec les anciennes sauvegardes et styles de carte actualisés entre onglets du même profil.",
+          "Les erreurs de lecture ou de sauvegarde des médailles sont signalées et permettent de réessayer sans écraser la progression."
+        ]
+      }
+    ],
+    "date": "2026-10-09",
+    "historical": false
+  },
+  {
+    "id": "release-2-0-1",
+    "version": "2.0.1",
+    "title": "La rareté en couleurs",
+    "summary": "Quatre couleurs distinctes séparent les résultats courants des plus rares, en gardant le style arcade.",
+    "date": "2026-10-09",
+    "historical": false,
+    "sections": [
+      {
+        "title": "Des roues plus lisibles",
+        "items": [
+          "Vert pour les résultats courants, bleu pour les peu courants, violet pour les rares et or pour les très rares.",
+          "Les secteurs, la légende et les probabilités partagent une classification qui regroupe les résultats répétés.",
+          "Les roues aux chances similaires conservent les couleurs des catégories ; la couleur indique la rareté, pas la force.",
+          "Bordures plus visibles sur les secteurs rares et texte sombre sur l’or. Probabilités, tailles des secteurs et résultats inchangés."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "release-2-0-0",
+    "version": "2.0.0",
+    "title": "La nouvelle arène de Career Wheel",
+    "summary": "Interface réorganisée, résumé de carrière en direct, guide du jeu et révision des sauvegardes et défis.",
+    "sections": [
+      {
+        "title": "Une nouvelle arène",
+        "items": [
+          "En-tête compact, navigation claire et stade sombre avec surfaces graphite et accents menthe.",
+          "Grande roue centrale aux couleurs arcade ; aperçus et probabilités sont regroupés sous les commandes.",
+          "Cinq étapes clarifient le parcours : origines, club, profil, attributs et palmarès.",
+          "Cartes, statistiques, lobby, duels et fenêtres partagent une hiérarchie visuelle plus claire, aussi sur téléphone."
+        ]
+      },
+      {
+        "title": "De nouveaux outils pour jouer",
+        "items": [
+          "Le résumé en direct affiche identité, club, style et valeurs tirées, sans inventer un OVR avant la carte finale.",
+          "Un guide explique les tours, modes, sauvegardes, duels et Career Points.",
+          "Dans Objectifs, le prochain palier propose un résultat proche avec sa progression réelle et sa récompense XP.",
+          "Le centre de la roue permet de rejouer une carrière terminée ; les choix obligatoires des événements sont rendus visibles.",
+          "Export PNG avec état visible, chargement limité des images, fonds locaux de secours et téléchargement compatible via Blob."
+        ]
+      },
+      {
+        "title": "Corrections et vérifications",
+        "items": [
+          "Les anciennes carrières sans style de jeu s’ouvrent et se partagent correctement.",
+          "Traductions complétées des postes, titres, talents, bonus et messages dynamiques en italien, anglais, espagnol et français.",
+          "Défi quotidien en mode Normal, date conservée après minuit et dernier essai distingué de l’historique.",
+          "Validation renforcée de la reprise des duels, des résultats des salles, de la progression et de l’identité verrouillée.",
+          "Les requêtes de compte ont un délai limité, les imports sont vérifiés avant de modifier la progression et les demandes d’amitié reçues sont limitées.",
+          "Vérifications automatiques avec des données isolées et contrôle des écrans dans le navigateur local.",
+          "La carrière locale est restaurée même si le service de compte ne répond pas, avant de réactiver le jeu.",
+          "Les descriptions des talents et la carte finale utilisent les mêmes bonus, en conservant les valeurs de l’équilibrage existant.",
+          "Résultats annoncés aux lecteurs d’écran et groupes de modes accessibles aussi sur téléphone."
+        ]
+      }
+    ],
+    "date": "2026-10-09",
+    "historical": false
+  },
+  {
+    "id": "release-1-9-0",
+    "version": "1.9.0",
+    "title": "Des carrières plus crédibles et une nouvelle finale du duel",
+    "date": "2026-10-09",
+    "summary": "Un mode Réaliste lié au poste et aux saisons, une comparaison finale animée et un résumé personnel de la carrière.",
+    "sections": [
+      {
+        "title": "Mode Réaliste",
+        "items": [
+          "Les nouvelles carrières Réalistes utilisent des probabilités d’attributs et une note globale pondérée selon le poste du joueur.",
+          "Les buts et les passes décisives sont des nombres exacts, avec des résultats qui dépendent du poste, des saisons jouées et des attributs.",
+          "Les talents multiples sont moins fréquents ; les valeurs exceptionnelles restent possibles, avec des probabilités réduites.",
+          "Le nombre de trophées respecte les occasions disponibles pendant la carrière, y compris les compétitions organisées tous les quatre ans.",
+          "Les carrières déjà commencées conservent les règles précédentes et les résultats déjà obtenus."
+        ]
+      },
+      {
+        "title": "Finale du duel",
+        "items": [
+          "Les deux cartes sont présentées côte à côte, suivies d’une comparaison des attributs et du palmarès.",
+          "Les Career Points augmentent pendant la présentation avant la révélation du vainqueur selon le critère choisi ; les égalités sont aussi reconnues.",
+          "La présentation peut être passée et respecte la préférence de mouvement réduit."
+        ]
+      },
+      {
+        "title": "Ton histoire",
+        "items": [
+          "Un titre personnel résume le caractère de la carrière à partir de ses résultats.",
+          "Trois moments marquants reprennent les résultats réels de la carrière et accompagnent le récit existant."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-2",
+    "version": "1.8.2",
+    "title": "Des couleurs arcade pour la roue",
+    "date": "2026-10-08",
+    "summary": "Une palette plus vive, avec des secteurs bien distincts et des détails neutres.",
+    "sections": [
+      {
+        "title": "Couleurs de la roue",
+        "items": [
+          "Bleu électrique, fuchsia, vert, cyan, orange et violet pour les secteurs de la roue.",
+          "Les couleurs de la liste des probabilités suivent la nouvelle palette des secteurs.",
+          "Des reflets neutres, un centre graphite et un pointeur clair complètent le nouvel aspect."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-1",
+    "version": "1.8.1",
+    "title": "Une roue plus soignée",
+    "date": "2026-10-08",
+    "summary": "De nouvelles couleurs, des textes plus lisibles et un résultat plus visible, avec une roue toujours grande et centrée.",
+    "sections": [
+      {
+        "title": "Apparence et interaction de la roue",
+        "items": [
+          "Palette renouvelée avec du bleu, du turquoise, du violet et de l’ambre ; les couleurs des secteurs correspondent à celles de la liste des probabilités.",
+          "Des libellés plus lisibles, avec les noms longs répartis sur plusieurs lignes et un meilleur contraste.",
+          "Le secteur tiré est mis en évidence à la fin du tour, tandis que les autres s’estompent.",
+          "Un centre minimal avec une commande Lancer, également utilisable au clavier.",
+          "Le pointeur accompagne le passage des secteurs ; les animations respectent la préférence de mouvement réduit.",
+          "Une touche dorée distingue les résultats les plus rares.",
+          "Les probabilités de tirage, les comptes et la progression sont conservés ; la mise à jour est disponible sur le serveur local."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-0",
+    "version": "1.8.0",
+    "title": "La roue relève le défi",
+    "date": "2026-10-08",
+    "summary": "Un duel local pour deux joueurs sur le même PC : créez vos carrières à tour de rôle et comparez les cartes et les Career Points.",
+    "sections": [
+      {
+        "title": "Duel local",
+        "items": [
+          "Ajout du mode Duel pour deux joueurs partageant le même PC, sans compte nécessaire.",
+          "Avant de commencer, choisissez un mode de carrière commun et le critère qui détermine le vainqueur.",
+          "Chaque joueur saisit son nom et son numéro de maillot puis lance ses roues pendant son tour.",
+          "Le récapitulatif final compare les deux cartes et les Career Points des deux carrières.",
+          "Les résultats égaux sont reconnus comme des matchs nuls.",
+          "La carrière Solo et la progression existante restent disponibles ; le développement continue sur le serveur local."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-7-0",
+    "version": "1.7.0",
+    "title": "En ligne, avec vos amis",
+    "date": "2026-10-08",
+    "summary": "Le site peut être hébergé en ligne avec des sauvegardes persistantes et des invitations depuis Amis.",
+    "sections": [
+      {
+        "title": "Salles et progression",
+        "items": [
+          "Les comptes, amitiés, sauvegardes et salles en ligne utilisent une base de données persistante.",
+          "Les amis enregistrés peuvent recevoir une invitation directe à votre salle privée.",
+          "Acceptez ou refusez les invitations dans Amis ; elles expirent après 15 minutes.",
+          "Une invitation acceptée ouvre le lobby avec son code déjà saisi ; les joueurs choisissent toujours leur nom et numéro.",
+          "Exportez et importez votre progression depuis Compte pour passer du site local à la nouvelle adresse.",
+          "Les archives et objectifs sont réunis pendant le transfert ; une carrière déjà commencée sur cet appareil est conservée."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "release-1-6-0",
+    "version": "1.6.0",
+    "title": "Votre compte, vos progrès, vos amis",
+    "date": "2026-10-08",
+    "summary": "Des comptes et des sauvegardes personnelles sur le serveur, avec un panneau Amis pour les contacts et les demandes d’amitié.",
+    "sections": [
+      {
+        "title": "Compte",
+        "items": [
+          "Ajout de Compte dans la barre supérieure, avec connexion et création d’un profil par e-mail, mot de passe et pseudo.",
+          "Le panneau du compte permet de modifier son pseudo et de se déconnecter.",
+          "La création d’un compte fournit un code personnel pour récupérer l’accès et définir un nouveau mot de passe.",
+          "La récupération utilise le code personnel et ne nécessite pas de service d’envoi d’e-mails."
+        ]
+      },
+      {
+        "title": "Sauvegardes personnelles",
+        "items": [
+          "La carrière en cours et les carrières archivées sont liées à votre compte.",
+          "Les objectifs obtenus, XP, niveau, records et progrès des défis sont conservés avec vos sauvegardes.",
+          "La personnalisation de la carte, le style du profil, la langue et le brouillon du feedback suivent votre compte.",
+          "Ajout de la synchronisation automatique des progrès et de la commande Synchroniser maintenant dans le panneau Compte.",
+          "Les progrès des joueurs sans compte restent séparés de ceux des utilisateurs inscrits.",
+          "Les données du compte sont conservées sur le serveur qui héberge le site : sur le serveur local pour l’installation locale."
+        ]
+      },
+      {
+        "title": "Amis et navigation",
+        "items": [
+          "Amis rassemble désormais votre liste d’amis enregistrés et permet de rechercher d’autres joueurs par pseudo.",
+          "Les demandes d’amitié peuvent être acceptées ou refusées ; la liste distingue les amis des demandes en attente.",
+          "Ajout d’un lien personnel d’amitié à copier et à partager pour que les autres vous retrouvent.",
+          "Sans compte, le panneau Amis invite à se connecter ou à créer un profil.",
+          "Les défis partagés par code sont regroupés dans Objectifs pour éviter les sections en double.",
+          "Compte, sauvegardes et Amis sont disponibles en italien, anglais, espagnol et français."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-5-1",
+    "version": "1.5.1",
+    "title": "L'histoire de Career Wheel, depuis le début",
+    "date": "2026-10-08",
+    "summary": "Un historique des mises à jour retraçant toutes les étapes du projet, de la première roue aux missions et à la nouvelle navigation.",
+    "sections": [
+      {
+        "title": "Nouveautés et mises à jour",
+        "items": [
+          "Ajout de l'historique complet de Career Wheel, consultable sur le site.",
+          "La version actuelle et la dernière mise à jour sont réunies en haut de la page, avec un accès direct aux nouveautés.",
+          "Chaque mise à jour présente un résumé et une liste organisée des fonctionnalités ajoutées et des corrections.",
+          "Recherche parmi les mises à jour par version, fonctionnalité ou mot-clé.",
+          "Historique des mises à jour disponible en italien, anglais, espagnol et français.",
+          "Les premières phases de développement ont également été retracées : carte, roues, probabilités, animations, missions, événements, défis, salons et interface.",
+          "Les anciens correctifs sont regroupés par séries de mises à jour lorsqu'une chronologie précise de chaque version n'est pas disponible.",
+          "Les dates historiques non documentées restent sans date, plutôt que d'être inventées."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-5-0",
+    "version": "1.5.0",
+    "title": "La roue au centre, les outils en haut",
+    "date": "2026-10-08",
+    "summary": "Une barre de navigation compacte ouvre les sections dans des panneaux dédiés et libère de l'espace autour de la roue.",
+    "sections": [
+      {
+        "title": "Navigation",
+        "items": [
+          "Ajout de la barre supérieure avec Messages, Feedback, Objectifs, Classements, Amis, Archives et Profil.",
+          "Les sections existantes ont été déplacées dans les nouveaux panneaux, en conservant leurs données et leurs fonctionnalités.",
+          "Objectifs regroupe les missions, le défi du jour et les scénarios spéciaux.",
+          "Archives regroupe les carrières sauvegardées, l'album des cartes et le tournoi entre carrières.",
+          "Profil regroupe le niveau, les titres, les fonds de carte et le guide OVR.",
+          "La roue reste grande et centrale ; les panneaux ne s'ouvrent que lorsqu'ils sont utiles.",
+          "La navigation et les panneaux sont disponibles en italien, anglais, espagnol et français."
+        ]
+      },
+      {
+        "title": "Classements et amis",
+        "items": [
+          "Classement des carrières sauvegardées sur l'appareil, triable par Career Points ou OVR.",
+          "Accès aux records personnels et possibilité de rouvrir une carrière depuis le classement.",
+          "Le panneau Amis regroupe les invitations au salon privé et les défis partagés par code.",
+          "Accès au lobby existant sans créer une seconde gestion des salons.",
+          "Le profil utilise les progrès locaux déjà présents dans le jeu."
+        ]
+      },
+      {
+        "title": "Messages et feedback",
+        "items": [
+          "Messages réunit les nouveautés du site au même endroit.",
+          "Formulaire Feedback pour décrire un bug ou proposer une idée.",
+          "Le brouillon est enregistré sur l'appareil et peut être copié ou téléchargé sous forme de rapport.",
+          "Le rapport comprend le message saisi, le type de signalement, la version, la langue et l'heure de création."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-4-0",
+    "version": "1.4.0",
+    "title": "Plus d'objectifs et un niveau qui compte",
+    "date": "2026-10-08",
+    "summary": "Le nombre de missions passe à 67. Le niveau du profil débloque des titres et des fonds, tandis que de nouveaux objectifs couvrent plusieurs carrières.",
+    "sections": [
+      {
+        "title": "24 nouvelles missions",
+        "items": [
+          "Catalogue étendu de 43 à 67 succès, en conservant les missions précédentes.",
+          "Nouveaux objectifs pour terminer 1, 3, 10 et 25 carrières réelles.",
+          "Objectifs cumulés pour atteindre 1 500 buts et 1 000 passes décisives parmi les carrières enregistrées.",
+          "Objectifs d'exploration pour jouer avec 3 nationalités, 3 championnats, 3 postes et 3 styles de jeu différents.",
+          "Base solide récompense les six attributs à 70 minimum ; Marquer et créer exige au moins 300 buts et 200 passes décisives.",
+          "Une carrière de valeur exige au moins 300 Career Points ; Fair-play exige des cartons jaunes et rouges dans la tranche 0–10.",
+          "Nouvelles combinaisons de buts et tir, passes décisives et passes, vitesse et dribble, défense et physique, passes et dribble.",
+          "Club et sélection, Dynastie européenne et Fierté nationale récompensent des combinaisons de trophées.",
+          "Le palmarès compte récompense une carte avec un OVR entre 75 et 84 et au moins 8 trophées.",
+          "Talent naturel exige un OVR d'au moins 85 sans talents spéciaux."
+        ]
+      },
+      {
+        "title": "Niveaux et récompenses",
+        "items": [
+          "Le niveau est lié au profil, se conserve entre les carrières et augmente tous les 500 XP.",
+          "Chaque mission accorde ses XP une seule fois.",
+          "Titres et fonds de carte à débloquer : Classique au niveau 1, Émeraude au 3, Saphir au 6, Or au 10, Aurore au 15 et Légende au 20.",
+          "Les titres du profil deviennent Débutant, Espoir, Vedette, Classe mondiale, Icône et Légende.",
+          "Le style choisi reste enregistré et est également disponible sur la carte PNG.",
+          "Le panneau affiche les XP totaux, les XP manquants pour le prochain niveau et la prochaine récompense.",
+          "Filtres À terminer, Obtenues et Toutes, avec les catégories Attributs, Carrière et trophées, Exploration et Secrètes.",
+          "Trois missions visibles à l'ouverture ; la liste complète se déploie sur demande.",
+          "Nouvelles missions, nouveaux niveaux et récompenses traduits en italien, anglais, espagnol et français."
+        ]
+      },
+      {
+        "title": "Corrections des progrès",
+        "items": [
+          "Les missions ne sont accordées qu'à la fin d'une carrière réelle, après l'application des effets des événements.",
+          "Les aperçus de la carte ne produisent ni XP, ni niveaux, ni nouvelles missions obtenues.",
+          "Rouvrir une carrière depuis les archives n'accorde pas de XP ni d'objectifs une seconde fois.",
+          "Correction du calcul des attributs pendant une carrière partielle, en conservant la correspondance entre vitesse, tir, passes, dribble, défense et physique.",
+          "Recordman exige désormais 900 buts, un résultat atteignable avec la roue, tout en conservant les XP et les dates déjà obtenus.",
+          "Les succès et les dates des anciennes missions sont conservés ; dans les archives, les XP de chaque carrière sont distincts du niveau du profil."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-3-1",
+    "version": "1.3.1",
+    "title": "Un lobby dédié aux défis en ligne",
+    "date": null,
+    "summary": "Solo et En ligne deviennent des vues séparées : le lobby permet de créer ou de rejoindre un salon, puis de passer à la roue.",
+    "sections": [
+      {
+        "title": "Lobby et partie",
+        "items": [
+          "Vue En ligne avec les onglets Créer et Rejoindre, inspirée d'un lobby de jeu et adaptée à Career Wheel.",
+          "Saisie du nom dans le lobby et du numéro de maillot, liés à l'identité du footballeur.",
+          "Entrée par code de salon ou lien d'invitation.",
+          "Le nom et le numéro restent également verrouillés dans le lobby après le premier tour.",
+          "Bouton pour aller à la roue, poursuivre la carrière et revenir au salon.",
+          "État du salon, nombre de participants et manche de la série visibles dans la navigation de la partie.",
+          "Explication du score réunie dans une section dépliable.",
+          "Libellés et commandes du lobby disponibles dans les quatre langues du site."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "release-1-3-0",
+    "version": "1.3.0",
+    "title": "Identité, histoires et nouveaux défis",
+    "date": null,
+    "summary": "Plus de façons de créer et de partager une carrière : personnalisation de la carte, scénarios, défis par code, records et salons en direct.",
+    "sections": [
+      {
+        "title": "Ta carte et ton histoire",
+        "items": [
+          "Configuration du footballeur réunie dans un panneau avec nom, numéro de maillot et mode.",
+          "Personnalisation facultative de la carte avec avatar, surnom et signature.",
+          "Choix entre Silhouette, Capitaine, Meneur de jeu, Sprinteur et Baller.",
+          "Possibilité d'importer un visage personnel au format PNG, JPG ou WEBP, jusqu'à 2 Mo.",
+          "Les détails personnels se verrouillent après le premier tour et sont conservés dans les carrières sauvegardées.",
+          "Histoire finale du footballeur construite à partir des résultats réels de sa carrière, avec un bouton pour la copier.",
+          "Career Points et détail de leur calcul présents dans le résumé de la carrière.",
+          "Amélioration de la préparation des images pour l'exportation de la carte et du palmarès."
+        ]
+      },
+      {
+        "title": "Scénarios et défis partagés",
+        "items": [
+          "Six scénarios spéciaux : Machine à buts, Le meneur de jeu, Le capitaine, Légende nationale, Le mur et Le joueur complet.",
+          "Chaque scénario possède des conditions explicites, vérifiées à la fin de la carrière.",
+          "Création d'un défi personnalisé portant sur l'OVR, les buts, les passes décisives, les trophées ou les Career Points.",
+          "Code et lien partageables pour activer le même défi entre amis.",
+          "Le même code produit la même séquence aléatoire ; les choix lors des événements peuvent changer la fin.",
+          "Les défis par code utilisent le mode Normal pour tous les participants.",
+          "Possibilité d'importer un défi, de le retenter ou de revenir à la carrière libre.",
+          "Records personnels d'OVR, de buts, de passes décisives, de trophées et de Career Points, mis à jour uniquement par de nouvelles carrières réelles."
+        ]
+      },
+      {
+        "title": "Salons en direct",
+        "items": [
+          "Les salons privés peuvent être ouverts avant de commencer la carrière.",
+          "La progression des participants et le dernier résultat sont visibles dans le salon pendant la partie.",
+          "La carrière terminée est envoyée automatiquement au salon.",
+          "Choix entre une seule carrière et une série de trois carrières avec des scores cumulés.",
+          "L'organisateur ouvre les manches suivantes et les revanches lorsque les participants ont terminé.",
+          "Gestion du classement provisoire, du vainqueur, des égalités, des envois à retenter et des sessions expirées.",
+          "Les aperçus et les carrières rouvertes depuis les archives ne sont pas envoyés comme une nouvelle partie."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "release-1-2-0",
+    "version": "1.2.0",
+    "title": "Career Wheel entre dans le stade",
+    "date": null,
+    "summary": "Une identité visuelle footballistique, avec un fond de stade, des panneaux sombres et des accents chaleureux, tout en gardant la roue comme élément principal.",
+    "sections": [
+      {
+        "title": "Ambiance et mise en page",
+        "items": [
+          "Ajout d'un fond de stade dédié, avec terrain et éclairage sur les côtés.",
+          "Nouvelle palette sombre avec panneaux translucides, bordures discrètes et accents dorés.",
+          "Hiérarchie plus claire pour le titre, la configuration du joueur, la roue et les outils.",
+          "Accès Solo et En ligne présentés comme deux modes de jeu.",
+          "La roue reste au centre et conserve les grandes dimensions demandées.",
+          "Outils et statistiques secondaires réunis dans des sections dépliables pour laisser plus de place à la partie.",
+          "Adaptations pour les petits écrans et les préférences de mouvement réduit."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-1-0-1-1-5",
+    "version": "1.1.0–1.1.5",
+    "title": "Salons privés et Career Points",
+    "date": null,
+    "summary": "Le site adopte une numérotation plus ordonnée et ajoute des défis entre amis qui comparent à la fois la carrière et la puissance de la carte.",
+    "sections": [
+      {
+        "title": "Une version plus ordonnée",
+        "items": [
+          "La numérotation passe de la longue série 1.0 aux versions 1.1.",
+          "Le poste sur la carte est centré sous l'OVR total.",
+          "Le nom et le numéro de maillot se choisissent avant la partie et se verrouillent après le premier tour.",
+          "Le verrouillage de l'identité s'applique également au nom affiché sur la carte finale ; Recommencer permet de choisir un nouveau footballeur."
+        ]
+      },
+      {
+        "title": "Score et salons privés",
+        "items": [
+          "Création d'un salon privé et entrée par code ou lien d'invitation.",
+          "Salons pouvant accueillir jusqu'à 10 participants, avec classement des résultats.",
+          "Trois critères de victoire : plus de Career Points, carte la plus forte ou score combiné.",
+          "Career Points calculés à partir des buts, des passes décisives, des saisons, des championnats, des Champions League, des Coupes du monde, des coupes continentales et des Ballons d'Or.",
+          "Les buts et les passes décisives ont un poids différent selon le poste du footballeur.",
+          "Chaque saison vaut 2 points ; championnat 12, Champions 22, Coupe du monde 25, coupe continentale 15 et Ballon d'Or 20.",
+          "Le duel des cartes compare l'OVR avec un poids double et les six attributs des participants.",
+          "Le mode combiné réunit 70 % de score de carrière et 30 % de duel des cartes, en valorisant également le palmarès.",
+          "Gestion des égalités dans le classement des attributs et distinction entre meilleure carrière, carte la plus forte et vainqueur.",
+          "Serveur local pour les salons et mise à jour des résultats partagés entre les participants."
+        ]
+      },
+      {
+        "title": "Langues",
+        "items": [
+          "Révision des traductions de l'interface, des roues, des résultats, des résumés, des événements, des archives et des défis.",
+          "Changement de langue disponible en italien, anglais, espagnol et français, y compris dans les nouvelles sections.",
+          "Amélioration des libellés accessibles et des noms des logos dans la langue choisie."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-120-1-0-130",
+    "version": "1.0.120–1.0.130",
+    "title": "Une carte plus soignée et une partie plus claire",
+    "date": null,
+    "summary": "Réorganisation des outils et du résumé, nouveaux choix personnels, style de jeu et révélation animée de la carte.",
+    "sections": [
+      {
+        "title": "Interface et résumé",
+        "items": [
+          "Réorganisation des Missions, du défi du jour, de l'album, du guide et des archives pour réduire les sections répétées ou dispersées.",
+          "Résumé final avec saisons, buts et passes décisives immédiatement visibles ; statistiques complètes et palmarès dépliables sur demande.",
+          "Moments clés de la carrière réunis dans le résumé.",
+          "Révision des espacements, des alignements, des bordures et de la lisibilité de l'interface générale."
+        ]
+      },
+      {
+        "title": "Identité et carte",
+        "items": [
+          "Numéro de maillot choisi par le joueur avec son nom, au lieu d'être attribué par la roue.",
+          "Ajout de la roue du style de jeu : Sprinteur, Buteur, Meneur de jeu, Dribbleur, Défenseur solide et Puissance physique.",
+          "Chaque style ajoute un bonus de 2 à son attribut et apparaît dans le résumé.",
+          "Révélation animée de la carte à la fin de la carrière.",
+          "Numéro de maillot abaissé pour rester à l'intérieur de la carte.",
+          "OVR et poste déplacés dans le coin gauche et abaissés pour respecter le bord de la carte."
+        ]
+      },
+      {
+        "title": "Modes de carrière",
+        "items": [
+          "Mode Rapide avec des tours plus courts, en conservant toutes les roues.",
+          "Mode Normal pour l'expérience complète.",
+          "Mode Réaliste avec des résultats exceptionnels et de grands trophées moins fréquents.",
+          "Le mode se choisit avant de commencer la carrière."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-108-1-0-119",
+    "version": "1.0.108–1.0.119",
+    "title": "L'identité du site et la roue au premier plan",
+    "date": null,
+    "summary": "Une icône dédiée, un centre de roue plus sobre et plusieurs révisions de la mise en page pour remettre une grande roue au centre.",
+    "sections": [
+      {
+        "title": "Identité visuelle",
+        "items": [
+          "Création d'une icône dédiée à Career Wheel pour l'identité du site.",
+          "Le centre de la roue a été revu plusieurs fois pour aboutir à un élément minimaliste sans ballon.",
+          "Le centre couvre les secteurs situés dessous avec une seule forme unifiée.",
+          "Révision des couleurs et des surfaces du site, en gardant les secteurs reconnaissables."
+        ]
+      },
+      {
+        "title": "Mise en page et logos",
+        "items": [
+          "Plusieurs mises en page ont été essayées avant de rétablir la grande roue centrale demandée pour le jeu.",
+          "Correction de la taille de la roue lorsque la mise en page la rendait trop petite.",
+          "La carte finale et le palmarès restent côte à côte sur les grands écrans et s'adaptent aux petits écrans.",
+          "Mise à jour du logo de la Serie A et correction du cas où seul un texte de remplacement apparaissait.",
+          "Réorganisation des outils secondaires pour alléger l'écran principal."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-90-1-0-107",
+    "version": "1.0.90–1.0.107",
+    "title": "Des roues mieux organisées et des probabilités plus claires",
+    "date": null,
+    "summary": "Révision de l'ordre des roues, des raretés et des couleurs, avec un aperçu pour passer rapidement d'une catégorie à l'autre.",
+    "sections": [
+      {
+        "title": "Probabilités et ordre",
+        "items": [
+          "Révision des probabilités pour distinguer les résultats courants des résultats exceptionnels.",
+          "Les buts et les passes décisives sont plus faciles à obtenir, tout en gardant les résultats les plus élevés plus rares.",
+          "Les attributs élevés, les grandes quantités de trophées et les résultats extrêmes conservent des probabilités plus faibles.",
+          "Le guide Probabilités et raretés affiche les chances réelles de chaque tour.",
+          "Roues réorganisées selon un parcours plus cohérent : origines, poste, championnat et équipe, carrière et physique, attributs, statistiques et palmarès.",
+          "Les carrières sauvegardées sont adaptées au nouvel ordre des questions.",
+          "Explorer les roues permet de choisir une roue ou d'utiliser précédente et suivante sans modifier la carrière.",
+          "Correction de la correspondance entre le championnat obtenu et le logo de la ligue sur la carte finale, y compris le cas Bundesliga/La Liga."
+        ]
+      },
+      {
+        "title": "Pied, talents et saisons",
+        "items": [
+          "Pied préféré avec 9 secteurs : 3 Droit, 3 Gauche et 3 Les deux.",
+          "Les secteurs Les deux sont répartis entre les autres, avec une probabilité plus faible.",
+          "Même couleur pour le même pied : bleu pour Droit, rouge pour Gauche et orange pour Les deux.",
+          "La roue des talents conserve des secteurs égaux et des résultats équiprobables.",
+          "Les talents déjà obtenus sont exclus des tours suivants de la même carrière.",
+          "La roue des saisons conserve 18 secteurs et commence à un minimum de 10 saisons, jusqu'à 27."
+        ]
+      },
+      {
+        "title": "Couleurs des secteurs",
+        "items": [
+          "Renouvellement des couleurs des roues, en conservant les familles de couleurs liées aux catégories.",
+          "Teintes plus faciles à distinguer pour les attributs, les cartons et les trophées, même lorsqu'ils appartiennent à la même catégorie.",
+          "La différence de rareté est soulignée par une variation plus nette de la teinte.",
+          "Les libellés clairs de la roue conservent un contour sombre pour rester lisibles.",
+          "Ajout de bordures noires entre les secteurs pour mieux séparer les résultats."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-83-1-0-89",
+    "version": "1.0.83–1.0.89",
+    "title": "Moins de désordre, plus d'interaction",
+    "date": null,
+    "summary": "Des sections plus compactes, des roues plus vives et de nouveaux événements avec des choix, ainsi qu'un tournoi entre carrières sauvegardées.",
+    "sections": [
+      {
+        "title": "Ordre et lisibilité",
+        "items": [
+          "Outils secondaires réunis dans des sections dépliables pour réduire le désordre de la page.",
+          "Révision des palettes des roues et augmentation de l'intensité des secteurs.",
+          "Correction des cas où les succès étaient à nouveau signalés comme venant d'être obtenus.",
+          "La version est affichée au centre, sans compteur du nombre de mises à jour."
+        ]
+      },
+      {
+        "title": "Événements et tournois",
+        "items": [
+          "Choix dans les événements de carrière, avec des effets visibles sur les attributs.",
+          "Décisions entre entraînement ciblé et préparation physique, talent et étude du jeu, records et jeu d'équipe, retour prudent et anticipé.",
+          "Possibilité de rester au club ou d'accepter un transfert dans le même championnat.",
+          "Les choix effectués et leurs effets sont enregistrés dans le résumé de la carrière.",
+          "Tournoi entre 2 et 8 carrières sauvegardées, avec sélection des participants et tableau à élimination.",
+          "Résultats des matchs influencés par l'OVR avec une composante aléatoire, qualifications successives et vainqueur final.",
+          "Le tournoi en cours reste sauvegardé sur l'appareil."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-origins",
+    "version": "1.0",
+    "title": "La naissance de Career Wheel",
+    "date": null,
+    "summary": "Les premières roues construisent le footballeur et sa carte finale. Viennent ensuite les logos, les sauvegardes, les langues, les missions, les animations et les défis quotidiens.",
+    "sections": [
+      {
+        "title": "Les bases du jeu",
+        "items": [
+          "Générateur de carrière footballistique avec des roues pour le continent, la nationalité, le poste, le championnat, le club, les saisons, la taille et le pied préféré.",
+          "Roues pour le nombre de talents spéciaux et les talents individuels, avec des effets sur les attributs.",
+          "Six attributs de la carte : vitesse, finition, passes, dribble, défense et force.",
+          "Statistiques de carrière pour les buts, les passes décisives, les cartons jaunes et les cartons rouges.",
+          "Palmarès avec championnats, Champions League, Coupes du monde, coupes continentales et Ballons d'Or.",
+          "Boutons pour tourner, passer à la roue suivante, recommencer et partager le résultat.",
+          "Suppression du profil provisoire en haut pour laisser de la place à la roue et réserver le résumé à la fin.",
+          "Aperçu d'exemple pour voir la carte et le palmarès sans terminer toute la carrière."
+        ]
+      },
+      {
+        "title": "Carte et archives",
+        "items": [
+          "Carte finale avec OVR, poste, nom, silhouette du footballeur et six attributs.",
+          "Ajout de la silhouette fournie pour le visage du footballeur.",
+          "Six types de carte : Bronze, Argent, Or, Héros, Icône et Hall of FUT.",
+          "OVR calculé comme la moyenne arrondie des six attributs, bonus compris.",
+          "Légende OVR et cartes : Bronze sous 65, Argent 65–74, Or 75–84, Héros 85–89, Icône 90–94 et Hall of FUT à partir de 95.",
+          "Textes clairs sur les cartes Héros et Hall of FUT pour conserver la lisibilité.",
+          "Drapeau du pays, logo de la ligue et écusson de l'équipe réunis en bas de la carte.",
+          "Écusson de l'équipe lié au club réellement obtenu.",
+          "Correction de la position du nom, des espaces du poste et des alignements des éléments de la carte.",
+          "Téléchargement et partage de la carte PNG, également avec le palmarès.",
+          "Archives locales des carrières terminées, avec sauvegarde automatique, réouverture et suppression.",
+          "Comparaison entre deux carrières sauvegardées, avec mise en regard des attributs et des résultats.",
+          "Album des cartes avec raretés, nationalités et championnats recueillis dans les carrières sauvegardées."
+        ]
+      },
+      {
+        "title": "Missions et divertissement",
+        "items": [
+          "Introduction de succès avec des progrès conservés entre les carrières.",
+          "Missions présentées sous forme de fiches avec icône, condition, progression et récompense en XP.",
+          "Catalogue étendu jusqu'à 43 objectifs portant sur l'OVR, les attributs, les buts, les passes décisives, les saisons, les talents, le pied et les trophées.",
+          "Missions secrètes pour des combinaisons spéciales d'attributs et de résultats.",
+          "Niveau, XP et médaille du footballeur liés aux missions obtenues.",
+          "Missions cliquables pour consulter la description, la progression, la récompense et la date d'obtention.",
+          "Liste réduite à quelques missions visibles, avec déploiement sur demande pour éviter un panneau trop envahissant.",
+          "Suppression des pourcentages des succès, en conservant la progression sous forme de valeurs et de barres.",
+          "Correction de la visibilité du panneau et des notifications des succès.",
+          "Chronologie de la carrière avec étapes, résultats, détails et moments clés.",
+          "Événements aléatoires d'entraînement, de détection, de record, de blessure et de transfert.",
+          "Défi du jour avec objectif, tentatives, meilleur score et résultat partageable.",
+          "Objectifs quotidiens portant sur l'OVR, les buts, la Champions, les talents, l'équilibre des attributs et le nombre de trophées."
+        ]
+      },
+      {
+        "title": "Roue, langues et stabilité",
+        "items": [
+          "Résultats aléatoires avec des probabilités liées à la roue et à ses secteurs.",
+          "Animation de la roue avec ralentissement progressif avant l'arrêt.",
+          "La roue peut s'arrêter à différents endroits du secteur, même près des limites, au lieu d'arriver toujours au centre.",
+          "Révision des transitions et des mouvements de l'interface pour les rendre plus fluides.",
+          "Couleurs associées aux catégories des roues, avec des libellés lisibles.",
+          "Drapeaux dans les roues des nationalités et symboles pour les continents.",
+          "Correction du choix des pays après l'obtention du continent.",
+          "Sélecteur de langue en haut pour l'italien, l'anglais, l'espagnol et le français, avec le drapeau de la langue choisie.",
+          "Révision de la mise en page, des éléments superposés, des espacements et du comportement sur les petits écrans.",
+          "Résolution des erreurs qui empêchaient le site de fonctionner après certaines modifications.",
+          "Rétablissement du serveur local dans les cas de connexion refusée.",
+          "Ajout de la version du site pour identifier les mises à jour."
+        ]
+      }
+    ],
+    "historical": true
+  }
+]

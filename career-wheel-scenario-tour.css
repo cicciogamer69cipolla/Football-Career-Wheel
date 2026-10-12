@@ -1,0 +1,27 @@
+.cw-tour-summary { padding:16px; margin:0 0 14px; border:1px solid #67d8b249; border-radius:13px; background:linear-gradient(120deg,#142d28,#101c27); }
+.cw-tour-heading { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.cw-tour-heading h3 { margin:0; color:#f0f8f5; font-size:16px; }
+.cw-tour-count { padding:5px 8px; border-radius:7px; color:#8ce6c5; background:#67d8b216; font-size:11px; white-space:nowrap; }
+.cw-tour-summary p { margin:9px 0 11px; color:#b5c8ce; font-size:11px; line-height:1.6; }
+.cw-tour-summary small { display:block; margin-top:9px; color:#97afbb; font-size:10px; line-height:1.5; }
+.cw-tour-summary small.cw-tour-save-error { color:#ffb7a7; }
+.cw-tour-summary > .cw-tour-open { margin-top:9px; }
+.cw-tour-open[hidden] { display:none; }
+.cw-tour-meter { height:5px; overflow:hidden; border-radius:4px; background:#ffffff12; }
+.cw-tour-meter i { display:block; height:100%; background:#66dab6; }
+.cw-tour-medals { display:flex; flex-wrap:wrap; gap:4px; margin-top:7px; }
+.cw-tour-medal { padding:3px 5px; border:1px solid #ffffff20; border-radius:5px; color:#8c9ba7; background:#080f1780; font-size:9px; line-height:1.4; }
+.cw-tour-medal[data-earned="true"][data-tier="bronze"] { color:#edb08a; border-color:#bb795b99; background:#452c21; }
+.cw-tour-medal[data-earned="true"][data-tier="silver"] { color:#e7ecf4; border-color:#b6c2d299; background:#2d3846; }
+.cw-tour-medal[data-earned="true"][data-tier="gold"] { color:#f7d77a; border-color:#dcae4a99; background:#3a2f15; }
+.cw-tour-goal { display:block; color:#c8d9e0; font-size:10px; line-height:1.5; margin-top:5px; }
+.cw-tour-progress { color:#8db7aa; font-size:9px; line-height:1.5; }
+.cw-tour-result { display:grid; gap:9px; padding:13px; margin:14px 0 0; border:1px solid #b89b47; border-radius:11px; background:#2c2817; }
+.cw-tour-result[hidden] { display:none; }
+.cw-tour-result > small { color:#f1d479; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; }
+.cw-tour-result ul { margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:6px; }
+.cw-tour-result li { padding:5px 7px; border:1px solid #ffffff25; border-radius:6px; color:#f0dbb9; font-size:10px; }
+.cw-tour-result li[data-tier="gold"] { color:#ffe195; border-color:#d8b858; }
+.cw-tour-open { justify-self:start; border:1px solid #a68b4d; border-radius:7px; background:transparent; color:#f5d998; padding:7px 9px; font:700 10px Inter,system-ui,sans-serif; cursor:pointer; }
+.cw-tour-open:focus-visible { outline:2px solid #f5d998; outline-offset:3px; }
+@media(max-width:420px) { .cw-tour-heading { align-items:flex-start; }.cw-tour-heading h3 { font-size:14px; }.cw-tour-summary { padding:12px; } }

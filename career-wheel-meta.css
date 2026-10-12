@@ -1,0 +1,34 @@
+.meta-panel{margin:8px 9px;padding:12px;border:1px solid #30415a;border-radius:13px;background:linear-gradient(145deg,#121d2c,#0e1622)}
+.brand{display:flex;align-items:center;gap:7px}.brand-icon{display:block;width:23px;height:23px;object-fit:contain;flex:0 0 23px}
+.daily-meta-date,.album-summary-count{color:#8ebbe7;font-size:9px;font-weight:800;white-space:nowrap}
+.daily-meta-card{display:grid;gap:9px}
+.daily-meta-top{display:flex;align-items:flex-start;gap:10px}
+.daily-meta-icon{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border:1px solid #3c5b7b;border-radius:11px;background:#172a40;font-size:19px}
+.daily-meta-copy{min-width:0;flex:1}
+.daily-meta-eyebrow{display:block;color:#7dbfff;font-size:9px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
+.daily-meta-title{display:block;margin-top:3px;color:#f4f7fc;font-size:14px;font-weight:850}
+.daily-meta-description,.daily-meta-note{margin:4px 0 0;color:#a7b5c9;font-size:11px;line-height:1.45}
+.daily-meta-code{justify-self:start;padding:4px 7px;border:1px solid #2e4057;border-radius:7px;background:#0d1520;color:#8ca3be;font:700 9px ui-monospace,monospace}
+.daily-meta-status{min-height:16px;color:#b9c8dc;font-size:10px;line-height:1.45}
+.daily-meta-status.is-success{color:#81e0b1}.daily-meta-status.is-failure{color:#ffd27b}
+.daily-meta-actions{display:flex;flex-wrap:wrap;gap:7px}
+.daily-meta-actions button{flex:1 1 130px}
+.daily-meta-actions button:disabled{opacity:.5;cursor:not-allowed}
+.daily-result-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding:10px 12px;border:1px solid #47795f;border-radius:11px;background:linear-gradient(120deg,#142a23,#111d24);color:#c5f2d7;font-size:11px;font-weight:750;line-height:1.45}
+.daily-result-banner.is-failure{border-color:#785f38;background:linear-gradient(120deg,#2a2418,#171c24);color:#ffe0a3}
+.daily-result-banner button{flex:0 0 auto;border:1px solid #3a596e;border-radius:8px;padding:6px 8px;background:#162638;color:#d9ebff;font:700 10px system-ui;cursor:pointer}
+.album-meta-intro{margin:0 0 10px;color:#a7b5c9;font-size:10px;line-height:1.45}
+.album-tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.album-tier{display:grid;gap:4px;min-width:0;padding:9px;border:1px solid #34445b;border-radius:10px;background:#101a28}
+.album-tier strong{overflow:hidden;color:#e8eff9;font-size:10px;text-overflow:ellipsis;white-space:nowrap}
+.album-tier span{color:#87a0bd;font-size:9px}
+.album-tier[data-tier="bronze"]{border-color:#78533d}.album-tier[data-tier="silver"]{border-color:#637386}.album-tier[data-tier="gold"]{border-color:#91752f}.album-tier[data-tier="hero"]{border-color:#995c45}.album-tier[data-tier="legend"]{border-color:#7758a5}.album-tier[data-tier="halloffut"]{border-color:#a88b4a}
+.album-collection-group{margin-top:9px;border:1px solid #2d3d52;border-radius:10px;background:#101925}
+.album-collection-group>summary{display:flex;justify-content:space-between;gap:10px;padding:9px 10px;list-style:none;color:#dce8f8;font-size:10px;font-weight:800;cursor:pointer}
+.album-collection-group>summary::-webkit-details-marker{display:none}
+.album-collection-count{color:#8ebbe7;font-size:9px;white-space:nowrap}
+.album-pill-list{display:flex;flex-wrap:wrap;gap:5px;max-height:190px;overflow:auto;padding:0 9px 9px;overscroll-behavior:contain}
+.album-pill{padding:4px 7px;border:1px solid #3a424f;border-radius:999px;background:#20242b;color:#9299a5;font-size:9px;line-height:1.2}
+.album-pill.is-collected{border-color:#37644e;background:#172a22;color:#b9ebcf}
+.album-empty{margin-top:9px;padding:8px 9px;border-radius:8px;background:#0e1723;color:#8fa2bb;font-size:10px;line-height:1.45}
+@media(max-width:420px){.album-tier-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.daily-meta-actions button{flex-basis:100%}.daily-result-banner{align-items:flex-start;flex-direction:column}}

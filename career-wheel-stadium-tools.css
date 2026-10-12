@@ -1,0 +1,461 @@
+/* Secondary tools share the stadium palette without changing game visibility. */
+:root {
+  --cw-tools-surface: rgba(10, 16, 14, .86);
+  --cw-tools-inner: rgba(16, 23, 20, .78);
+  --cw-tools-line: rgba(218, 224, 201, .14);
+  --cw-tools-line-strong: rgba(234, 162, 59, .42);
+  --cw-tools-ink: #f5f3e9;
+  --cw-tools-muted: #a5aca3;
+  --cw-tools-soft: #7e8981;
+  --cw-tools-accent: #ffad32;
+}
+
+/* Folded sections stay quiet until the player asks to see them. */
+#extraTools,
+.online-room-disclosure,
+.career-timeline {
+  border-color: var(--cw-tools-line);
+  border-radius: 15px;
+  background: var(--cw-tools-surface);
+  box-shadow: 0 12px 34px #0003;
+  color: var(--cw-tools-ink);
+}
+.extra-tools-summary,
+.online-room-disclosure > summary,
+.career-timeline > summary {
+  color: var(--cw-tools-ink);
+  font-weight: 750;
+}
+.extra-tools-summary { min-height: 55px; }
+.extra-tools-icon,
+.online-room-disclosure > summary::after,
+.ovr-legend-title::after,
+.career-tournament > summary::after {
+  color: var(--cw-tools-accent);
+}
+.extra-tools-meta,
+.online-room-teaser,
+.career-timeline-meta,
+.tournament-selection-count {
+  color: var(--cw-tools-muted);
+}
+.extra-tools-chevron,
+.sub-disclosure-chevron,
+.career-timeline-chevron,
+.career-timeline-item-chevron {
+  border-color: #bea978;
+}
+#extraTools[open] > .extra-tools-summary,
+.online-room-lobby,
+#achievementDisclosure .achievement-panel,
+#careerArchive.career-tools,
+#extraTools .extra-tools-group > #archiveDisclosure > #careerArchive {
+  border-top-color: var(--cw-tools-line);
+  border-bottom-color: var(--cw-tools-line);
+}
+.extra-tools-tabs { border-bottom-color: var(--cw-tools-line); }
+.extra-tools-tab { color: var(--cw-tools-muted); border-radius: 8px; }
+.extra-tools-tab:hover {
+  background: #ffffff07;
+  color: var(--cw-tools-ink);
+}
+.extra-tools-tab[aria-selected=true] {
+  border-color: #eaa23b38;
+  background: #eaa23b0b;
+  color: #ffd58d;
+  box-shadow: inset 0 -2px #ffad32;
+}
+.extra-tools-tab:focus-visible,
+.achievement-badge:focus-visible,
+.tournament-selection input:focus-visible {
+  outline-color: var(--cw-tools-accent);
+}
+.sub-disclosure,
+.ovr-legend,
+.album-collection-group,
+.career-tournament {
+  border-color: var(--cw-tools-line);
+  border-radius: 10px;
+  background: #101713a3;
+}
+.sub-disclosure-summary,
+.ovr-legend-title,
+.album-collection-group > summary,
+.career-tournament > summary {
+  color: var(--cw-tools-ink);
+}
+.sub-disclosure-summary:hover,
+.online-room-disclosure > summary:hover,
+.career-timeline > summary:hover,
+.album-collection-group > summary:hover {
+  background: #ffffff04;
+}
+
+/* Online rooms */
+.online-room-disclosure { width: min(100%, 760px); margin: 18px auto 0; }
+.online-room-disclosure > summary { padding: 16px 17px; }
+.online-room-body { padding: 0 17px 17px; }
+.online-room-intro,
+.online-room-statusline,
+.online-room-feedback,
+.online-room-form label {
+  color: var(--cw-tools-muted);
+}
+.online-room-method { color: var(--cw-tools-soft); }
+.online-room-form select,
+.online-room-code-input {
+  border-color: var(--cw-tools-line);
+  border-radius: 9px;
+  background: #060c09c4;
+  color: var(--cw-tools-ink);
+}
+.online-room-form select:focus,
+.online-room-code-input:focus {
+  border-color: #eaa23b9c;
+  box-shadow: 0 0 0 3px #eaa23b15;
+}
+.online-room-code-input::placeholder { color: var(--cw-tools-soft); }
+.online-room-primary {
+  border-color: #f5b448;
+  background: linear-gradient(110deg, #ffad32, #eaa23b);
+  color: #251a08;
+  box-shadow: 0 4px 16px #eaa23b14;
+}
+.online-room-secondary,
+.online-room-copy {
+  border-color: var(--cw-tools-line);
+  background: #1b231c;
+  color: var(--cw-tools-ink);
+}
+.online-room-primary:hover:not(:disabled) { filter: brightness(1.07); }
+.online-room-secondary:hover:not(:disabled),
+.online-room-copy:hover:not(:disabled) {
+  border-color: var(--cw-tools-line-strong);
+  background: #242b20;
+}
+.online-room-code-label { color: var(--cw-tools-soft); }
+.online-room-code { color: #ffd58d; }
+.online-room-leader,
+.online-room-player {
+  border-color: var(--cw-tools-line);
+  background: var(--cw-tools-inner);
+  border-radius: 9px;
+}
+.online-room-leader small,
+.online-room-player-meta { color: var(--cw-tools-soft); }
+.online-room-leader strong,
+.online-room-player-name { color: var(--cw-tools-ink); }
+.online-room-leader span,
+.online-room-score { color: #ffd58d; }
+.online-room-rank {
+  border-radius: 7px;
+  background: #eaa23b12;
+  color: var(--cw-tools-accent);
+}
+.online-room-empty { border-color: var(--cw-tools-line); color: var(--cw-tools-muted); }
+.online-room-feedback[data-state=success] { color: #a2dfb1; }
+.online-room-feedback[data-state=error] { color: #ffaf9b; }
+
+/* Daily challenge and the collection */
+.meta-panel {
+  border-color: var(--cw-tools-line);
+  border-radius: 10px;
+  background: linear-gradient(120deg, #eaa23b08, #101713d9 58%);
+  box-shadow: none;
+}
+.daily-meta-date,
+.album-summary-count,
+.album-collection-count { color: #c6b58d; }
+.daily-meta-icon {
+  border-color: #eaa23b38;
+  border-radius: 9px;
+  background: #eaa23b0d;
+}
+.daily-meta-eyebrow { color: #cbb478; letter-spacing: .1em; }
+.daily-meta-title { color: var(--cw-tools-ink); font-size: 15px; }
+.daily-meta-description,
+.daily-meta-note,
+.daily-meta-status,
+.album-meta-intro { color: var(--cw-tools-muted); }
+.daily-meta-code {
+  border-color: var(--cw-tools-line);
+  background: #090f0ca6;
+  color: var(--cw-tools-soft);
+}
+.daily-meta-status.is-success { color: #a2dfb1; }
+.daily-meta-status.is-failure { color: #f5cb86; }
+.daily-result-banner {
+  border-color: #64866a80;
+  background: #142719e3;
+  color: #d4eed5;
+}
+.daily-result-banner.is-failure {
+  border-color: var(--cw-tools-line-strong);
+  background: #302612dd;
+  color: #f5dbab;
+}
+.daily-result-banner button {
+  border-color: var(--cw-tools-line);
+  background: #1b261d;
+  color: var(--cw-tools-ink);
+}
+.album-tier {
+  border-radius: 8px;
+  background: #0b120de3;
+  box-shadow: none;
+}
+.album-tier strong { color: var(--cw-tools-ink); }
+.album-tier span { color: var(--cw-tools-muted); }
+.album-pill {
+  border-color: #73816e38;
+  background: #20271f;
+  color: #8d968c;
+}
+.album-pill.is-collected {
+  border-color: #8c9f635c;
+  background: #25301a;
+  color: #d2dcb0;
+}
+.album-empty { background: #0b120db8; color: var(--cw-tools-muted); }
+
+/* Quests use slim, calm panels so the wheel remains the focus. */
+.achievement-panel {
+  border-color: var(--cw-tools-line);
+  background: var(--cw-tools-surface);
+  box-shadow: none;
+}
+.achievement-header h3 { color: var(--cw-tools-ink); }
+.achievement-header h3::before {
+  border-color: #eaa23b38;
+  background: #eaa23b10;
+  color: #ffce80;
+}
+.achievement-header p { color: var(--cw-tools-muted); }
+.achievement-header-stats {
+  border-color: var(--cw-tools-line);
+  border-radius: 10px;
+  background: #0d150ee6;
+}
+.achievement-header-stats > #achievementCount {
+  border-color: #eaa23b38;
+  background: #eaa23b0e;
+  color: #f5d194;
+}
+.achievement-header-stats > #careerLevelSummary { color: var(--cw-tools-ink); }
+.achievement-header-stats > #careerLevelProgress { color: var(--cw-tools-soft); }
+.career-level-meter,
+.achievement-progress-track { background: #32392c; }
+.career-level-meter > span,
+.achievement-progress-fill { background: linear-gradient(90deg, #c58c3c, #ffbb50); }
+.achievement-badge,
+.achievement-badge.is-locked {
+  border-color: var(--cw-tools-line);
+  border-radius: 10px;
+  background: #111910d6;
+  box-shadow: none;
+}
+.achievement-badge.is-unlocked {
+  border-color: #eaa23b47;
+  background: linear-gradient(110deg, #eaa23b0d, #121912db 55%);
+  box-shadow: inset 2px 0 #eaa23b;
+}
+.achievement-badge:hover {
+  border-color: var(--cw-tools-line-strong);
+  background: #1b2418e6;
+  box-shadow: none;
+}
+.achievement-icon,
+.achievement-badge.is-unlocked .achievement-icon {
+  border-color: #c2c5ac24;
+  border-radius: 9px;
+  background: #ffffff04;
+  box-shadow: none;
+}
+.achievement-name { color: var(--cw-tools-ink); font-size: 12px; }
+.achievement-rule { color: var(--cw-tools-muted); font-size: 10px; }
+.achievement-progress-meta,
+.achievement-progress-meta b { color: var(--cw-tools-soft); }
+.achievement-badge.is-unlocked .achievement-progress-meta b { color: #eec785; }
+.achievement-xp-reward {
+  border-color: var(--cw-tools-line);
+  background: #182117;
+  color: #aab49b;
+}
+.achievement-badge.is-unlocked .achievement-xp-reward {
+  background: #eaa23b0e;
+  color: #f5d194;
+}
+.achievement-badge.is-secret.is-locked,
+.achievement-badge.is-secret.is-locked .achievement-icon {
+  border-color: #c2c5ac24;
+  background: #10160fea;
+}
+.achievement-toggle {
+  border-color: var(--cw-tools-line);
+  border-radius: 9px;
+  background: #1b2418cc;
+  color: var(--cw-tools-ink);
+}
+.achievement-toggle::after { color: var(--cw-tools-accent); }
+.achievement-toggle:hover {
+  border-color: var(--cw-tools-line-strong);
+  background: #252c1d;
+}
+.player-achievement-medal {
+  border-color: #8c93744d;
+  border-radius: 10px;
+  background: #151e14e8;
+  box-shadow: none;
+}
+.player-achievement-medal.rank-gold,
+.player-achievement-medal.rank-legend { box-shadow: none; }
+.player-achievement-crest { background: #ffffff05; }
+.player-achievement-medal-copy small { color: var(--cw-tools-muted); }
+.achievement-toast,
+.achievement-dialog {
+  border-color: #eaa23b47;
+  background: #111a13f7;
+  color: var(--cw-tools-ink);
+}
+.achievement-toast { box-shadow: 0 12px 30px #0006; }
+.achievement-toast-icon,
+.achievement-dialog-icon {
+  border-color: #eaa23b38;
+  background: #eaa23b0d;
+}
+.achievement-toast-copy small { color: var(--cw-tools-muted); }
+.achievement-dialog { border-radius: 16px; }
+.achievement-dialog::backdrop { background: #030804c9; }
+.achievement-dialog-close {
+  border-color: var(--cw-tools-line);
+  background: #20291d;
+  color: var(--cw-tools-muted);
+}
+.achievement-dialog-close:hover { border-color: var(--cw-tools-line-strong); color: var(--cw-tools-ink); }
+.achievement-dialog-eyebrow { color: #d0b67e; }
+.achievement-dialog h2 { color: var(--cw-tools-ink); }
+.achievement-dialog-description { color: #bcc6b7; }
+.achievement-detail-grid > div {
+  border-color: var(--cw-tools-line);
+  border-radius: 9px;
+  background: #182115a8;
+}
+.achievement-detail-grid span { color: var(--cw-tools-soft); }
+.achievement-detail-grid strong { color: var(--cw-tools-ink); }
+
+/* Archive, comparisons, and tournaments */
+.archive-item,
+.compare-player,
+.challenge-selection-status,
+.tournament-select-row,
+.tournament-round,
+.career-timeline-item {
+  border-color: var(--cw-tools-line);
+  border-radius: 9px;
+  background: #11190fd9;
+}
+.archive-item input,
+.tournament-select-row input { accent-color: var(--cw-tools-accent); }
+.archive-item-name,
+.compare-player strong { color: var(--cw-tools-ink); }
+.archive-item-meta,
+.compare-stats,
+.archive-empty,
+.archive-achievement-summary,
+.challenge-selection-status { color: var(--cw-tools-muted); }
+.archive-achievement-badges span {
+  border-color: var(--cw-tools-line);
+  border-radius: 6px;
+  background: #212a1d;
+}
+.archive-achievement-badges small { color: var(--cw-tools-soft); }
+.archive-item button,
+.tool-button,
+.duel-actions button {
+  border-color: var(--cw-tools-line);
+  border-radius: 8px;
+  background: #20291c;
+  color: var(--cw-tools-ink);
+}
+.archive-item button:hover,
+.tool-button:hover,
+.duel-actions button:hover { border-color: var(--cw-tools-line-strong); background: #2a311f; }
+#compareSelected {
+  border-color: #f5b448;
+  background: linear-gradient(110deg, #ffad32, #eaa23b);
+  color: #251a08;
+}
+.compare-overall,
+.tournament-select-ovr,
+.tournament-score,
+.duel-points { color: var(--cw-tools-accent); }
+.career-duel {
+  border-color: var(--cw-tools-line);
+  border-radius: 13px;
+  background: #0e170de3;
+}
+.duel-score-card,
+.duel-metric-row {
+  border-color: var(--cw-tools-line);
+  background: #182116;
+}
+.duel-score-card.is-winning {
+  border-color: #a7bc7266;
+  background: linear-gradient(150deg, #27351a, #182116);
+  box-shadow: none;
+}
+.duel-score-card.is-drawing { border-color: #8b958266; }
+.duel-eyebrow { color: #d0b67e; }
+.duel-player-name { color: var(--cw-tools-ink); }
+.duel-player-meta,
+.duel-points-label,
+.duel-instruction,
+.duel-metric-head,
+.duel-vs { color: var(--cw-tools-soft); }
+.duel-outcome { background: #20291b; color: var(--cw-tools-ink); }
+.duel-outcome.is-winner,
+.duel-metric-value.is-winner { color: #cfdfa5; }
+.duel-metric-label,
+.duel-metric-value { color: #bec8b4; }
+.duel-metric-value.is-draw { color: #8f9d87; }
+.tournament-select-row { color: var(--cw-tools-ink); }
+.tournament-select-row:has(input:checked) {
+  border-color: #eaa23b7d;
+  background: #eaa23b0b;
+}
+.tournament-select-copy small,
+.tournament-status,
+.tournament-bye,
+.tournament-empty { color: var(--cw-tools-muted); }
+.tournament-round h3 { color: #d0b67e; }
+.tournament-match { background: #1c2518; color: var(--cw-tools-muted); }
+.tournament-team.is-winner { color: var(--cw-tools-ink); }
+.tournament-champion {
+  border-color: var(--cw-tools-line-strong);
+  background: linear-gradient(120deg, #eaa23b15, #172014);
+  color: #f5d194;
+}
+
+/* Timeline and rating guide remain legible on the pitch background. */
+.career-timeline-icon {
+  border-color: var(--cw-tools-line);
+  border-radius: 8px;
+  background: #202a1b;
+}
+.career-timeline-stage { color: #c7b382; }
+.career-timeline-result { color: var(--cw-tools-ink); }
+.career-timeline-date { color: var(--cw-tools-soft); }
+.career-timeline-detail-row { border-top-color: var(--cw-tools-line); }
+.career-timeline-detail-row span { color: var(--cw-tools-soft); }
+.career-timeline-detail-row strong { color: #c2cdbb; }
+.ovr-legend-note { color: var(--cw-tools-muted); }
+.ovr-legend-item { background: #ffffff04; border-top-color: #ffffff0e; border-right-color: #ffffff0e; border-bottom-color: #ffffff0e; }
+.ovr-legend-name { color: #c2cdbb; }
+.ovr-legend-range { color: var(--cw-tools-ink); }
+
+@media (max-width: 560px) {
+  .online-room-disclosure > summary { padding: 14px 12px; gap: 8px; }
+  .online-room-teaser { max-width: 42%; line-height: 1.35; }
+  .online-room-body { padding: 0 12px 13px; }
+  .achievement-rule { line-height: 1.45; }
+}

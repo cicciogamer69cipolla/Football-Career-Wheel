@@ -1,0 +1,82 @@
+/* Account progression stays inside the existing folded mission panel. */
+#achievementPanel .achievement-header { grid-template-columns: minmax(0, 1fr) auto; gap: 10px; margin-bottom: 14px; }
+#achievementPanel .achievement-header-stats { display: block; min-width: 0; padding: 0; background: none; border: 0; }
+#achievementPanel #careerLevelSummary,
+#achievementPanel #careerLevelProgress,
+#achievementPanel .career-level-meter,
+#achievementPanel #achievementIntro { display: none; }
+.profile-progression { --profile-accent: #70d7b0; padding: 19px; border: 1px solid #ffffff12; border-radius: 14px; background: linear-gradient(120deg, #2636296b, #101915); }
+.profile-progression-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.profile-progression-copy { min-width: 0; }
+.profile-progression-eyebrow { display: block; margin-bottom: 7px; color: #98a59c; font-size: 9px; font-weight: 750; letter-spacing: .14em; }
+.profile-progression-headline { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.profile-progression-level { color: #f6f5ed; font-size: 26px; font-weight: 850; letter-spacing: -.05em; line-height: 1.2; }
+.profile-progression-title { border: 1px solid color-mix(in srgb, var(--profile-accent) 34%, transparent); border-radius: 6px; padding: 4px 7px; background: color-mix(in srgb, var(--profile-accent) 8%, transparent); color: var(--profile-accent); font-size: 10px; font-weight: 700; }
+.profile-progression-xp { display: block; margin-top: 6px; color: #a5b2a8; font-size: 10px; }
+.profile-progression-next { display: grid; gap: 6px; max-width: 46%; text-align: right; }
+.profile-progression-next small { color: #8f9e94; font-size: 9px; }
+.profile-progression-next strong { color: #f0d395; font-size: 11px; font-weight: 700; }
+.profile-progression-meter { margin-top: 17px; overflow: hidden; border-radius: 6px; height: 5px; background: #ffffff0c; }
+.profile-progression-meter > span { display: block; height: 100%; background: var(--profile-accent); border-radius: inherit; transition: width .35s ease; }
+.profile-progression-progress { display: block; margin-top: 7px; text-align: right; color: #adb9b0; font-size: 9px; }
+.profile-progression-help { margin: 12px 0 0; max-width: 65ch; color: #8f9b93; font-size: 10px; line-height: 1.65; }
+.next-achievement-milestone { --milestone-accent: #70d7b0; margin: 12px 0; padding: 16px; border: 1px solid color-mix(in srgb, var(--milestone-accent) 25%, transparent); border-radius: 14px; background: linear-gradient(110deg, color-mix(in srgb, var(--milestone-accent) 6%, #0e1713), #0c1512); }
+.next-achievement-milestone[hidden] { display: none !important; }
+.next-milestone-label { display: block; margin-bottom: 10px; color: var(--milestone-accent); font-size: 10px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.next-milestone-open { width: 100%; display: flex; gap: 12px; align-items: center; padding: 0; border: 0; background: none; color: #ecefe9; font: inherit; text-align: left; cursor: pointer; }
+.next-milestone-icon { display: grid; place-items: center; flex: 0 0 38px; min-height: 40px; border-radius: 10px; background: color-mix(in srgb, var(--milestone-accent) 9%, transparent); font-size: 23px; }
+.next-milestone-copy { display: grid; gap: 5px; min-width: 0; }
+.next-milestone-copy strong { font-size: 15px; font-weight: 750; }
+.next-milestone-copy small { color: #aab8af; font-size: 11px; line-height: 1.5; }
+.next-milestone-reward { margin-left: auto; flex-shrink: 0; color: var(--milestone-accent); font-size: 12px; white-space: nowrap; }
+.next-milestone-meter { height: 5px; margin-top: 15px; overflow: hidden; border-radius: 4px; background: #ffffff13; }
+.next-milestone-meter > span { display: block; height: 100%; border-radius: inherit; background: var(--milestone-accent); }
+.next-milestone-meta { display: flex; justify-content: space-between; gap: 12px; margin-top: 7px; color: #a9b9af; font-size: 11px; }
+.next-milestone-meta > small:last-child { flex-shrink: 0; font-variant-numeric: tabular-nums; }
+.next-milestone-note { margin: 9px 0 0; color: #87998d; font-size: 10px; line-height: 1.5; }
+.next-milestone-open:hover .next-milestone-copy strong { color: var(--milestone-accent); }
+.next-milestone-open:focus-visible { outline: 2px solid var(--milestone-accent); outline-offset: 5px; border-radius: 5px; }
+.profile-rewards { margin: 10px 0 16px; border: 1px solid #ffffff14; border-radius: 10px; background: #ffffff02; overflow: hidden; }
+.profile-rewards > summary { display: flex; align-items: center; gap: 12px; padding: 12px; cursor: pointer; list-style: none; }
+.profile-rewards > summary::-webkit-details-marker { display: none; }
+.profile-rewards > summary::after { content: '+'; color: #ddbc7c; }
+.profile-rewards[open] > summary::after { content: '−'; }
+.profile-rewards > summary strong { font-size: 11px; color: #dddcd1; font-weight: 700; }
+.profile-rewards > summary small { margin-left: auto; font-size: 10px; color: #9cab9f; }
+.profile-rewards-body { padding: 0 12px 12px; }
+.profile-rewards-help { margin: 2px 0 12px; color: #8f9b93; font-size: 10px; line-height: 1.6; }
+.profile-rewards-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.profile-reward { display: flex; align-items: center; gap: 9px; padding: 10px; border: 1px solid #ffffff13; border-radius: 9px; background: #0c1410; color: #b7c0b9; text-align: left; font: inherit; cursor: pointer; min-width: 0; }
+.profile-reward:hover:not(:disabled), .profile-reward.is-equipped { border-color: color-mix(in srgb, var(--reward-accent) 55%, transparent); background: color-mix(in srgb, var(--reward-accent) 5%, #0c1410); }
+.profile-reward:disabled { opacity: .48; cursor: default; }
+.profile-reward-swatch { display: grid; place-items: center; width: 34px; height: 40px; flex: 0 0 34px; border: 1px solid color-mix(in srgb, var(--reward-accent) 40%, transparent); border-radius: 6px; color: var(--reward-accent); font-size: 20px; }
+.profile-reward-copy { display: grid; gap: 4px; min-width: 0; }
+.profile-reward-copy strong { color: #f0f0e6; font-size: 11px; font-weight: 750; }
+.profile-reward-copy small { font-size: 8px; line-height: 1.4; color: #9ba99e; }
+.profile-reward-status { margin-left: auto; max-width: 58px; color: var(--reward-accent); font-size: 9px; font-weight: 750; text-align: right; }
+.mission-filters { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; margin: 0 0 11px; }
+.mission-filters > button { padding: 7px 9px; border: 1px solid transparent; border-radius: 7px; background: transparent; color: #94a098; font: inherit; font-size: 10px; font-weight: 650; cursor: pointer; }
+.mission-filters > button[aria-pressed=true] { color: #f2d59d; border-color: #e6b75c28; background: #e6b75c0a; }
+.mission-category { margin-left: auto; min-width: 0; }
+.mission-category > span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.mission-category select { width: 100%; max-width: 165px; border: 1px solid #ffffff16; border-radius: 7px; padding: 6px 22px 6px 8px; background: #101914; color: #b7c1b9; font: inherit; font-size: 9px; }
+.mission-empty { margin: 18px 0; color: #a0aea4; font-size: 11px; text-align: center; }
+#achievementList > [hidden], #achievementToggle[hidden], .mission-empty[hidden] { display: none !important; }
+.profile-medal { border-color: color-mix(in srgb, var(--profile-accent) 50%, transparent); color: var(--profile-accent); background: #0b1510; box-shadow: none; }
+.profile-medal .player-achievement-crest { color: var(--profile-accent); border-color: color-mix(in srgb, var(--profile-accent) 40%, transparent); border-radius: 8px; background: color-mix(in srgb, var(--profile-accent) 9%, #0b1510); font-size: 20px; }
+.profile-medal .player-achievement-medal-copy small { color: #99a89e; }
+.profile-rewards > summary:focus-visible, .profile-reward:focus-visible, .mission-filters > button:focus-visible, .mission-category select:focus-visible { outline: 2px solid #efbc68; outline-offset: 3px; }
+@media (max-width: 560px) {
+  .next-achievement-milestone { padding: 14px; }
+  .next-milestone-open { flex-wrap: wrap; gap: 10px; }
+  .next-milestone-copy { flex: 1; }
+  .next-milestone-reward { margin-left: 48px; }
+  .profile-progression { padding: 15px; }
+  .profile-progression-level { font-size: 23px; }
+  .profile-progression-top { gap: 12px; align-items: flex-start; }
+  .profile-progression-next { max-width: 42%; }
+  .profile-rewards-grid { grid-template-columns: 1fr; }
+  .mission-category { width: 100%; margin: 3px 0 0; }
+  .mission-category select { max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) { .profile-progression-meter > span { transition: none; } }

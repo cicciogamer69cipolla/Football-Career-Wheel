@@ -1,0 +1,79 @@
+/* Online has its own screen; Solo retains the large central wheel. */
+.app[data-view="solo"] > #onlineRoomDisclosure,.app[data-view="online-game"] > #onlineRoomDisclosure,.app[data-view="online"] > #careerGame,.app[data-view="online"] > .progress,.app[data-view="online"] > #careerSummary,.app[data-view="online"] > #extraTools,.app[data-view="online-game"] > #extraTools{display:none!important}
+.online-game-bar[hidden],.online-lobby-panel[hidden],#onlineLobbyPlay[hidden],.stadium-online-status[hidden],.online-lobby-lock[hidden]{display:none!important}
+.app[data-view="online"] .stadium-play-nav{margin-bottom:22px}
+.app[data-view="online"] .stadium-play-route{min-height:100px;padding:19px 22px}
+.app[data-view="online"] .stadium-route-title{font-size:30px;letter-spacing:-.04em}
+.app[data-view="online"] .stadium-route-description{font-size:11px}
+.app[data-view="online"] #stadiumSolo{color:#919992;background:#141b18d6}
+#stadiumOnline[data-current="true"]{border-color:#dfac52;background:linear-gradient(125deg,#0d252ae8,#171b18ed);box-shadow:inset 0 -3px #32bbd6}
+.stadium-online-status{display:flex;align-items:center;gap:5px;margin-top:9px;color:#a9bab4;font-size:9px}
+.stadium-online-status::before{content:'';width:5px;height:5px;border-radius:50%;background:#36d8a5;box-shadow:0 0 8px #36d8a560}
+.app[data-view="online"] > #onlineRoomDisclosure{margin-top:0;border:1px solid #ffffff22;border-radius:18px;background:linear-gradient(135deg,#0d1513ed,#101815d9);box-shadow:0 24px 55px #0003;animation:lobby-arrive .26s ease-out both}
+.app[data-view="online"] #onlineRoomDisclosure > summary{display:none}
+.app[data-view="online"] .online-room-body{padding:24px}
+.online-lobby-head{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}
+.online-lobby-heading small{display:block;color:#b3a27a;font-size:9px;font-weight:750;letter-spacing:.14em}
+.online-lobby-heading h2{margin:6px 0 0;color:#f0f3eb;font-size:24px;letter-spacing:-.035em;line-height:1.2}
+.online-lobby-heading h2:focus{outline:none}
+.online-lobby-tabs{display:grid;grid-template-columns:repeat(2,minmax(90px,1fr));gap:7px}
+.online-lobby-tabs button{min-height:41px;padding:9px 18px;border:1px solid #ffffff20;border-radius:10px;background:#0b131166;color:#9aa69f;font:750 13px system-ui;cursor:pointer;transition:border-color .18s,background-color .18s,color .18s}
+.online-lobby-tabs button[aria-selected="true"]{border-color:#38b4d575;background:#10303a99;color:#edf8fa}
+.online-lobby-tabs button:hover{border-color:#65c3d68c}
+.online-lobby-tabs button:disabled{opacity:.55;cursor:wait}
+.online-lobby-identity{display:grid;grid-template-columns:minmax(0,1fr) 130px;gap:14px;margin-bottom:18px}
+.online-lobby-field{display:grid;min-width:0;gap:7px}
+.online-lobby-field > span,.app[data-view="online"] .online-room-form label > span{color:#a1aba5;font-size:10px;font-weight:650;letter-spacing:.035em;text-transform:uppercase}
+.online-lobby-field input,.app[data-view="online"] .online-room-form select{width:100%;min-width:0;min-height:46px;box-sizing:border-box;padding:11px 13px;border:1px solid #ffffff1d;border-radius:10px;background:#050b0bc4;color:#f0f5ed;font:600 13px system-ui;outline:none}
+.online-lobby-field input::placeholder{color:#687b73}
+.online-lobby-field input:focus,.app[data-view="online"] .online-room-form select:focus{border-color:#37bdd48c;box-shadow:0 0 0 3px #37bdd412}
+.online-lobby-field input[readonly]{color:#a7b4ab;cursor:default}
+.online-lobby-lock{margin:-5px 0 18px;color:#c0ac7b;font-size:10px;line-height:1.5}
+.app[data-view="online"] .online-room-form{grid-template-columns:1fr 1fr;gap:14px}
+.app[data-view="online"] .online-room-form label{gap:7px}
+.app[data-view="online"] .online-room-form > button,.app[data-view="online"] .online-room-join > button{grid-column:1/-1;width:100%;min-height:46px;margin-top:7px;border:1px solid #5ad3db42;border-radius:10px;background:linear-gradient(100deg,#47b9c7,#70d2c7);color:#05202a;font:850 13px system-ui;cursor:pointer;transition:filter .18s,opacity .18s}
+.app[data-view="online"] .online-room-form > button:hover,.app[data-view="online"] .online-room-join > button:hover{filter:brightness(1.09)}
+.app[data-view="online"] .online-room-form > button:disabled,.app[data-view="online"] .online-room-join > button:disabled{background:#89958b;border-color:#89958b;color:#263229;opacity:.48;cursor:default}
+.app[data-view="online"] .online-room-join{grid-template-columns:1fr;gap:14px;margin:0}
+.app[data-view="online"] #onlineRoomCode{text-transform:none;letter-spacing:.01em}
+.online-lobby-hint{display:block;margin-top:9px;color:#81978c;font-size:10px;line-height:1.5}
+.online-lobby-private{margin:20px 0 0;padding:12px 14px;border:1px dashed #ffffff1e;border-radius:9px;background:#050e0b66;color:#92a197;font-size:10px;line-height:1.6}
+#onlineRoomIntro{display:none}
+.app[data-view="online"] #onlineRoomFormatNote{margin:13px 0 0;color:#b7c3a8}
+.app[data-view="online"] #onlineRoomFeedback{min-height:0;margin-top:13px;font-size:11px}
+.app[data-view="online"] #onlineRoomFeedback:empty{display:none}
+.app[data-view="online"] #onlineRoomFeedback[data-status="idle"]{display:none}
+.app[data-view="online"] #onlineRoomIdle{margin-top:12px;color:#788d80;font-size:9px}
+.has-room #onlineLobbyEntry,.has-room #onlineLobbyTabs,.has-room #onlineLobbyPrivateNote{display:none}
+.app[data-view="online"] .online-room-lobby{margin-top:0;padding-top:0;border-top:0}
+.app[data-view="online"] .online-room-code-label{color:#97afa3}
+.app[data-view="online"] .online-room-code{color:#eef9f5;font-size:24px}
+.app[data-view="online"] .online-room-code-input{width:100%;box-sizing:border-box}
+.app[data-view="online"] #onlineRoomInviteUrl{margin-top:12px;text-transform:none;letter-spacing:.01em;color:#a6bdb1;background:#040b09ad;border-color:#ffffff1b}
+.app[data-view="online"] .online-room-copy,.app[data-view="online"] .online-room-secondary{border-color:#8aaba038;background:#16261dcc;color:#c9dbce;border-radius:9px}
+.app[data-view="online"] .online-room-series-status{margin:17px 0 12px;background:#e3b7650c;border-color:#e3b7652b;color:#e7cc99}
+.online-lobby-play{width:100%;min-height:46px;padding:11px 18px;border:1px solid #6ad3cf60;border-radius:10px;background:linear-gradient(100deg,#47b9c7,#70d2c7);color:#05202a;font:850 13px system-ui;cursor:pointer}
+.online-lobby-play:disabled{opacity:.5;cursor:wait}
+.app[data-view="online"] #onlineRoomPlayRound{display:none!important}
+.app[data-view="online"] .online-room-player{padding:12px;background:#06100cc7;border-color:#ffffff18;border-radius:11px}
+.app[data-view="online"] .online-room-player[data-self="true"]{border-color:#53bcb94d}
+.app[data-view="online"] .online-room-player-name{color:#e3eee7;font-size:12px}
+.app[data-view="online"] .online-room-player-meta{color:#95ad9d;font-size:10px}
+.app[data-view="online"] .online-room-last{color:#bbc3a2;font-size:10px}
+.app[data-view="online"] .online-room-score{color:#7fd5ca}
+.app[data-view="online"] .online-room-rank{background:#173b35;color:#8be3d6}
+.app[data-view="online"] .online-room-leader{background:#0c1b15c2;border-color:#ffffff16}
+.app[data-view="online"] .online-room-leader small{color:#8fa79a}
+.app[data-view="online"] .online-room-leader span{color:#8fe3d5}
+#onlineRoomLeaders[hidden]{display:none!important}
+.online-lobby-scoring{margin:14px 0;padding:10px 12px;border:1px solid #ffffff14;border-radius:9px;background:#060d0966}
+.online-lobby-scoring > summary{color:#aebeb1;font-size:10px;cursor:pointer}
+.online-lobby-scoring #onlineRoomFormula{color:#8ca697;line-height:1.7}
+.online-game-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 auto 14px;width:min(100%,820px);padding:11px 14px;border:1px solid #49bbcb38;border-radius:10px;background:#0b2423db}
+.online-game-bar span{color:#a3cebf;font-size:11px;font-weight:700}
+.online-game-bar button{padding:7px 10px;border:1px solid #62c6bd4d;border-radius:7px;background:#15332a;color:#d2e8da;font:750 10px system-ui;cursor:pointer}
+.online-lobby-tabs button:focus-visible,.online-lobby-play:focus-visible,.online-game-bar button:focus-visible{outline:2px solid #68d7dd;outline-offset:3px}
+@keyframes lobby-arrive{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.app[data-view="online"] .stadium-play-route{min-height:85px;padding:14px}.app[data-view="online"] .stadium-route-title{font-size:25px}.app[data-view="online"] .stadium-route-description{font-size:9px}.app[data-view="online"] .online-room-body{padding:19px 16px}.online-lobby-head{gap:12px;flex-wrap:wrap}.online-lobby-heading h2{font-size:23px}.online-lobby-tabs{flex:1;max-width:230px}.online-lobby-tabs button{padding-inline:12px}.online-lobby-identity{grid-template-columns:minmax(0,1fr) 85px;gap:10px}.app[data-view="online"] .online-room-form{grid-template-columns:1fr}.online-game-bar{flex-wrap:wrap}}
+@media(max-width:380px){.online-lobby-tabs{width:100%;max-width:none;flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){.app[data-view="online"] > #onlineRoomDisclosure{animation:none}.online-lobby-tabs button{transition:none}}

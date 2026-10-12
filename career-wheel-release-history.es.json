@@ -1,0 +1,738 @@
+[
+  {
+    "id": "release-2-1-1",
+    "version": "2.1.1",
+    "title": "Correcciones para el inicio local",
+    "summary": "Inicio desde la carpeta más fiable, exportación de cartas corregida y URL de emojis reparadas.",
+    "sections": [
+      {
+        "title": "Aplicación local",
+        "items": [
+          "Se añadieron instrucciones e inicio con servidor local para cuentas y guardados en el dispositivo.",
+          "Las cartas usan fondos locales exportables sin depender de imágenes externas.",
+          "Se corrigió la carga de emojis en las ruletas."
+        ]
+      }
+    ],
+    "date": "2026-10-12",
+    "historical": false
+  },
+  {
+    "id": "release-2-1-0",
+    "version": "2.1.0",
+    "title": "El Tour de leyendas",
+    "summary": "18 medallas en escenarios, récords que mejorar y correcciones de vistas previas, archivo y guardados.",
+    "sections": [
+      {
+        "title": "Un reto entre carreras",
+        "items": [
+          "Seis escenarios tienen medallas de Bronce, Plata y Oro: 18 hazañas con objetivos cada vez más exigentes.",
+          "Cada nueva carrera real en Solo cuenta, también las libres. Las medallas quedan en el perfil; vistas previas, archivo y duelos locales no las otorgan.",
+          "Cada escenario muestra la próxima medalla y el mejor intento hacia el oro, conservando un resultado completo de una carrera.",
+          "Las nuevas medallas aparecen en el resumen final. El Tour está dentro de Escenarios, sin una sección duplicada ni XP repetibles.",
+          "El progreso se incluye en guardados de cuenta local y copias de seguridad, combinando resultados y validando las importaciones."
+        ]
+      },
+      {
+        "title": "Correcciones del juego",
+        "items": [
+          "Abrir el archivo durante una carrera real pide confirmación antes de sustituirla; los giros y elecciones pendientes quedan protegidos.",
+          "Vistas previas de carreras terminadas, animación de rareza y etiquetas de sectores estrechos coherentes y legibles.",
+          "Cambiar del reto diario a un escenario o código antes del primer giro elimina correctamente el reto anterior.",
+          "Los resultados diarios se conservan al pasar la medianoche y no aparecen en ejemplos ni archivos.",
+          "Clasificaciones compatibles con guardados antiguos y estilos de carta actualizados entre pestañas del mismo perfil.",
+          "Los fallos al leer o guardar medallas se indican y permiten reintentar sin sobrescribir el progreso."
+        ]
+      }
+    ],
+    "date": "2026-10-09",
+    "historical": false
+  },
+  {
+    "id": "release-2-0-1",
+    "version": "2.0.1",
+    "title": "La rareza se ve en los colores",
+    "summary": "Cuatro colores distintos separan los resultados comunes de los más raros, manteniendo el estilo arcade.",
+    "date": "2026-10-09",
+    "historical": false,
+    "sections": [
+      {
+        "title": "Ruletas más legibles",
+        "items": [
+          "Verde para resultados comunes, azul para poco comunes, violeta para raros y oro para muy raros.",
+          "Sectores, leyenda y panel de probabilidades usan la misma clasificación, agrupando resultados repetidos.",
+          "Las ruletas con probabilidades similares conservan los colores de las categorías; el color indica rareza, no fuerza.",
+          "Bordes más visibles en sectores raros y texto oscuro sobre oro. Probabilidades, tamaño de sectores y resultados sin cambios."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "release-2-0-0",
+    "version": "2.0.0",
+    "title": "La nueva arena de Career Wheel",
+    "summary": "Interfaz reorganizada, resumen de carrera en directo, guía de juego y revisión de guardados y retos.",
+    "sections": [
+      {
+        "title": "Una nueva arena",
+        "items": [
+          "Cabecera compacta, navegación clara y estadio oscuro con superficies grafito y acentos menta.",
+          "Ruleta grande y centrada con colores arcade; las vistas previas y probabilidades están debajo de los controles.",
+          "Cinco etapas aclaran el recorrido: origen, club, perfil, atributos y palmarés.",
+          "Cartas, estadísticas, lobby, duelos y ventanas comparten una jerarquía visual más clara, también en móviles."
+        ]
+      },
+      {
+        "title": "Nuevas herramientas para jugar",
+        "items": [
+          "El resumen durante la carrera muestra identidad, club, estilo y valores extraídos, sin inventar un OVR antes de la carta final.",
+          "Una guía explica giros, modos, guardados, duelos y Career Points.",
+          "En Objetivos, el próximo hito propone un logro cercano con progreso real y recompensa XP.",
+          "El centro de la ruleta permite repetir una carrera completada; las elecciones obligatorias de eventos aparecen a la vista.",
+          "Exportación PNG con estado visible, carga limitada de imágenes, fondos locales de reserva y descarga compatible mediante Blob."
+        ]
+      },
+      {
+        "title": "Correcciones y comprobaciones",
+        "items": [
+          "Las carreras antiguas sin estilo de juego se abren y comparten correctamente.",
+          "Traducciones completadas de posiciones, títulos, talentos, bonus y mensajes dinámicos en italiano, inglés, español y francés.",
+          "Reto diario en modo Normal, fecha conservada al pasar la medianoche y último intento separado del historial.",
+          "Validación más estricta del restablecimiento de duelos, resultados de salas, progreso e identidad bloqueada.",
+          "Las peticiones de cuenta tienen tiempo límite, las importaciones se validan antes de cambiar el progreso y las solicitudes de amistad recibidas tienen límites.",
+          "Comprobaciones automáticas con datos aislados y revisión de pantallas en el navegador local.",
+          "La carrera local se restaura aunque el servicio de cuenta no responda, antes de permitir jugar.",
+          "Las descripciones de talentos y la carta final usan los mismos bonus, conservando los valores del equilibrio existente.",
+          "Resultados anunciados a lectores de pantalla y grupos de modos accesibles también en móviles."
+        ]
+      }
+    ],
+    "date": "2026-10-09",
+    "historical": false
+  },
+  {
+    "id": "release-1-9-0",
+    "version": "1.9.0",
+    "title": "Carreras más creíbles y un nuevo final del duelo",
+    "date": "2026-10-09",
+    "summary": "Modo Realista ligado a la posición y las temporadas, comparación final animada y un resumen personal de la carrera.",
+    "sections": [
+      {
+        "title": "Modo Realista",
+        "items": [
+          "Las nuevas carreras Realistas usan probabilidades de atributos y un OVR ponderado según la posición del jugador.",
+          "Los goles y las asistencias son cantidades exactas, con resultados que dependen de la posición, las temporadas jugadas y los atributos.",
+          "Los talentos múltiples son menos frecuentes; los valores excepcionales siguen siendo posibles, con probabilidades menores.",
+          "La cantidad de trofeos respeta las oportunidades disponibles durante la carrera, incluidas las competiciones celebradas cada cuatro años.",
+          "Las carreras ya iniciadas mantienen las reglas anteriores y los resultados ya obtenidos."
+        ]
+      },
+      {
+        "title": "Final del duelo",
+        "items": [
+          "Las dos cartas se presentan una junto a otra, seguidas de una comparación de atributos y palmarés.",
+          "Los Career Points aumentan durante la presentación antes de revelar al ganador según el criterio elegido; también se reconocen los empates.",
+          "La presentación se puede omitir y respeta la preferencia de movimiento reducido."
+        ]
+      },
+      {
+        "title": "Tu historia",
+        "items": [
+          "Un título personal resume el carácter de la carrera según sus resultados.",
+          "Tres momentos destacados recogen los resultados reales de la carrera y acompañan la historia existente."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-2",
+    "version": "1.8.2",
+    "title": "Colores arcade para la rueda",
+    "date": "2026-10-08",
+    "summary": "Una paleta más viva, con sectores bien diferenciados y detalles neutros.",
+    "sections": [
+      {
+        "title": "Colores de la rueda",
+        "items": [
+          "Azul eléctrico, fucsia, verde, cian, naranja y morado para los sectores de la rueda.",
+          "Los colores de la lista de probabilidades siguen la nueva paleta de los sectores.",
+          "Reflejos neutros, un centro grafito y un indicador claro completan el nuevo aspecto."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-1",
+    "version": "1.8.1",
+    "title": "Una rueda más cuidada",
+    "date": "2026-10-08",
+    "summary": "Nuevos colores, textos más legibles y un resultado más visible, con la rueda siempre grande y centrada.",
+    "sections": [
+      {
+        "title": "Aspecto e interacción de la rueda",
+        "items": [
+          "Paleta renovada con azul, turquesa, morado y ámbar; los colores de los sectores coinciden con los de la lista de probabilidades.",
+          "Etiquetas más legibles, con los nombres largos repartidos en varias líneas y un mejor contraste.",
+          "El sector elegido se destaca al terminar el giro, mientras los demás se atenúan.",
+          "Centro minimal con el control Girar, que también se puede utilizar con el teclado.",
+          "El indicador acompaña el paso de los sectores; las animaciones respetan la preferencia de movimiento reducido.",
+          "Un detalle dorado distingue los resultados más raros.",
+          "Se conservan las probabilidades del sorteo, las cuentas y los progresos; la actualización está disponible en el servidor local."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-0",
+    "version": "1.8.0",
+    "title": "La rueda decide el desafío",
+    "date": "2026-10-08",
+    "summary": "Duelo local para dos jugadores en el mismo PC: cread vuestras carreras por turnos y comparad cartas y Career Points.",
+    "sections": [
+      {
+        "title": "Duelo local",
+        "items": [
+          "Añadida una modalidad Duelo para dos jugadores que comparten el mismo PC, sin necesidad de una cuenta.",
+          "Antes de empezar, se elige un modo de carrera común y el criterio que determina al ganador.",
+          "Cada jugador introduce su nombre y dorsal y gira sus ruedas durante su turno.",
+          "El resumen final compara ambas cartas y los Career Points de las dos carreras.",
+          "Los resultados iguales se reconocen como empates.",
+          "La carrera Solo y los progresos existentes siguen disponibles; el desarrollo continúa en el servidor local."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-7-0",
+    "version": "1.7.0",
+    "title": "Online, con tus amigos",
+    "date": "2026-10-08",
+    "summary": "El sitio puede alojarse online con partidas persistentes e invitaciones a salas desde Amigos.",
+    "sections": [
+      {
+        "title": "Salas y progreso",
+        "items": [
+          "Las cuentas, amistades, partidas y salas online usan una base de datos persistente.",
+          "Los amigos guardados pueden recibir una invitación directa a tu sala privada.",
+          "Acepta o rechaza invitaciones en Amigos; caducan después de 15 minutos.",
+          "Una invitación aceptada abre el lobby con el código rellenado; cada jugador sigue eligiendo su nombre y dorsal.",
+          "Exporta e importa el progreso desde Cuenta para pasar del sitio local a la nueva dirección.",
+          "Los archivos y objetivos se combinan durante el traslado; se conserva una carrera ya iniciada en este dispositivo."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "release-1-6-0",
+    "version": "1.6.0",
+    "title": "Tu cuenta, tus progresos, tus amigos",
+    "date": "2026-10-08",
+    "summary": "Cuentas y partidas personales guardadas en el servidor, con un panel Amigos para los contactos y las solicitudes de amistad.",
+    "sections": [
+      {
+        "title": "Cuenta",
+        "items": [
+          "Añadida la opción Cuenta a la barra superior, con inicio de sesión y creación de un perfil mediante correo, contraseña y apodo.",
+          "El panel de la cuenta permite cambiar el apodo y cerrar sesión.",
+          "Al crear una cuenta se proporciona un código personal para recuperar el acceso y establecer una nueva contraseña.",
+          "La recuperación utiliza el código personal y no requiere un servicio de envío de correo."
+        ]
+      },
+      {
+        "title": "Partidas guardadas personales",
+        "items": [
+          "La carrera en curso y las carreras archivadas quedan vinculadas a tu cuenta.",
+          "Los objetivos conquistados, XP, nivel, récords y progresos de los desafíos se conservan junto con las partidas guardadas.",
+          "Las personalizaciones de la carta, el estilo del perfil, el idioma y el borrador del feedback siguen a tu cuenta.",
+          "Añadida la sincronización automática del progreso y el comando Sincronizar ahora en el panel Cuenta.",
+          "El progreso de quienes juegan sin cuenta permanece separado del de los usuarios registrados.",
+          "Los datos de la cuenta se conservan en el servidor que aloja el sitio: en el servidor local cuando se utiliza la instalación local."
+        ]
+      },
+      {
+        "title": "Amigos y navegación",
+        "items": [
+          "Amigos reúne ahora tu lista de amigos guardados y permite buscar otros jugadores por apodo.",
+          "Las solicitudes de amistad se pueden aceptar o rechazar; la lista distingue a los amigos de las solicitudes pendientes.",
+          "Añadido un enlace personal de amistad que puedes copiar y compartir para que otros te encuentren.",
+          "Sin una cuenta, el panel Amigos invita a iniciar sesión o crear un perfil.",
+          "Los desafíos compartidos mediante código se agrupan en Objetivos para evitar secciones duplicadas.",
+          "Cuenta, partidas guardadas y Amigos están disponibles en italiano, inglés, español y francés."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-5-1",
+    "version": "1.5.1",
+    "title": "La historia de Career Wheel, desde el principio",
+    "date": "2026-10-08",
+    "summary": "Un historial de actualizaciones con todas las etapas del proyecto, desde la primera ruleta hasta las misiones y la nueva navegación.",
+    "sections": [
+      {
+        "title": "Novedades y actualizaciones",
+        "items": [
+          "Añadido el historial completo de cambios de Career Wheel, que se puede consultar desde el sitio.",
+          "La versión actual y la última actualización aparecen juntas en la parte superior, con acceso directo a las novedades.",
+          "Cada actualización incluye un resumen y una lista ordenada de las funciones añadidas y las correcciones.",
+          "Búsqueda entre las actualizaciones por versión, función o palabra clave.",
+          "Historial de actualizaciones disponible en italiano, inglés, español y francés.",
+          "También se han reconstruido las primeras fases de desarrollo: carta, ruletas, probabilidades, animaciones, misiones, eventos, desafíos, salas e interfaz.",
+          "Los parches antiguos se agrupan por series de actualizaciones cuando no existe una cronología precisa de cada versión.",
+          "Las fechas históricas no documentadas se mantienen sin fecha, en lugar de inventarlas."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-5-0",
+    "version": "1.5.0",
+    "title": "La ruleta en el centro y las herramientas arriba",
+    "date": "2026-10-08",
+    "summary": "Una barra de navegación compacta abre las secciones en paneles dedicados y deja más espacio alrededor de la ruleta.",
+    "sections": [
+      {
+        "title": "Navegación",
+        "items": [
+          "Añadida la barra superior con Mensajes, Feedback, Objetivos, Clasificaciones, Amigos, Archivo y Perfil.",
+          "Las secciones existentes se han trasladado a los nuevos paneles, conservando sus datos y funciones.",
+          "Objetivos reúne las misiones, el desafío diario y los escenarios especiales.",
+          "Archivo reúne las carreras guardadas, el álbum de cartas y el torneo entre carreras.",
+          "Perfil reúne el nivel, los títulos, los fondos de la carta y la guía de OVR.",
+          "La ruleta sigue siendo grande y central; los paneles solo se abren cuando hacen falta.",
+          "La navegación y los paneles están disponibles en italiano, inglés, español y francés."
+        ]
+      },
+      {
+        "title": "Clasificaciones y amigos",
+        "items": [
+          "Clasificación de las carreras guardadas en el dispositivo, que se puede ordenar por Career Points u OVR.",
+          "Acceso a los récords personales y posibilidad de volver a abrir una carrera desde la clasificación.",
+          "El panel Amigos reúne las invitaciones a la sala privada y los desafíos compartidos mediante código.",
+          "Acceso al lobby existente sin crear una segunda gestión de salas.",
+          "El perfil utiliza los progresos locales que ya existen en el juego."
+        ]
+      },
+      {
+        "title": "Mensajes y feedback",
+        "items": [
+          "Mensajes reúne las novedades del sitio en un solo lugar.",
+          "Formulario Feedback para describir un error o proponer una idea.",
+          "El borrador se guarda en el dispositivo y se puede copiar o descargar como informe.",
+          "El informe incluye el mensaje introducido, el tipo de aviso, la versión, el idioma y la hora de creación."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-4-0",
+    "version": "1.4.0",
+    "title": "Más objetivos y un nivel que cuenta",
+    "date": "2026-10-08",
+    "summary": "Las misiones pasan a ser 67. El nivel del perfil desbloquea títulos y fondos, mientras nuevos objetivos abarcan varias carreras.",
+    "sections": [
+      {
+        "title": "24 misiones nuevas",
+        "items": [
+          "Catálogo ampliado de 43 a 67 logros, conservando las misiones anteriores.",
+          "Nuevas metas por completar 1, 3, 10 y 25 carreras reales.",
+          "Objetivos acumulativos para alcanzar 1.500 goles y 1.000 asistencias entre las carreras registradas.",
+          "Objetivos de exploración para jugar con 3 nacionalidades, 3 ligas, 3 posiciones y 3 estilos de juego diferentes.",
+          "Base sólida recompensa los seis atributos con un mínimo de 70; Marca y crea exige al menos 300 goles y 200 asistencias.",
+          "Carrera de valor exige al menos 300 Career Points; Juego limpio exige amarillas y rojas en el intervalo 0–10.",
+          "Nuevas combinaciones de goles y tiro, asistencias y pases, velocidad y regate, defensa y físico, pases y regate.",
+          "Club y selección, Dinastía europea y Orgullo nacional recompensan combinaciones de trofeos.",
+          "El palmarés cuenta recompensa una carta con OVR entre 75 y 84 y al menos 8 trofeos.",
+          "Talento natural exige un OVR de al menos 85 sin talentos especiales."
+        ]
+      },
+      {
+        "title": "Niveles y recompensas",
+        "items": [
+          "El nivel está ligado al perfil, se conserva entre carreras y aumenta cada 500 XP.",
+          "Cada misión concede sus XP una sola vez.",
+          "Títulos y fondos de carta desbloqueables: Clásico en el nivel 1, Esmeralda en el 3, Zafiro en el 6, Oro en el 10, Aurora en el 15 y Leyenda en el 20.",
+          "Los títulos del perfil pasan a ser Novato, Promesa, Protagonista, Clase mundial, Icono y Leyenda.",
+          "El estilo elegido queda guardado y también está disponible en la carta PNG.",
+          "El panel muestra los XP totales, los XP que faltan para el siguiente nivel y la próxima recompensa.",
+          "Filtros Pendientes, Obtenidas y Todas, con las categorías Atributos, Carrera y trofeos, Exploración y Secretas.",
+          "Tres misiones visibles al abrir; la lista completa se despliega cuando se solicita.",
+          "Nuevas misiones, niveles y recompensas traducidos al italiano, inglés, español y francés."
+        ]
+      },
+      {
+        "title": "Correcciones de los progresos",
+        "items": [
+          "Las misiones solo se conceden al final de una carrera real, después de aplicar los efectos de los eventos.",
+          "Las vistas previas de la carta no generan XP, niveles ni misiones recién conseguidas.",
+          "Volver a abrir una carrera desde el archivo no concede XP ni objetivos por segunda vez.",
+          "Corregido el cálculo de los atributos durante una carrera parcial, manteniendo la correspondencia entre velocidad, tiro, pases, regate, defensa y físico.",
+          "Récord histórico ahora exige 900 goles, un resultado alcanzable con la ruleta, conservando los XP y las fechas ya obtenidos.",
+          "Conservados los desbloqueos y las fechas de las misiones anteriores; en el archivo se distinguen los XP de cada carrera y el nivel del perfil."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-3-1",
+    "version": "1.3.1",
+    "title": "Un lobby dedicado a los desafíos online",
+    "date": null,
+    "summary": "Solo y Online se convierten en vistas separadas: el lobby permite crear una sala o entrar en ella y después pasar a la ruleta.",
+    "sections": [
+      {
+        "title": "Lobby y partida",
+        "items": [
+          "Vista Online con pestañas Crear y Entrar, inspirada en un lobby de juego y adaptada a Career Wheel.",
+          "Introducción del nombre en el lobby y del número de camiseta, vinculados a la identidad del futbolista.",
+          "Entrada mediante código de sala o enlace de invitación.",
+          "El nombre y el número también quedan bloqueados en el lobby después del primer giro.",
+          "Botón para ir a la ruleta, continuar la carrera y volver a la sala.",
+          "Estado de la sala, número de participantes y ronda de la serie visibles en la navegación de la partida.",
+          "Explicación de la puntuación reunida en una sección desplegable.",
+          "Etiquetas y controles del lobby disponibles en los cuatro idiomas del sitio."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "release-1-3-0",
+    "version": "1.3.0",
+    "title": "Identidad, historias y nuevos desafíos",
+    "date": null,
+    "summary": "Más formas de crear y compartir una carrera: personalización de la carta, escenarios, desafíos con código, récords y salas en directo.",
+    "sections": [
+      {
+        "title": "Tu carta y tu historia",
+        "items": [
+          "Configuración del futbolista reunida en un panel con nombre, número de camiseta y modo.",
+          "Personalización opcional de la carta con avatar, apodo y firma.",
+          "Elección entre Silueta, Capitán, Organizador, Velocista y Baller.",
+          "Posibilidad de subir un rostro personal en PNG, JPG o WEBP, de hasta 2 MB.",
+          "Los detalles personales se bloquean después del primer giro y se conservan en las carreras guardadas.",
+          "Historia final del futbolista construida a partir de los resultados reales de la carrera, con un botón para copiarla.",
+          "Career Points y detalle de su cálculo presentes en el resumen de la carrera.",
+          "Mejorada la preparación de las imágenes para exportar la carta y el palmarés."
+        ]
+      },
+      {
+        "title": "Escenarios y desafíos compartidos",
+        "items": [
+          "Seis escenarios especiales: Goleador sin límites, El organizador, El capitán, Leyenda nacional, El muro y Jugador completo.",
+          "Cada escenario tiene condiciones explícitas que se comprueban al final de la carrera.",
+          "Creación de un desafío personalizado de OVR, goles, asistencias, trofeos o Career Points.",
+          "Código y enlace compartibles para activar el mismo desafío entre amigos.",
+          "El mismo código produce la misma secuencia aleatoria; las decisiones en los eventos pueden cambiar el final.",
+          "Los desafíos con código utilizan el modo Normal para todos los participantes.",
+          "Posibilidad de importar un desafío, volver a intentarlo o regresar a la carrera libre.",
+          "Récords personales de OVR, goles, asistencias, trofeos y Career Points, actualizados solo por nuevas carreras reales."
+        ]
+      },
+      {
+        "title": "Salas en directo",
+        "items": [
+          "Las salas privadas se pueden abrir antes de comenzar la carrera.",
+          "El progreso de los participantes y el último resultado aparecen en la sala durante la partida.",
+          "La carrera completada se envía automáticamente a la sala.",
+          "Elección entre una sola carrera y una serie de tres carreras con puntuaciones acumuladas.",
+          "El organizador abre las rondas siguientes y las revanchas cuando los participantes han terminado.",
+          "Gestión de la clasificación provisional, el ganador, los empates, los envíos pendientes de reintentar y las sesiones caducadas.",
+          "Las vistas previas y las carreras reabiertas desde el archivo no se envían como una partida nueva."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "release-1-2-0",
+    "version": "1.2.0",
+    "title": "Career Wheel entra en el estadio",
+    "date": null,
+    "summary": "Una identidad visual futbolística, con fondo de estadio, paneles oscuros y acentos cálidos, manteniendo la ruleta como elemento principal.",
+    "sections": [
+      {
+        "title": "Ambiente y diseño",
+        "items": [
+          "Añadido un fondo de estadio dedicado, con campo e iluminación a los lados.",
+          "Nueva paleta oscura con paneles translúcidos, bordes discretos y acentos dorados.",
+          "Jerarquía más clara para el título, la configuración del jugador, la ruleta y las herramientas.",
+          "Accesos Solo y Online presentados como dos modos de juego.",
+          "La ruleta permanece en el centro y conserva el gran tamaño solicitado.",
+          "Herramientas y estadísticas secundarias reunidas en secciones desplegables para dejar más espacio a la partida.",
+          "Adaptaciones para pantallas pequeñas y para las preferencias de movimiento reducido."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-1-0-1-1-5",
+    "version": "1.1.0–1.1.5",
+    "title": "Salas privadas y Career Points",
+    "date": null,
+    "summary": "El sitio adopta una numeración más ordenada y añade desafíos entre amigos que comparan tanto la carrera como la fuerza de la carta.",
+    "sections": [
+      {
+        "title": "Una versión más ordenada",
+        "items": [
+          "La numeración pasa de la larga serie 1.0 a las versiones 1.1.",
+          "La posición de la carta se centra debajo del OVR total.",
+          "El nombre y el número de camiseta se eligen antes de la partida y se bloquean después del primer giro.",
+          "El bloqueo de identidad también se aplica al nombre que aparece en la carta final; Reiniciar permite elegir un nuevo futbolista."
+        ]
+      },
+      {
+        "title": "Puntuación y salas privadas",
+        "items": [
+          "Creación de una sala privada y entrada mediante código o enlace de invitación.",
+          "Salas de hasta 10 participantes, con clasificación de los resultados.",
+          "Tres criterios de victoria: más Career Points, carta más fuerte o puntuación combinada.",
+          "Career Points calculados a partir de goles, asistencias, temporadas, ligas, Champions League, Mundiales, copas continentales y Balones de Oro.",
+          "Los goles y las asistencias tienen un peso diferente según la posición del futbolista.",
+          "Cada temporada vale 2 puntos; liga 12, Champions 22, Mundial 25, copa continental 15 y Balón de Oro 20.",
+          "El duelo de cartas compara el OVR con peso doble y los seis atributos de los participantes.",
+          "El modo combinado une un 70% de puntuación de carrera y un 30% de duelo de cartas, dando valor también al palmarés.",
+          "Gestión de los empates en la clasificación de atributos y distinción entre mejor carrera, carta más fuerte y ganador.",
+          "Servidor local para las salas y actualización de los resultados compartidos entre los participantes."
+        ]
+      },
+      {
+        "title": "Idiomas",
+        "items": [
+          "Revisadas las traducciones de la interfaz, las ruletas, los resultados, los resúmenes, los eventos, el archivo y los desafíos.",
+          "Cambio de idioma disponible en italiano, inglés, español y francés también en las nuevas secciones.",
+          "Mejoradas las etiquetas de accesibilidad y los nombres de los logotipos en el idioma seleccionado."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-120-1-0-130",
+    "version": "1.0.120–1.0.130",
+    "title": "Una carta más cuidada y una partida más clara",
+    "date": null,
+    "summary": "Reorganización de las herramientas y del resumen, nuevas elecciones personales, estilo de juego y revelación animada de la carta.",
+    "sections": [
+      {
+        "title": "Interfaz y resumen",
+        "items": [
+          "Reorganizados Misiones, desafío diario, álbum, guía y archivo para reducir las secciones repetidas o dispersas.",
+          "Resumen final con temporadas, goles y asistencias visibles de inmediato; estadísticas completas y palmarés desplegables cuando se solicitan.",
+          "Momentos clave de la carrera reunidos en el resumen.",
+          "Revisados espacios, alineaciones, bordes y legibilidad de la interfaz general."
+        ]
+      },
+      {
+        "title": "Identidad y carta",
+        "items": [
+          "Número de camiseta elegido por el jugador junto con el nombre, en lugar de ser asignado por la ruleta.",
+          "Añadida la ruleta del estilo de juego: Velocista, Goleador, Organizador, Regateador, Defensor sólido y Potencia física.",
+          "Cada estilo añade una bonificación de 2 a su atributo y aparece en el resumen.",
+          "Revelación animada de la carta al terminar la carrera.",
+          "Número de camiseta bajado para que permanezca dentro de la carta.",
+          "OVR y posición trasladados a la esquina izquierda y bajados para respetar el borde de la carta."
+        ]
+      },
+      {
+        "title": "Modos de carrera",
+        "items": [
+          "Modo Rápido con giros más cortos, manteniendo todas las ruletas.",
+          "Modo Normal para la experiencia completa.",
+          "Modo Realista con resultados excepcionales y grandes trofeos menos frecuentes.",
+          "El modo se elige antes de comenzar la carrera."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-108-1-0-119",
+    "version": "1.0.108–1.0.119",
+    "title": "Identidad del sitio y ruleta protagonista",
+    "date": null,
+    "summary": "Icono propio, centro de la ruleta más sencillo y una serie de revisiones del diseño para volver a colocar una gran ruleta en el centro.",
+    "sections": [
+      {
+        "title": "Identidad visual",
+        "items": [
+          "Creado un icono propio de Career Wheel para la identidad del sitio.",
+          "El centro de la ruleta se revisó varias veces hasta llegar a un elemento minimalista sin balón.",
+          "El centro cubre los sectores situados debajo con una única forma unida.",
+          "Revisados los colores y las superficies del sitio, manteniendo los sectores reconocibles."
+        ]
+      },
+      {
+        "title": "Diseño y logotipos",
+        "items": [
+          "Probados distintos diseños y recuperada la ruleta grande y central solicitada para el juego.",
+          "Corregido el tamaño de la ruleta cuando el diseño la hacía demasiado pequeña.",
+          "La carta final y el palmarés siguen uno junto al otro en pantallas amplias y se adaptan a pantallas pequeñas.",
+          "Actualizado el logotipo de la Serie A y corregido el caso en el que solo aparecía un marcador de texto.",
+          "Reorganizadas las herramientas secundarias para aligerar la pantalla principal."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-90-1-0-107",
+    "version": "1.0.90–1.0.107",
+    "title": "Ruletas más ordenadas y probabilidades más claras",
+    "date": null,
+    "summary": "Revisión del orden de las ruletas, las rarezas y los colores, con una vista previa para pasar rápidamente de una categoría a otra.",
+    "sections": [
+      {
+        "title": "Probabilidades y orden",
+        "items": [
+          "Revisadas las probabilidades para distinguir los resultados comunes de los excepcionales.",
+          "Goles y asistencias más fáciles de conseguir, manteniendo más raros los resultados más altos.",
+          "Los atributos altos, las grandes cantidades de trofeos y los resultados extremos conservan probabilidades inferiores.",
+          "La guía Probabilidades y rarezas muestra las probabilidades reales de cada giro.",
+          "Ruletas reorganizadas en un recorrido más coherente: orígenes, posición, liga y equipo, carrera y físico, atributos, estadísticas y palmarés.",
+          "Las carreras guardadas se adaptan al nuevo orden de las preguntas.",
+          "Explora las ruletas permite elegir una ruleta o usar anterior y siguiente sin modificar la carrera.",
+          "Corregida la correspondencia entre la liga obtenida y su logotipo en la carta final, incluido el caso Bundesliga/La Liga."
+        ]
+      },
+      {
+        "title": "Pie, talentos y temporadas",
+        "items": [
+          "Pie preferido con 9 sectores: 3 Derecho, 3 Izquierdo y 3 Ambos.",
+          "Los sectores Ambos se distribuyen entre los demás, con una probabilidad inferior.",
+          "Colores iguales para el mismo pie: azul para Derecho, rojo para Izquierdo y naranja para Ambos.",
+          "La ruleta de talentos mantiene sectores iguales y resultados equiprobables.",
+          "Los talentos ya obtenidos se excluyen de los siguientes giros de la misma carrera.",
+          "La ruleta de temporadas conserva 18 sectores y parte de un mínimo de 10 temporadas, hasta 27."
+        ]
+      },
+      {
+        "title": "Colores de los sectores",
+        "items": [
+          "Renovados los colores de las ruletas, manteniendo las familias cromáticas ligadas a las categorías.",
+          "Tonos más fáciles de distinguir en atributos, tarjetas y trofeos, aunque pertenezcan a la misma categoría.",
+          "La diferencia de rareza se destaca mediante una variación más marcada del tono.",
+          "Conservadas las etiquetas claras de la ruleta con un contorno oscuro para facilitar la lectura.",
+          "Añadidos bordes negros entre los sectores para separar mejor los resultados."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-83-1-0-89",
+    "version": "1.0.83–1.0.89",
+    "title": "Menos desorden y más interacción",
+    "date": null,
+    "summary": "Secciones más compactas, ruletas más vivas y nuevos eventos con decisiones, junto con el torneo entre carreras guardadas.",
+    "sections": [
+      {
+        "title": "Orden y legibilidad",
+        "items": [
+          "Herramientas secundarias reunidas en secciones desplegables para reducir el desorden de la página.",
+          "Revisadas las paletas de las ruletas y aumentada la intensidad de los sectores.",
+          "Corregidos los casos en los que los logros volvían a notificarse como recién conseguidos.",
+          "La versión aparece centrada, eliminando el contador del número de actualizaciones."
+        ]
+      },
+      {
+        "title": "Eventos y torneos",
+        "items": [
+          "Decisiones en los eventos de carrera, con efectos visibles en los atributos.",
+          "Decisiones entre entrenamiento específico y preparación física, talento y estudio del juego, récords y juego de equipo, regreso prudente y anticipado.",
+          "Posibilidad de quedarse en el club o aceptar un traspaso dentro de la misma liga.",
+          "Las decisiones tomadas y sus efectos se registran en el resumen de la carrera.",
+          "Torneo entre 2 y 8 carreras guardadas, con selección de participantes y cuadro de eliminación.",
+          "Resultados de los partidos influidos por el OVR con un componente aleatorio, avances de ronda y ganador final.",
+          "El torneo en curso permanece guardado en el dispositivo."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-origins",
+    "version": "1.0",
+    "title": "Nace Career Wheel",
+    "date": null,
+    "summary": "Las primeras ruletas construyen el futbolista y la carta final. Después llegan logotipos, guardados, idiomas, misiones, animaciones y desafíos diarios.",
+    "sections": [
+      {
+        "title": "Las bases del juego",
+        "items": [
+          "Generador de carrera futbolística con ruletas de continente, nacionalidad, posición, liga, club, temporadas, altura y pie preferido.",
+          "Ruletas del número de talentos especiales y de talentos individuales, con efectos en los atributos.",
+          "Seis atributos de la carta: velocidad, definición, pases, regate, defensa y fuerza.",
+          "Estadísticas de carrera de goles, asistencias, tarjetas amarillas y tarjetas rojas.",
+          "Palmarés con ligas, Champions League, Mundiales, copas continentales y Balones de Oro.",
+          "Botones para girar, pasar a la siguiente ruleta, reiniciar y compartir el resultado.",
+          "Eliminado el perfil provisional de la parte superior para dejar espacio a la ruleta y reservar el resumen para el final.",
+          "Vista previa de ejemplo para ver la carta y el palmarés sin completar toda la carrera."
+        ]
+      },
+      {
+        "title": "Carta y archivo",
+        "items": [
+          "Carta final con OVR, posición, nombre, silueta del futbolista y seis atributos.",
+          "Añadida la silueta proporcionada para el rostro del futbolista.",
+          "Seis tipos de carta: Bronce, Plata, Oro, Héroe, Icono y Hall of FUT.",
+          "OVR calculado como media redondeada de los seis atributos, incluyendo las bonificaciones.",
+          "Leyenda de OVR y cartas: Bronce por debajo de 65, Plata 65–74, Oro 75–84, Héroe 85–89, Icono 90–94 y Hall of FUT desde 95.",
+          "Textos claros en las cartas Héroe y Hall of FUT para mantener la legibilidad.",
+          "Bandera del país, logotipo de la liga y escudo del equipo juntos en la parte inferior de la carta.",
+          "Escudo del equipo vinculado al club realmente obtenido.",
+          "Corregidos la posición del nombre, los espacios de la posición y las alineaciones de los elementos de la carta.",
+          "Descarga y uso compartido de la carta PNG, también junto con el palmarés.",
+          "Archivo local de carreras completadas, con guardado automático, reapertura y eliminación.",
+          "Comparación entre dos carreras guardadas, con sus atributos y resultados enfrentados.",
+          "Álbum de cartas con rarezas, nacionalidades y ligas reunidas en las carreras guardadas."
+        ]
+      },
+      {
+        "title": "Misiones y entretenimiento",
+        "items": [
+          "Introducción de logros con progresos conservados entre carreras.",
+          "Misiones presentadas como fichas con icono, condición, progreso y recompensa de XP.",
+          "Catálogo ampliado hasta 43 objetivos de OVR, atributos, goles, asistencias, temporadas, talentos, pie y trofeos.",
+          "Misiones secretas para combinaciones especiales de atributos y resultados.",
+          "Nivel, XP y medalla del futbolista vinculados a las misiones conseguidas.",
+          "Misiones en las que se puede pulsar para consultar descripción, progreso, recompensa y fecha de obtención.",
+          "Lista reducida a unas pocas misiones visibles y desplegable cuando se solicita, para evitar un panel demasiado invasivo.",
+          "Eliminadas las etiquetas de porcentaje de los logros, manteniendo el progreso mediante valores y barras.",
+          "Corregidas la visibilidad del panel y las notificaciones de los logros.",
+          "Cronología de la carrera con etapas, resultados, detalles y momentos clave.",
+          "Eventos aleatorios de entrenamiento, ojeadores, récords, lesión y traspaso.",
+          "Desafío diario con objetivo, intentos, mejor puntuación y resultado compartible.",
+          "Objetivos diarios de OVR, goles, Champions, talentos, equilibrio de atributos y número de trofeos."
+        ]
+      },
+      {
+        "title": "Ruleta, idiomas y estabilidad",
+        "items": [
+          "Resultados aleatorios con probabilidades ligadas a la ruleta y a sus sectores.",
+          "Animación de la ruleta con desaceleración progresiva antes de detenerse.",
+          "La ruleta puede detenerse en diferentes puntos del sector, incluso cerca de los límites, en lugar de llegar siempre al centro.",
+          "Revisadas las transiciones y los movimientos de la interfaz para hacerlos más fluidos.",
+          "Colores asociados a las categorías de las ruletas, con etiquetas legibles.",
+          "Banderas en las ruletas de nacionalidades y símbolos para los continentes.",
+          "Corregida la elección de países tras obtener el continente.",
+          "Selector de idioma en la parte superior para italiano, inglés, español y francés, con la bandera del idioma seleccionado.",
+          "Revisados el diseño, los elementos superpuestos, los espacios y el comportamiento en pantallas pequeñas.",
+          "Resueltos errores que impedían el funcionamiento del sitio después de algunos cambios.",
+          "Restablecido el servidor local en los casos de conexión rechazada.",
+          "Añadida la versión del sitio para reconocer las actualizaciones."
+        ]
+      }
+    ],
+    "historical": true
+  }
+]

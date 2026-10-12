@@ -1,0 +1,38 @@
+.personality-setup{margin-top:12px;border:1px solid var(--line,#393426);border-radius:12px;background:#0b1010a6;overflow:hidden}
+.personality-setup>summary,.career-story>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;font-size:12px;font-weight:750;color:#eee9df}
+.personality-setup>summary::-webkit-details-marker,.career-story>summary::-webkit-details-marker{display:none}
+.personality-setup>summary::after,.career-story>summary::after{content:'+';color:var(--gold,#ffb84d);font-size:17px;line-height:1}
+.personality-setup[open]>summary::after,.career-story[open]>summary::after{content:'−'}
+.personality-fields{border:0;margin:0;padding:0 15px 15px;min-width:0}
+.personality-hint{font-size:11px;line-height:1.55;color:#a8a79e;margin:0 0 12px}
+.personality-avatar-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-bottom:12px}
+.personality-avatar{border:1px solid #363a33;border-radius:10px;background:#151b19;color:#c6c9c0;padding:5px 3px 6px;cursor:pointer;min-width:0;display:flex;flex-direction:column;align-items:center;gap:5px;font:650 10px/1.2 system-ui,sans-serif}
+.personality-avatar img{width:100%;max-width:48px;aspect-ratio:1;object-fit:contain;display:block;opacity:.94}
+.personality-avatar[aria-pressed=true]{border-color:var(--gold,#ffb84d);background:#322715;color:#ffe2ae;box-shadow:inset 0 0 0 1px #e9a24436}
+.personality-avatar:focus-visible,.personality-upload:focus-visible{outline:2px solid var(--gold,#ffb84d);outline-offset:3px}
+.personality-fields:disabled .personality-avatar{cursor:default;opacity:.6}
+.personality-inputs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.personality-label{font-size:11px;color:#bbbdb4;font-weight:700;display:flex;flex-direction:column;gap:6px;min-width:0}
+.personality-label input{width:100%;min-width:0;border:1px solid #363c34;border-radius:9px;color:#eee8da;background:#090f0e;padding:10px 11px;font:500 12px/1.3 system-ui,sans-serif}
+.personality-label input::placeholder{color:#7f877d}
+.personality-label input:focus{outline:0;border-color:var(--gold,#ffb84d);box-shadow:0 0 0 2px #e9a24416}
+.personality-label input:disabled{opacity:.55;cursor:default}
+.personality-upload-row{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:11px}
+.personality-upload{border:1px solid #393e34;border-radius:8px;background:#192019;color:#d4d5c7;padding:7px 10px;font:650 10px/1.4 system-ui,sans-serif;cursor:pointer}
+.personality-upload:disabled{opacity:.55;cursor:default}
+.personality-photo-status{color:#a6ab9c;font-size:10px;line-height:1.5;flex:1;min-width:130px}
+.personality-lock{font-size:10px;line-height:1.55;color:#bba77f;margin:11px 0 0}
+.card-personality-nickname,.card-personality-signature{position:absolute;z-index:2;left:21%;right:21%;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none;color:#302016;text-shadow:0 1px 1px #f5dfb588}
+.card-personality-nickname{top:61.4%;font:800 clamp(9px,3vw,12px)/1.2 system-ui,sans-serif;letter-spacing:.05em}
+.card-inner[data-personality-nickname=true] .card-silhouette{left:23%;width:54%}
+.card-personality-signature{top:43%;left:64%;right:13%;font:italic 700 clamp(7px,2.4vw,9px)/1.25 Georgia,serif;letter-spacing:0;text-align:right}
+.career-card.hero .card-personality-nickname,.career-card.hero .card-personality-signature,.career-card.halloffut .card-personality-nickname,.career-card.halloffut .card-personality-signature{color:#fff;text-shadow:0 1px 4px #000b}
+.card-personality-nickname[hidden],.card-personality-signature[hidden]{display:none}
+.career-story{border:1px solid #3c3b2b;border-radius:12px;background:#0b1110a6;margin-top:15px;overflow:hidden}
+.career-story-body{padding:0 15px 15px}
+.career-story-copy{font-size:12px;line-height:1.75;color:#c8cec3;margin:0}
+.career-story-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+.career-story-copy-btn{border:1px solid #504126;border-radius:8px;color:#e9d9b9;background:#251f13;cursor:pointer;padding:8px 11px;font:700 11px/1.3 system-ui,sans-serif}
+.career-story-status{font-size:10px;color:#aaa58b}
+@media(max-width:430px){.personality-fields{padding-inline:12px}.personality-inputs{gap:8px}.personality-avatar-grid{gap:5px}.personality-avatar{font-size:9px}.personality-avatar img{max-width:40px}}
+@media(prefers-reduced-motion:no-preference){.personality-avatar,.personality-upload,.career-story-copy-btn{transition:border-color .2s ease,background-color .2s ease,transform .2s ease}.personality-avatar:hover:not(:disabled){transform:translateY(-2px)}}

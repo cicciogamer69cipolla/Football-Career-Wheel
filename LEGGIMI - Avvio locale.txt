@@ -1,0 +1,11 @@
+CAREER WHEEL — AVVIO LOCALE
+
+Avvia l'app con un doppio clic su "Avvia Career Wheel.cmd".
+Si aprirà nel browser all'indirizzo locale http://127.0.0.1:8765/career-wheel.html.
+
+Non aprire direttamente career-wheel.html: i browser limitano API e immagini locali
+quando una pagina viene aperta con file://.
+
+Il server ascolta solo su questo dispositivo (127.0.0.1). Account e salvataggi
+continuano a usare il servizio locale già presente in questa installazione.
+Per fermare il server, chiudi la finestra del terminale avviata dal file .cmd.

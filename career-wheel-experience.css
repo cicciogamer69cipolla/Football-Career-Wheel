@@ -1,0 +1,68 @@
+/* Less setup chrome; the wheel remains the main interaction. */
+.app { padding-top: 18px; }
+.app > .top { padding-bottom: 8px; margin-bottom: 4px; }
+.app > .hero { padding: 6px 8px 15px; }
+.app > .hero h1 { margin: 7px 0; font-size: clamp(31px, 4.4vw, 42px); }
+.app > .hero .eyebrow { font-size: 9px; }
+.app > .hero p { font-size: 12px; }
+.stadium-play-nav { gap: 10px; margin-bottom: 13px; }
+.stadium-play-route { padding: 12px 16px; }
+.stadium-route-title { font-size: 19px; }
+.stadium-route-description { font-size: 10px; margin-top: 4px; }
+.app > .wheel-card { display: flex; flex-direction: column; padding-top: 17px; }
+.wheel-card > .step { padding-bottom: 10px; }
+.player-setup { width: 100%; margin: 10px 0 0; border-bottom: 1px solid #ffffff0c; }
+.player-setup > summary { display: flex; align-items: center; gap: 12px; padding: 8px 0 12px; cursor: pointer; list-style: none; }
+.player-setup > summary::-webkit-details-marker { display: none; }
+.player-setup > summary strong { color: #e3e8db; font-size: 11px; }
+.player-setup > summary span { margin-left: auto; font-size: 9px; color: #97a18e; text-align: right; overflow-wrap: anywhere; }
+.player-setup > summary::after { content: '+'; color: #d8b674; font-size: 16px; }
+.player-setup[open] > summary::after { content: '−'; }
+.player-setup-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22px; padding-bottom: 12px; }
+.player-setup-body .player-identity-entry { width: 100%; grid-template-columns: minmax(0, 1fr) 76px; margin: 0; gap: 9px; }
+.player-setup-body .career-mode-picker { width: 100%; margin: 0; }
+.player-setup-body .identity-lock-notice { grid-column: 1 / -1; font-size: 9px; color: #929d89; margin: 8px 0 0; }
+.player-setup-body > details { grid-column: 1 / -1; }
+.wheel-card > .prompt { margin: 16px 0 12px; }
+.wheel-shell { width: min(100%, 530px); max-width: 530px; }
+.wheel-side-panel .result { position: relative; }
+.experience-result-arrive .result-name { animation: experience-result-in .48s cubic-bezier(.16, 1, .3, 1) both; }
+.experience-result-arrive .result-sub { animation: experience-result-in .4s .06s both; }
+.experience-rare-result { border-radius: 13px !important; animation: experience-rare-glow 1.7s ease-out both; }
+.app > .career-summary { width: min(100%, 760px); }
+.career-summary-layout { grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 23px; }
+.career-summary-layout .card-column { width: min(100%, 370px); min-width: 0; }
+.career-summary-layout > .career-record { width: min(100%, 620px); box-sizing: border-box; }
+.career-summary-layout .career-card { margin-inline: auto; }
+.experience-points { margin: 14px 0 15px; padding: 14px 16px; border: 1px solid #deb56938; border-radius: 11px; background: linear-gradient(110deg, #8a5c191f, #080f0b66); }
+.experience-points-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.experience-points-head span { color: #dbbe85; font-size: 11px; font-weight: 700; }
+.experience-points-head strong { color: #ffce77; font-size: 30px; line-height: 1; letter-spacing: -.035em; }
+.experience-points p { color: #a4af99; font-size: 10px; margin: 8px 0 0; }
+.experience-points-details { margin-top: 10px; border-top: 1px solid #ffffff0c; padding-top: 9px; }
+.experience-points-details summary { color: #b4bea9; font-size: 10px; cursor: pointer; }
+.experience-points-rows { margin-top: 8px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 18px; }
+.experience-points-rows > div { display: flex; justify-content: space-between; color: #a4af99; font-size: 10px; }
+.experience-points-rows b { color: #e8d6ae; }
+.experience-final-reveal .career-record { animation: experience-final-in .7s .82s both; }
+.experience-final-reveal .card-extra-actions, .experience-final-reveal #downloadCard { animation: experience-final-in .5s .68s both; }
+@keyframes experience-result-in { from { opacity: 0; transform: translateY(8px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes experience-rare-glow { 0%,100% { box-shadow: 0 0 0 transparent; background: transparent; } 30% { box-shadow: 0 0 32px #ffbc3929; background: #ffbc390c; } }
+@keyframes experience-final-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 680px) {
+  .app { padding-top: 13px; }
+  .app > .hero { padding: 6px 2px 13px; }
+  .app > .hero .eyebrow { font-size: 8px; }
+  .stadium-play-route { padding: 11px 12px; }
+  .stadium-route-title { font-size: 18px; }
+  .stadium-route-description { font-size: 9px; }
+  .player-setup-body { grid-template-columns: 1fr; gap: 9px; }
+  .player-setup-body .career-mode-picker { margin-top: 3px; }
+  .player-setup > summary { gap: 8px; }
+  .player-setup > summary span { max-width: 65%; font-size: 9px; }
+  .wheel-card > .prompt { font-size: 18px; }
+  .career-summary-layout .card-column { width: min(100%, 360px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .experience-result-arrive *, .experience-rare-result, .experience-final-reveal * { animation: none !important; }
+}

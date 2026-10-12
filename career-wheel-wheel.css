@@ -1,0 +1,24 @@
+/* A graphite hub and a clear pointer frame the full size arcade wheel. */
+.wheel-shell { isolation:isolate; }
+.wheel-rarity-legend { display:flex; justify-content:center; flex-wrap:wrap; gap:6px 16px; width:min(100%,520px); margin:5px auto 12px; color:#c0ced8; font-size:10px; line-height:1.6; }
+.wheel-rarity-legend[hidden] { display:none; }
+.wheel-rarity-key { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
+.wheel-rarity-key i { width:8px; height:8px; border-radius:3px; box-shadow:0 0 0 1px #ffffff35; }
+.wheel-rarity-key[data-rarity="veryRare"] { color:#f4ce70; }
+.odds-category.is-uncommon { border-color:#376bb6; background:#152e50; color:#b9d4ff; }
+.odds-category.is-rare { border-color:#8243ac; background:#301a43; color:#e8c0ff; }
+.odds-category.is-very-rare { border-color:#ad8432; background:#3d2e12; color:#f7d882; }
+.wheel-shell .pin { top:-1px; border-left-width:10px; border-right-width:10px; border-top-width:21px; border-top-color:#f4f7ff; transform-origin:50% 15%; filter:drop-shadow(0 2px 3px #0008); }
+.wheel-hub { position:absolute; z-index:2; top:50%; left:50%; width:25.2%; aspect-ratio:1; display:grid; place-items:center; padding:8px; border:2px solid #bccbe070; border-radius:50%; background:radial-gradient(circle at 35% 25%,#242e40,#101724 72%); color:#f4f7ff; box-shadow:0 6px 14px #0007,0 0 0 4px #070d195c; transform:translate(-50%,-50%); cursor:pointer; transition:border-color .18s,background-color .18s,box-shadow .18s; -webkit-tap-highlight-color:transparent; }
+.wheel-hub-label { font:800 clamp(10px,1.8vw,17px)/1.2 Inter,system-ui,sans-serif; letter-spacing:.09em; text-align:center; }
+.wheel-hub:hover:not(:disabled) { border-color:#93d8ffb3; background:radial-gradient(circle at 35% 25%,#2a3b55,#142237 72%); box-shadow:0 6px 16px #0008,0 0 0 4px #31b9ff13; }
+.wheel-hub:active:not(:disabled) { transform:translate(-50%,-50%) scale(.97); }
+.wheel-hub:focus-visible { outline:3px solid #b0e6ff; outline-offset:5px; }
+.wheel-hub:disabled { cursor:default; }
+.wheel-hub:disabled:not([data-state="busy"]):not([data-state="next"]) { color:#a4b1c7; border-color:#9aa9c055; }
+.wheel-hub[data-state="busy"] { cursor:progress; color:#b7e3ff; border-color:#83c9ee88; }
+.wheel-hub[data-state="busy"] .wheel-hub-label { font-size:clamp(24px,4vw,34px); letter-spacing:.03em; }
+.wheel-hub[data-state="preview"] .wheel-hub-label { font-size:clamp(8px,1.3vw,12px); letter-spacing:.05em; }
+.wheel-shell[data-wheel-rare="true"] .wheel-hub { border-color:#efd08c; box-shadow:0 6px 14px #0007,0 0 0 4px #c49b361e,0 0 22px #e4b65320; }
+@media(max-width:540px) { .wheel-shell .pin { border-left-width:8px; border-right-width:8px; border-top-width:18px; } .wheel-hub { border-width:1.5px; box-shadow:0 4px 10px #0007,0 0 0 3px #070d195c; } .wheel-hub-label { font-size:clamp(9px,2.9vw,14px); } }
+@media(prefers-reduced-motion:reduce) { .wheel-hub { transition:none; } .wheel-hub:active:not(:disabled) { transform:translate(-50%,-50%); } }

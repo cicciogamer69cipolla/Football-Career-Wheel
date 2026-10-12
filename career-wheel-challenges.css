@@ -1,0 +1,64 @@
+.fcw-challenge-disclosure { background: rgba(12, 19, 17, .78); border-color: rgba(128, 150, 127, .24); }
+.fcw-challenge-body { padding: 12px; }
+.fcw-challenge-note { margin: 0 0 12px; color: #a0aaa1; font-size: 11px; line-height: 1.55; }
+.fcw-scenario-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-bottom: 10px; }
+.fcw-scenario-card { display: flex; align-items: flex-start; gap: 10px; min-width: 0; padding: 13px; border: 1px solid #334338; border-radius: 12px; background: linear-gradient(130deg, #16211b, #101713); color: #ecf0e9; text-align: left; cursor: pointer; transition: border-color .2s, background .2s, transform .2s; }
+.fcw-scenario-card:hover { border-color: #9d7a37; transform: translateY(-1px); }
+.fcw-scenario-card[data-selected="true"] { border-color: #d69b36; background: linear-gradient(130deg, #2b281a, #171d15); box-shadow: inset 3px 0 #e8aa42; }
+.fcw-scenario-icon { display: grid; place-items: center; flex: 0 0 30px; width: 30px; height: 30px; border: 1px solid #45634d; border-radius: 9px; background: #1b2f23; color: #e8ba68; font-size: 17px; }
+.fcw-scenario-content { display: grid; gap: 4px; min-width: 0; }
+.fcw-scenario-content strong { font-size: 13px; font-weight: 800; }
+.fcw-scenario-content small { color: #a6b3a9; font-size: 10px; line-height: 1.5; }
+.fcw-scenario-action { margin-top: 4px; color: #e7b55f; font-size: 10px; }
+.fcw-challenge-button { min-height: 35px; padding: 8px 12px; border: 1px solid #435544; border-radius: 9px; background: #1a2a20; color: #e8eee6; font: 750 11px Inter, system-ui, sans-serif; cursor: pointer; transition: background .2s, border-color .2s, transform .2s; }
+.fcw-challenge-button:hover { background: #243729; border-color: #b4873b; }
+.fcw-challenge-button:active { transform: scale(.985); }
+.fcw-challenge-button:disabled, .fcw-scenario-card:disabled { opacity: .5; cursor: wait; transform: none; }
+.fcw-challenge-button:focus-visible, .fcw-scenario-card:focus-visible, .fcw-challenge-field input:focus-visible, .fcw-challenge-field select:focus-visible { outline: 2px solid #f0b348; outline-offset: 3px; }
+.fcw-challenge-primary { border-color: #c58825; background: linear-gradient(100deg, #dda13e, #edbd62); color: #241909; }
+.fcw-challenge-primary:hover { background: #f1bb54; border-color: #facb79; }
+.fcw-challenge-subtle { background: transparent; color: #b5c1b7; }
+.fcw-custom-form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
+.fcw-custom-form > :first-child { grid-column: 1 / -1; }
+.fcw-custom-form > button { grid-column: 1 / -1; }
+.fcw-challenge-field { display: grid; gap: 6px; min-width: 0; color: #bdc7bf; font-size: 11px; font-weight: 650; }
+.fcw-challenge-field input, .fcw-challenge-field select { display: block; width: 100%; min-width: 0; min-height: 39px; padding: 9px 11px; border: 1px solid #34463a; border-radius: 8px; background: #0b1410; color: #eef1e9; font: 500 12px Inter, system-ui, sans-serif; }
+.fcw-challenge-field input::placeholder { color: #7d9083; font-size: 11px; }
+.fcw-challenge-field input[readonly] { font-size: 10px; color: #c4b581; }
+.fcw-challenge-field-hint { color: #7f9286; font-size: 10px; font-weight: 500; }
+.fcw-challenge-import { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 8px; margin-top: 16px; padding-top: 14px; border-top: 1px solid #29382e; }
+.fcw-challenge-import button { min-height: 39px; }
+.fcw-challenge-share { display: grid; gap: 10px; margin-top: 16px; padding: 12px; border: 1px solid #5f512f; border-radius: 10px; background: #1b2116; }
+.fcw-challenge-share[hidden], .fcw-active-objective[hidden], .fcw-objective-result[hidden], .fcw-new-record-banner[hidden] { display: none; }
+.fcw-challenge-share .fcw-challenge-note { margin: 0; font-size: 10px; }
+.fcw-challenge-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.fcw-challenge-actions button { flex: 1 1 100px; }
+.fcw-challenge-feedback { margin: 10px 0 0; min-height: 16px; color: #e2ba73; font-size: 11px; line-height: 1.45; }
+.fcw-active-objective { display: flex; align-items: center; gap: 12px; padding: 12px 14px; margin: 13px 0 7px; border: 1px solid #786335; border-radius: 12px; background: linear-gradient(110deg, #272616e0, #101b15ed); }
+.fcw-active-objective-copy { display: grid; gap: 4px; flex: 1; min-width: 0; }
+.fcw-active-objective-copy small, .fcw-challenge-eyebrow { color: #c69d54; font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.fcw-active-objective-copy strong { color: #f0e8d6; font-size: 12px; }
+.fcw-active-objective-copy span { color: #a9b3a5; font-size: 10px; line-height: 1.45; }
+.fcw-active-objective-status { color: #dcb366; font-size: 10px; }
+.fcw-active-objective .fcw-challenge-button { min-height: 30px; padding: 6px 8px; font-size: 10px; }
+.fcw-record-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.fcw-record-item { display: grid; gap: 4px; min-width: 0; padding: 12px; border: 1px solid #364837; border-radius: 10px; background: #101b14; }
+.fcw-record-item small { color: #a8b8a7; font-size: 9px; font-weight: 750; }
+.fcw-record-item strong { color: #efc271; font-size: 23px; line-height: 1.2; }
+.fcw-record-item span { color: #dbe3d6; overflow: hidden; text-overflow: ellipsis; font-size: 10px; white-space: nowrap; }
+.fcw-record-item time { color: #768878; font-size: 9px; }
+.fcw-record-grid + .fcw-challenge-note { display: block; margin: 10px 0 0; font-size: 10px; }
+.fcw-record-empty { grid-column: 1 / -1; margin: 0; padding: 8px; color: #a7b2a5; font-size: 11px; }
+.fcw-objective-result { display: grid; gap: 8px; margin-top: 16px; padding: 13px; border: 1px solid #60502e; border-radius: 11px; background: #1c2116; }
+.fcw-objective-result[data-success="true"] { border-color: #4e8458; background: #15271a; }
+.fcw-objective-result > strong { color: #edc478; font-size: 12px; line-height: 1.5; }
+.fcw-objective-result[data-success="true"] > strong { color: #acdaad; }
+.fcw-objective-checks { margin: 0; padding: 0; list-style: none; display: grid; gap: 5px; }
+.fcw-objective-checks li { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #a7b7a3; font-size: 10px; }
+.fcw-objective-checks li b { color: #d8b174; white-space: nowrap; }
+.fcw-objective-checks li[data-reached="true"] b { color: #a2d7a4; }
+.fcw-objective-result button { justify-self: start; }
+.fcw-new-record-banner { margin: 14px 0 0; padding: 10px 12px; border: 1px solid #74613a; border-radius: 9px; background: #292719; color: #edc47b; font-size: 11px; font-weight: 700; line-height: 1.55; }
+@media(max-width:600px) { .fcw-active-objective { flex-wrap: wrap; gap: 8px; } .fcw-active-objective-copy { flex-basis: 100%; } .fcw-active-objective-status { flex: 1; } .fcw-scenario-card { padding: 10px; gap: 7px; } .fcw-scenario-icon { flex-basis: 26px; width: 26px; height: 26px; } }
+@media(max-width:420px) { .fcw-scenario-grid { grid-template-columns: 1fr; } .fcw-record-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .fcw-challenge-import { grid-template-columns: 1fr; } .fcw-challenge-import button { justify-self: start; } }
+@media(prefers-reduced-motion:reduce) { .fcw-challenge-button, .fcw-scenario-card { transition: none; } }

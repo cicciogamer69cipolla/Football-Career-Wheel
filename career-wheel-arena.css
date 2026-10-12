@@ -1,0 +1,286 @@
+/* Career Wheel 2: a quiet stadium, one large wheel, a consistent set of surfaces. */
+:root {
+  --bg:#070e13; --panel:#111b23; --panel-raised:#182530; --line:#ffffff20;
+  --muted:#a2b2bb; --blue:#73e3c8; --gold:#ffca72;
+  --stadium-ink:#f4f8fb; --stadium-accent:#73e3c8; --stadium-line:#ffffff20;
+  --cw-hub-accent:#73e3c8;
+  color-scheme:dark;
+}
+html { background:#070e13; scroll-padding-top:20px; }
+body {
+  background-color:#070e13;
+  background-image:radial-gradient(ellipse at 50% 36%,#06101628,#050a10b3 75%),linear-gradient(180deg,#060e15a8,#070e1394),url('career-wheel-stadium.webp');
+  background-position:center,center,center bottom;
+  background-size:cover,cover,cover;
+  background-attachment:fixed;
+  color:var(--stadium-ink);
+  font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
+  line-height:1.5;
+}
+body ::selection { background:#73e3c850; color:#fff; }
+button,input,select,textarea { font:inherit; }
+button,summary,a,input,select,textarea { -webkit-tap-highlight-color:transparent; }
+button:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {
+  outline:2px solid #91f1d9; outline-offset:4px;
+}
+[hidden] { display:none!important; }
+.app { width:min(100%,980px); padding:20px 30px 34px; }
+.app > .top,.app > .hero,.app > .progress,.app > .wheel-card,.app > .stadium-play-nav,.app > #onlineRoomDisclosure,.app > .career-summary {
+  width:min(100%,860px); max-width:860px; margin-inline:auto;
+}
+.app > .top { display:flex; gap:20px; align-items:center; min-height:40px; padding:0; margin-bottom:4px; border:0; }
+.brand { font-size:12px; letter-spacing:.12em; color:#eef4f9; gap:9px; flex-shrink:0; }
+.brand-icon { width:27px; height:27px; flex-basis:27px; }
+.language-picker { margin-left:auto; font-size:10px; color:#a8b9c1; }
+.language-picker select { min-height:38px; padding:6px 10px; border:1px solid #ffffff24; border-radius:9px; background:#101c26; color:#e7f3f7; }
+.top .cw-release-meta { width:auto; margin:0; gap:0; }
+.top .cw-release-meta #siteVersion { color:#b1bdc5; font-size:9px; letter-spacing:.04em; }
+.top .cw-release-updated { margin:0; color:#8499a5; font-size:8px; }
+.cw-release-help { border-color:#7dc4b04d; color:#b1dace; }
+.cw-top-nav { justify-content:center; flex-wrap:nowrap; width:min(100%,860px); margin:0 auto 8px; padding:0; gap:22px; overflow-x:auto; scrollbar-width:thin; scrollbar-color:#365465 transparent; }
+.cw-top-link { min-height:44px; padding:7px 0; flex-shrink:0; color:#b9c6ce; font-size:11px; font-weight:650; }
+.cw-top-link:hover,.cw-top-link[aria-current] { color:#fff; border-bottom-color:#73e3c8; }
+.cw-nav-profile-level { background:#73e3c81a; color:#a4edd7; padding:1px 5px; border-radius:5px; }
+.cw-skip-link { position:fixed; top:-70px; left:20px; z-index:20; padding:12px 18px; border-radius:8px; background:#91f1d9; color:#082b24; font-weight:750; }
+.cw-skip-link:focus { top:12px; }
+.app > .hero { padding:2px 0 10px; }
+.app > .hero .eyebrow { color:#a6c4c6; font-size:9px; letter-spacing:.18em; }
+.app > .hero h1 { margin:4px 0; font-size:clamp(28px,3.7vw,34px); letter-spacing:-.05em; line-height:1.1; font-weight:850; }
+.app > .hero p { margin:4px 0 0; color:#aebfc9; font-size:12px; }
+.stadium-play-nav { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; padding:4px; margin-bottom:14px; border:1px solid #ffffff1c; border-radius:13px; background:#0b131cbd; }
+.stadium-play-route,.app[data-view='online'] .stadium-play-route { min-height:54px; padding:9px 13px; border:1px solid transparent; border-radius:9px; background:transparent; box-shadow:none; }
+.stadium-play-route:hover { background:#182934c7; border-color:#ffffff1c; transform:none; }
+.stadium-play-route[data-current='true'],#stadiumOnline[data-current='true'],#stadiumDuel[data-current='true'] { background:#20352dd9; border-color:#7eddb73a; box-shadow:inset 0 -2px #73e3c8; }
+.app[data-view='online'] #stadiumSolo { background:transparent; }
+.stadium-route-title,.app[data-view='online'] .stadium-route-title { color:#e8f1f5; font-size:16px; letter-spacing:-.025em; }
+.stadium-play-route[data-current='true'] .stadium-route-title { color:#a1f3d7; }
+.stadium-route-description,.app[data-view='online'] .stadium-route-description { margin-top:3px; color:#9dadb8; font-size:10px; line-height:1.35; }
+.stadium-route-arrow { display:none; }
+html.cw-arena-ready .has-local-duel .stadium-play-route { min-height:52px; padding:8px 12px; }
+html.cw-arena-ready .has-local-duel .stadium-route-title { font-size:16px; line-height:1.1; }
+html.cw-arena-ready .has-local-duel .stadium-route-description { max-width:none; margin-top:3px; font-size:10px; line-height:1.3; }
+.stadium-online-status { color:#a3d9c9; font-size:9px; }
+.app > .progress { height:3px; border-radius:2px; background:#82b7cb17; margin-bottom:0; }
+.progress i { background:linear-gradient(90deg,#29b5d1,#84e8b6); }
+.app > .wheel-card { display:flex; flex-direction:column; padding:13px 26px 20px; border:1px solid #ffffff19; border-top:0; border-radius:0 0 20px 20px; background:linear-gradient(155deg,#111e2aed,#0b151ce8 70%); box-shadow:0 28px 70px #0005; }
+.wheel-card > .step { padding:0 0 6px; border-bottom:0; font-size:9px; letter-spacing:.12em; color:#a0cbbc; }
+.step .count { font-size:10px; color:#9aafba; }
+.player-setup { margin:0 0 4px; border-bottom:1px solid #ffffff12; }
+.player-setup > summary { min-height:29px; padding:4px 0; }
+.player-setup > summary strong { font-size:11px; color:#d5e4ed; }
+.player-setup > summary span { color:#9dafba; font-size:10px; }
+.player-setup > summary::after { color:#78d8be; }
+.player-setup-body { grid-template-columns:1fr 1fr; gap:4px 20px; padding-bottom:9px; }
+.player-setup-body > .player-identity-entry { align-self:end; }
+.player-identity-entry .name-entry,.player-identity-entry .shirt-entry { font-size:10px; gap:4px; color:#b2c0ca; }
+.name-entry input,.shirt-entry input { min-height:39px; padding:8px 10px; border:1px solid #ffffff24; background:#09131c; color:#f0f8fc; border-radius:8px; font-size:13px; }
+.name-entry input::placeholder,.shirt-entry input::placeholder { color:#8b9da9; }
+.name-entry input:focus,.shirt-entry input:focus { border-color:#80dbbc; box-shadow:0 0 0 3px #80dbbc12; }
+.player-identity-entry.is-locked input { border-color:#ffffff17; background:#14222c; color:#b9c9d1; }
+.career-mode-picker legend { color:#a8bec8; font-size:9px; letter-spacing:.04em; margin-bottom:4px; }
+.card-export-status { min-height:0; margin:0 auto; color:#a8bec8; text-align:center; font-size:11px; }
+.card-export-status:not(:empty) { margin:8px auto; min-height:16px; }
+.career-mode-options { gap:4px; }
+.career-mode-choice { min-height:39px; padding:6px 4px; border:1px solid #ffffff1d; border-radius:8px; background:#0a1722; color:#aebfc9; }
+.career-mode-choice:has(input:checked) { border-color:#84dec74d; background:#20413766; color:#d7fae9; box-shadow:none; }
+.career-mode-choice span { font-size:10px; }
+#careerModeDescription { margin:3px 0 0; min-height:0; color:#9dabb9; font-size:9px; text-align:left; }
+.personality-setup { margin-top:4px; border:0; border-radius:0; background:none; }
+.personality-setup > summary { min-height:29px; padding:5px 0; color:#aabcc7; font-size:10px; border:0; }
+.personality-setup > summary::after { color:#81d8bb; }
+.personality-setup[open] { margin-top:7px; border-top:1px solid #ffffff14; }
+.cw-journey { display:flex; gap:7px; justify-content:center; width:min(100%,570px); margin:9px auto 0; padding:0; list-style:none; }
+.cw-journey li { min-width:0; flex:1; display:flex; align-items:center; justify-content:center; gap:5px; color:#91a7b4; font-size:9px; line-height:1.3; }
+.cw-journey-number { display:grid; place-items:center; width:17px; height:17px; border:1px solid #ffffff1f; border-radius:50%; flex-shrink:0; font-size:8px; font-weight:750; }
+.cw-journey li[data-state='current'] { color:#dbfff0; }
+.cw-journey li[data-state='current'] .cw-journey-number { background:#83e6bb; color:#113126; border-color:#83e6bb; }
+.cw-journey li[data-state='done'] { color:#95dabf; }
+.cw-journey li[data-state='done'] .cw-journey-number { border-color:#67be9966; color:#9bebbf; background:#193d302b; }
+.wheel-card > .prompt { font-size:21px; margin:13px 0 5px; color:#f4f8fa; letter-spacing:-.025em; }
+.prompt .emoji { font-size:21px; }
+.wheel-stage { display:block; padding:0; }
+.wheel-shell { width:min(100%,520px); max-width:520px; margin:14px auto 6px; filter:drop-shadow(0 18px 30px #0006); }
+.wheel-shell::before { content:''; position:absolute; z-index:-1; inset:-5%; border-radius:50%; background:radial-gradient(circle,#63dbb517,transparent 70%); pointer-events:none; }
+.wheel-side-panel { width:min(100%,650px); margin:0 auto; padding:0; gap:8px; border:0; border-radius:0; background:transparent; box-shadow:none; }
+.wheel-side-panel .result { min-height:80px; margin:2px 0 0; padding:6px 0; border:0; border-radius:0; background:transparent; }
+.result-label { color:#92b2c1; font-size:9px; letter-spacing:.12em; }
+.wheel-side-panel .result-name { font-size:28px; line-height:1.2; letter-spacing:-.035em; color:#f5fafc; }
+.wheel-side-panel .result-sub { color:#aebfc8; font-size:11px; }
+.wheel-side-panel .actions { grid-template-columns:1fr 2fr; gap:8px; margin-top:0; }
+.btn { min-height:46px; border-radius:10px; padding:10px 13px; font-size:12px; box-shadow:none; }
+.btn.primary { border:1px solid #94efc755; background:linear-gradient(115deg,#6edeb8,#abeaaa); color:#092c23; box-shadow:0 8px 23px #78cfa610; font-weight:850; }
+.btn.primary:disabled { color:#9dafb8; background:#263941; border-color:#ffffff1e; opacity:.72; box-shadow:none; }
+.btn.secondary { border:1px solid #ffffff21; background:#152530; color:#d2e2ea; }
+.demo-button { min-height:33px; padding:6px 10px; border:0; background:transparent; color:#9eb8c7; font-size:10px; }
+.demo-button:hover { color:#e4f5fc; background:#ffffff06; }
+.hint { margin:0; font-size:10px; line-height:1.5; color:#a3b5c0; }
+.steps-strip { margin:6px auto 0; gap:5px; flex-wrap:wrap; justify-content:center; }
+.dot { width:5px; height:5px; background:#425762; }
+.dot.done { background:#80d7b4; }
+.dot.active { background:#e0fbee; width:15px; }
+.cw-wheel-tools { display:grid; grid-template-columns:1fr 1fr auto; gap:7px; border-top:1px solid #ffffff14; padding-top:8px; }
+.cw-wheel-tools .wheel-preview,.cw-wheel-tools .odds-guide { width:auto; margin:0; padding:0 10px; border:1px solid #ffffff1c; border-radius:9px; background:#0b1721; }
+.cw-wheel-tools summary { min-height:38px; font-size:10px; gap:7px; color:#b9cedb; }
+.cw-wheel-tools .wheel-preview-counter { display:none; }
+.cw-wheel-tools .wheel-preview > summary::after,.cw-wheel-tools .odds-guide > summary::after { color:#7bd8bb; font-size:14px; }
+.cw-wheel-tools .wheel-preview[open],.cw-wheel-tools .odds-guide[open] { grid-column:1/-1; }
+.cw-wheel-tools .wheel-preview[open] .wheel-preview-counter { display:block; }
+.cw-wheel-tools .wheel-preview-note,.cw-wheel-tools .odds-description { color:#a7bdc9; font-size:10px; }
+.cw-game-help { min-height:40px; padding:6px 11px; border:1px solid #ffffff1c; border-radius:9px; background:#0b1721; color:#b9cedb; font-size:10px; cursor:pointer; }
+.cw-live-career { border-top:1px solid #ffffff18; margin-top:2px; }
+.cw-live-career > summary { display:flex; align-items:center; gap:12px; padding:12px 0; cursor:pointer; list-style:none; }
+.cw-live-career > summary::-webkit-details-marker { display:none; }
+.cw-live-career > summary::after { content:'+'; color:#8ae5c0; margin-left:auto; font-size:18px; }
+.cw-live-career[open] > summary::after { content:'−'; }
+.cw-live-heading { display:grid; gap:2px; min-width:0; }
+.cw-live-heading small { color:#9eb7c5; font-size:10px; }
+.cw-live-heading strong { color:#dff7ed; font-size:13px; overflow-wrap:anywhere; }
+.cw-live-meta { color:#b3c9d5; font-size:10px; margin-left:auto; }
+.cw-live-fields { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; margin:0 0 12px; }
+.cw-live-fields div { min-width:0; }
+.cw-live-fields dt { color:#a2b9c8; font-size:9px; }
+.cw-live-fields dd { margin:3px 0 0; color:#e1edf4; font-size:11px; overflow-wrap:anywhere; }
+.cw-live-fields dd[data-pending='true'] { color:#809ba8; }
+.cw-live-stats { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:10px; }
+.cw-live-stat > span:first-child { display:block; color:#a9becb; font-size:9px; }
+.cw-live-stat strong { display:block; color:#d5f9e6; font-size:20px; font-variant-numeric:tabular-nums; }
+.cw-live-stat-track { display:block; height:3px; border-radius:2px; background:#354955; overflow:hidden; }
+.cw-live-stat-track i { display:block; height:100%; background:#87ddbb; transition:width .3s ease; }
+.cw-live-note { margin:10px 0 3px; color:#9fb3c1; font-size:9px; }
+.app > .career-summary { margin:26px auto; }
+.career-summary-layout { grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr); gap:30px; align-items:center; }
+.career-summary-layout > .career-record { width:100%; padding:23px; border-color:#ffffff21; border-radius:17px; background:linear-gradient(150deg,#12232dea,#0b1721e8); }
+.record-eyebrow { color:#8cceb9; font-size:10px; letter-spacing:.12em; }
+.record-title { font-size:25px; color:#eef7fb; }
+.career-highlight { padding:10px; background:#071822; border-color:#ffffff1b; }
+.career-highlight small { color:#a0bccb; }
+.record-group,.record-note { color:#99b0c0; }
+.record-row span { color:#b9ccd6; }
+.record-row b { color:#eef7fc; }
+.career-record-details { border-color:#ffffff1e; background:#091721; }
+.career-record-details > summary { background:transparent; color:#d1e2ed; }
+.career-record-details > summary::after { border-color:#84d4b7; }
+.experience-points { background:linear-gradient(110deg,#73e3c811,#08141f66); border-color:#73e3c830; }
+.experience-points-head span,.experience-points-head strong { color:#b4f4d5; }
+.experience-points p,.experience-points-details summary,.experience-points-rows > div { color:#a6becb; }
+.career-style-highlight,.career-event-notice { background:#122b34; border-color:#81cfc23d; }
+.career-style-copy small,.career-event-eyebrow,.career-event-recap-title { color:#99daca; }
+.career-style-copy strong,.career-event-title { color:#e9f7f6; }
+.career-event-description,.career-event-recap-item { color:#abc2ce; }
+.career-event-choice { background:#152d3d; color:#e6f2f8; border-color:#a2c8c436; }
+.career-event-choice:hover { background:#213f4e; border-color:#97e0c1; }
+.career-event-choice small { color:#adc5d3; }
+.career-timeline { width:100%; background:#0b1a26; border-color:#ffffff20; }
+.card-column { width:100%; }
+.card-extra-actions button,.card-download { border-color:#ffffff24; background:#132733; color:#deedf7; border-radius:9px; }
+.card-extra-actions .full-career-share { background:#1a3b37; border-color:#82d8b449; color:#c5f4df; }
+.card-ovr-summary { background:#0c1d29; border-color:#ffffff24; color:#a9c2d1; }
+.card-ovr-summary strong { color:#adedd3; }
+.footer { margin-top:24px; padding-top:16px; color:#98aeba; border-color:#ffffff1c; font-size:10px; }
+dialog.cw-hub-dialog,dialog.cw-guide-dialog {
+  --cw-hub-ink:#f1f7fb; --cw-hub-muted:#adbfcb; --cw-hub-soft:#91a9b8; --cw-hub-line:#ffffff1c; --cw-hub-accent:#8ddfc0;
+  border:1px solid #d0e8ee24; border-radius:18px; background:#0e1a24; color:#edf5fa; box-shadow:0 26px 100px #000a;
+}
+.cw-hub-head { padding:24px 26px 20px; border-bottom:0; background:linear-gradient(110deg,#2339414a,transparent); }
+#cwHubEyebrow { color:#96d7bd; }
+.cw-hub-close { min-height:42px; border-color:#ffffff2b; border-radius:9px; color:#d3e4ee; background:#102332; }
+.cw-hub-tabs { padding:0 26px 16px; gap:7px; }
+.cw-hub-tabs > button { min-height:42px; font-size:12px; border-radius:9px; }
+.cw-hub-tabs > button[aria-selected='true'] { background:#193b35; border-color:#83d4b956; color:#c9f9e2; }
+.cw-hub-content { padding:20px 26px 26px; }
+.cw-hub-dialog input,.cw-hub-dialog select,.cw-hub-dialog textarea { border-color:#ffffff27; background:#08151f; color:#ecf5f9; border-radius:9px; min-height:44px; }
+.cw-hub-dialog input::placeholder,.cw-hub-dialog textarea::placeholder { color:#8ca8b8; }
+.cw-hub-dialog .cw-action { min-height:42px; border-radius:9px; }
+.cw-hub-dialog .cw-account-primary { background:#86dfbc; color:#092c24; }
+.cw-ranking-score strong,.cw-account-status[data-status='ok'] { color:#a1e6c7; }
+.cw-guide-dialog { width:min(630px,calc(100vw - 32px)); max-height:calc(100dvh - 32px); padding:0; overflow:auto; }
+.cw-guide-dialog::backdrop { background:#030a11b8; backdrop-filter:blur(8px); }
+.cw-guide-head { display:flex; justify-content:space-between; gap:20px; padding:22px 24px 16px; border-bottom:1px solid #ffffff1b; }
+.cw-guide-head h2 { margin:0; font-size:25px; line-height:1.5; letter-spacing:-.03em; }
+.cw-guide-body { padding:20px 24px; }
+.cw-guide-intro { margin:0 0 18px; color:#a4dacb; font-size:14px; }
+.cw-guide-steps { display:grid; gap:16px; margin:0; padding-left:25px; }
+.cw-guide-steps li { padding-left:7px; }
+.cw-guide-steps li::marker { color:#90e8c3; font-weight:850; }
+.cw-guide-steps h3 { margin:0 0 5px; font-size:14px; color:#e8f8f2; }
+.cw-guide-steps p,.cw-guide-note { margin:0; font-size:12px; color:#b1c7d6; line-height:1.65; }
+.cw-guide-section { margin:24px 0 12px; font-size:14px; }
+.cw-guide-modes { display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin:0; }
+.cw-guide-modes > div { background:#17303a; border:1px solid #ffffff1c; padding:12px; border-radius:9px; }
+.cw-guide-modes dt { font-size:12px; font-weight:750; color:#b4f0d5; }
+.cw-guide-modes dd { margin:6px 0 0; color:#b3c8d3; font-size:11px; }
+.cw-guide-local { padding-top:17px; margin:20px 0 0; border-top:1px solid #ffffff20; color:#93aebb; font-size:10px; }
+.app[data-view='online'] > #onlineRoomDisclosure { background:#0e1c26ed; border-color:#ffffff21; }
+.app[data-view='online'] .online-room-body { padding:24px; }
+.online-lobby-heading h2 { color:#f1f8fb; }
+.online-lobby-heading small { color:#99d4bf; }
+.online-lobby-field > span,.app[data-view='online'] .online-room-form label > span { color:#adc4d1; }
+.online-lobby-field input,.app[data-view='online'] .online-room-form select { background:#08151f; border-color:#ffffff25; color:#eaf6fc; }
+.online-lobby-private { background:#091822; color:#adc6d3; border-color:#ffffff24; }
+.online-lobby-hint { color:#a0bac9; }
+.local-duel-panel { background:linear-gradient(145deg,#142832ed,#0c1924ed); border-color:#ffffff24; }
+@media(min-width:1000px) { .cw-top-nav { gap:25px; } }
+@media(max-width:720px) {
+  .app { width:100%; padding:12px 14px 28px; }
+  .app > .top { gap:12px; }
+  .brand { font-size:10px; letter-spacing:.08em; }
+  .brand-icon { width:24px; height:24px; flex-basis:24px; }
+  .language-picker #languageLabel,.language-current-flag { display:none; }
+  .top .cw-release-meta #siteVersion { font-size:8px; }
+  .top .cw-release-updated { display:none; }
+  .cw-top-nav { justify-content:flex-start; gap:18px; margin:0 0 5px; }
+  .cw-top-link { font-size:11px; }
+  .app > .hero { padding:5px 0 12px; }
+  .app > .hero h1 { font-size:30px; }
+  .stadium-play-nav { margin-bottom:10px; }
+  .stadium-play-route,.app[data-view='online'] .stadium-play-route { padding:9px 9px; min-height:46px; }
+  .stadium-route-title,.app[data-view='online'] .stadium-route-title { font-size:14px; }
+  .stadium-route-description,.app[data-view='online'] .stadium-route-description { font-size:9px; }
+  html.cw-arena-ready .has-local-duel .stadium-play-route { min-height:46px; padding:8px; }
+  html.cw-arena-ready .has-local-duel .stadium-route-title { font-size:14px; }
+  html.cw-arena-ready .has-local-duel .stadium-route-description { font-size:9px; }
+  .app > .wheel-card { padding:11px 14px 17px; }
+  .player-setup-body { grid-template-columns:1fr; gap:7px; }
+  .player-setup-body .career-mode-picker { margin-top:0; }
+  .player-setup-body .player-identity-entry { grid-template-columns:minmax(0,1fr) 85px; }
+  .career-mode-picker legend { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
+  .personality-setup { margin-top:0; }
+  .cw-journey { gap:4px; margin-top:8px; }
+  .cw-journey li { font-size:8px; gap:3px; }
+  .cw-journey-number { width:15px; height:15px; font-size:8px; }
+  .wheel-card > .prompt { font-size:18px; margin:11px 0 2px; }
+  .wheel-shell { width:min(100%,500px); max-width:500px; margin:12px auto 4px; }
+  .wheel-side-panel .result-name { font-size:25px; }
+  .cw-wheel-tools { grid-template-columns:1fr 1fr; }
+  .cw-game-help { grid-column:1/-1; min-height:32px; border:0; background:transparent; }
+  .cw-live-fields { grid-template-columns:1fr 1fr; gap:9px; }
+  .cw-live-stats { gap:6px; }
+  .cw-live-stat > span:first-child { font-size:8px; }
+  .cw-live-meta { max-width:40%; text-align:right; font-size:9px; }
+  .career-summary-layout { grid-template-columns:1fr; gap:20px; }
+  .career-summary-layout .card-column { width:min(100%,360px); }
+  .cw-hub-head { padding:20px; }
+  .cw-hub-tabs { padding-inline:20px; }
+  .cw-hub-content { padding:16px 20px 22px; }
+}
+@media(max-width:400px) {
+  .app { padding-inline:9px; }
+  .app > .top { gap:8px; }
+  .brand { font-size:9px; }
+  .top .cw-release-meta #siteVersion { letter-spacing:0; font-size:7px; }
+  .cw-release-help { width:20px; height:20px; }
+  .app > .hero h1 { font-size:28px; }
+  .app > .wheel-card { padding-inline:10px; }
+  .stadium-route-description { display:none; }
+  .stadium-route-title,.app[data-view='online'] .stadium-route-title { font-size:13px; }
+  .cw-journey { gap:3px; }
+  .cw-journey-number { display:none; }
+  .cw-journey-label { font-size:9px; }
+  .cw-guide-modes { grid-template-columns:1fr; }
+  .cw-live-stats { grid-template-columns:repeat(3,1fr); }
+  .cw-live-stat > span:first-child { font-size:9px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { scroll-behavior:auto!important; }
+  .cw-live-stat-track i { transition:none; }
+}

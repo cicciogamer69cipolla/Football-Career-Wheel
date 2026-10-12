@@ -1,0 +1,738 @@
+[
+  {
+    "id": "release-2-1-1",
+    "version": "2.1.1",
+    "title": "Local launch fixes",
+    "summary": "More reliable folder launch, fixed card export and corrected emoji URLs.",
+    "sections": [
+      {
+        "title": "Local app",
+        "items": [
+          "Added instructions and a local server launcher for accounts and on-device saves.",
+          "Cards use local backgrounds that export without relying on external images.",
+          "Fixed emoji loading in the wheels."
+        ]
+      }
+    ],
+    "date": "2026-10-12",
+    "historical": false
+  },
+  {
+    "id": "release-2-1-0",
+    "version": "2.1.0",
+    "title": "The Legends tour",
+    "summary": "18 scenario medals, personal records to improve and fixes for previews, archives and saves.",
+    "sections": [
+      {
+        "title": "A challenge across careers",
+        "items": [
+          "Six scenarios now have Bronze, Silver and Gold medals: 18 feats with increasingly demanding goals.",
+          "Every new real Solo career counts, including free careers. Medals stay in your profile; previews, archives and local duels do not award them.",
+          "Each scenario shows your next medal and best attempt towards gold, keeping one complete career result.",
+          "New medals appear in the final summary. The Tour lives inside Scenarios, with no duplicate section or repeatable XP.",
+          "Progress is included in local account saves and backups, merging results and validating imports before applying them."
+        ]
+      },
+      {
+        "title": "Gameplay fixes",
+        "items": [
+          "Opening the archive during a real career asks before replacing it; spinning or pending-choice states remain protected.",
+          "Finished-career previews, rarity animation and narrow-sector badges are now consistent and readable.",
+          "Switching from the daily challenge to a scenario or code before the first spin clears the old challenge correctly.",
+          "Daily results survive midnight and are removed from demo and archive previews.",
+          "Rankings support older saves, and card styles update across tabs on the same profile.",
+          "Failed medal reads or saves are reported with a retry option that preserves existing progress."
+        ]
+      }
+    ],
+    "date": "2026-10-09",
+    "historical": false
+  },
+  {
+    "id": "release-2-0-1",
+    "version": "2.0.1",
+    "title": "Rarity in colour",
+    "summary": "Four distinct colours separate common outcomes from rarer ones while keeping the arcade style.",
+    "date": "2026-10-09",
+    "historical": false,
+    "sections": [
+      {
+        "title": "More readable wheels",
+        "items": [
+          "Green for common outcomes, blue for uncommon, purple for rare and gold for very rare.",
+          "Sectors, legend and odds panel share one rarity classification, grouping repeated outcomes.",
+          "Wheels with similar odds retain category colours; colour shows rarity, not the strength of the outcome.",
+          "Clearer rims on rare sectors and dark text on gold. Probabilities, sector sizes and outcomes are unchanged."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "release-2-0-0",
+    "version": "2.0.0",
+    "title": "The new Career Wheel arena",
+    "summary": "A reorganised interface, live career summary, game guide and a review of saves and challenges.",
+    "sections": [
+      {
+        "title": "A new arena",
+        "items": [
+          "A compact header, focused navigation and a dark stadium with graphite surfaces and mint accents.",
+          "A large central wheel keeps its arcade colours; previews and odds are grouped below the controls.",
+          "Five stages make the journey clear: origins, club, profile, attributes and honours.",
+          "Cards, statistics, lobby, duels and dialogs share a clearer visual hierarchy, including on phones."
+        ]
+      },
+      {
+        "title": "New tools for playing",
+        "items": [
+          "The live summary shows identity, club, style and drawn values, without inventing an OVR before the final card.",
+          "A guide explains spins, modes, saves, duels and Career Points.",
+          "In Objectives, the next milestone suggests a nearby achievement with real progress and its XP reward.",
+          "The wheel centre can replay a completed career; required event choices are brought into view.",
+          "PNG export with feedback, bounded image loading, local fallback backgrounds and compatible Blob downloads."
+        ]
+      },
+      {
+        "title": "Fixes and checks",
+        "items": [
+          "Older careers without a playing style open and share correctly.",
+          "Completed translations for positions, trophies, talents, bonuses and dynamic messages in Italian, English, Spanish and French.",
+          "Daily challenges use Normal mode, retain their date across midnight and distinguish the latest attempt from history.",
+          "Stricter validation of duel recovery, room results, progress and identity locking.",
+          "Account requests have timeouts, imports are validated before changing progress and incoming friendship requests have limits.",
+          "Automated checks use isolated data, with screen checks in the local browser.",
+          "The local career is restored even when the account service does not respond, before play is re-enabled.",
+          "Talent descriptions and the final card use the same bonuses; existing applied balance values are preserved.",
+          "Results are announced to screen readers and mode groups remain accessible on phones."
+        ]
+      }
+    ],
+    "date": "2026-10-09",
+    "historical": false
+  },
+  {
+    "id": "release-1-9-0",
+    "version": "1.9.0",
+    "title": "More believable careers and a new duel finale",
+    "date": "2026-10-09",
+    "summary": "Realistic mode shaped by position and seasons, an animated final comparison and a personal career summary.",
+    "sections": [
+      {
+        "title": "Realistic mode",
+        "items": [
+          "New Realistic careers use attribute probabilities and an OVR weighted by the player’s position.",
+          "Goals and assists are exact counts, with outcomes based on position, seasons played and attributes.",
+          "Multiple traits are less frequent; exceptional values remain possible, with lower probabilities.",
+          "Trophy counts respect the opportunities available during the career, including competitions held every four years.",
+          "Careers already in progress keep their previous rules and the results already obtained."
+        ]
+      },
+      {
+        "title": "Duel finale",
+        "items": [
+          "Both cards are presented side by side, followed by an attribute and honours comparison.",
+          "Career Points count up during the presentation before the winner is revealed using the selected criterion; ties are also recognized.",
+          "The presentation can be skipped and respects the reduced motion preference."
+        ]
+      },
+      {
+        "title": "Your story",
+        "items": [
+          "A personal title captures the character of the career based on its results.",
+          "Three highlights use actual career outcomes and accompany the existing story."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-2",
+    "version": "1.8.2",
+    "title": "Arcade colors for the wheel",
+    "date": "2026-10-08",
+    "summary": "A brighter palette, with distinct sectors and neutral details.",
+    "sections": [
+      {
+        "title": "Wheel colors",
+        "items": [
+          "Electric blue, fuchsia, green, cyan, orange and purple for the wheel sectors.",
+          "Colors in the probability list follow the new sector palette.",
+          "Neutral highlights, a graphite center and a light pointer complete the new look."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-1",
+    "version": "1.8.1",
+    "title": "A more polished wheel",
+    "date": "2026-10-08",
+    "summary": "New colors, clearer labels and a more visible result, with the wheel staying large and centered.",
+    "sections": [
+      {
+        "title": "Wheel appearance and interaction",
+        "items": [
+          "Refreshed palette with blue, turquoise, purple and amber; sector colors match those in the probability list.",
+          "Clearer labels, with long names arranged across multiple lines and improved contrast.",
+          "The winning sector is highlighted when the spin ends, while the other sectors fade.",
+          "A minimal center with a Spin control that also works with a keyboard.",
+          "The pointer follows sectors as they pass; animations respect the reduced motion preference.",
+          "A gold accent distinguishes the rarest results.",
+          "Draw probabilities, accounts and progress are preserved; the update is available on the local server."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-8-0",
+    "version": "1.8.0",
+    "title": "Let the wheel settle the challenge",
+    "date": "2026-10-08",
+    "summary": "A local duel for two players on the same PC: create your careers in turns and compare cards and Career Points.",
+    "sections": [
+      {
+        "title": "Local duel",
+        "items": [
+          "Added a Duel mode for two players sharing the same PC, with no account required.",
+          "Choose a shared career mode and the criterion that decides the winner before starting.",
+          "Each player enters a name and shirt number and spins their wheels during their turn.",
+          "The final summary compares both cards and the Career Points of both careers.",
+          "Equal results are recognized as ties.",
+          "Your Solo career and existing progress remain available; development continues on the local server."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-7-0",
+    "version": "1.7.0",
+    "title": "Online, with your friends",
+    "date": "2026-10-08",
+    "summary": "The site can be hosted online with persistent saves and room invitations from Friends.",
+    "sections": [
+      {
+        "title": "Rooms and progress",
+        "items": [
+          "Online accounts, friendships, saves and rooms use a persistent database.",
+          "Saved friends can receive a direct invitation to your private room.",
+          "Accept or decline invitations in Friends; invitations expire after 15 minutes.",
+          "An accepted invitation opens the lobby with its code already filled in; players still choose their name and shirt number.",
+          "Export and import progress in Account to move from the local site to the new address.",
+          "Archives and objectives are merged during transfer; a career already started on this device is kept."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "release-1-6-0",
+    "version": "1.6.0",
+    "title": "Your account, your progress, your friends",
+    "date": "2026-10-08",
+    "summary": "Accounts and personal saves on the server, with a Friends panel for saved contacts and friend requests.",
+    "sections": [
+      {
+        "title": "Account",
+        "items": [
+          "Added Account to the top navigation, with sign-in and profile creation using an email, password and nickname.",
+          "The account panel lets you change your nickname and sign out.",
+          "Creating an account provides a personal recovery code for regaining access and setting a new password.",
+          "Recovery uses your personal code and does not require an email delivery service."
+        ]
+      },
+      {
+        "title": "Personal saves",
+        "items": [
+          "Your current career and archived careers are linked to your account.",
+          "Unlocked objectives, XP, level, records and challenge progress are kept with your saves.",
+          "Card customizations, profile style, language and the feedback draft follow your account.",
+          "Added automatic progress synchronization and a Sync now command in the Account panel.",
+          "Guest progress stays separate from registered users’ progress.",
+          "Account data is stored on the server hosting the site: on the local server when using the local installation."
+        ]
+      },
+      {
+        "title": "Friends and navigation",
+        "items": [
+          "Friends now holds your saved friends list and lets you search for other players by nickname.",
+          "Friend requests can be accepted or declined; the list distinguishes friends from pending requests.",
+          "Added a personal friendship link that you can copy and share so others can find you.",
+          "Without an account, the Friends panel invites you to sign in or create a profile.",
+          "Challenges shared through a code are grouped under Objectives, avoiding duplicate sections.",
+          "Account, saves and Friends are available in Italian, English, Spanish and French."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-5-1",
+    "version": "1.5.1",
+    "title": "The story of Career Wheel, from the beginning",
+    "date": "2026-10-08",
+    "summary": "An update history covering every stage of the project, from the first wheel to missions and the new navigation.",
+    "sections": [
+      {
+        "title": "News and updates",
+        "items": [
+          "Added the complete Career Wheel changelog, accessible from the site.",
+          "The current version and latest update now appear together at the top, with direct access to the release notes.",
+          "Each update includes a summary and an organized list of new features and fixes.",
+          "Search the history by version or feature to find an update quickly.",
+          "The complete history is translated into Italian, English, Spanish and French.",
+          "The early stages of development are covered too: cards, wheels, probabilities, animations, missions, events, challenges, rooms and interface.",
+          "Older patches are grouped into update series when a precise history for each individual version is unavailable.",
+          "Undocumented historical dates are left undated rather than assigned arbitrarily."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-5-0",
+    "version": "1.5.0",
+    "title": "The wheel in the centre, the tools at the top",
+    "date": "2026-10-08",
+    "summary": "A compact navigation bar opens sections in dedicated panels, freeing up space around the wheel.",
+    "sections": [
+      {
+        "title": "Navigation",
+        "items": [
+          "Added a top bar with Messages, Feedback, Objectives, Rankings, Friends, Archive and Profile.",
+          "Existing sections were moved into the new panels, preserving their data and features.",
+          "Objectives brings together missions, the daily challenge and special scenarios.",
+          "Archive brings together saved careers, the card album and the career tournament.",
+          "Profile brings together your level, titles, card backgrounds and OVR guide.",
+          "The wheel stays large and central; panels open only when needed.",
+          "Navigation and panels are available in Italian, English, Spanish and French."
+        ]
+      },
+      {
+        "title": "Rankings and friends",
+        "items": [
+          "Rankings for careers saved on the device, sortable by Career Points or OVR.",
+          "Access to personal records and the option to reopen a career from the rankings.",
+          "The Friends panel brings together private room invitations and shared challenges with codes.",
+          "Access to the existing lobby without adding a second room management system.",
+          "The profile uses the local progress already recorded in the game."
+        ]
+      },
+      {
+        "title": "Messages and feedback",
+        "items": [
+          "Messages brings the site's news together in one place.",
+          "A Feedback form for reporting a bug or suggesting an idea.",
+          "Drafts are saved on the device and can be copied or downloaded as a report.",
+          "Reports include the entered message, report type, version, language and creation time."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-4-0",
+    "version": "1.4.0",
+    "title": "More objectives, a level that matters",
+    "date": "2026-10-08",
+    "summary": "There are now 67 missions. Your profile level unlocks titles and backgrounds, while new objectives span multiple careers.",
+    "sections": [
+      {
+        "title": "24 new missions",
+        "items": [
+          "Expanded the catalogue from 43 to 67 achievements, preserving all previous missions.",
+          "New milestones for completing 1, 3, 10 and 25 real careers.",
+          "Cumulative objectives for reaching 1,500 goals and 1,000 assists across recorded careers.",
+          "Exploration objectives for playing with 3 different nationalities, leagues, positions and play styles.",
+          "Solid Foundation rewards having all six attributes at 70 or above; Score and Create requires at least 300 goals and 200 assists.",
+          "A Valuable Career requires at least 300 Career Points; Fair Play requires yellow and red cards in the 0–10 range.",
+          "New combinations of goals and shooting, assists and passing, pace and dribbling, defending and physicality, passing and dribbling.",
+          "Club and Country, European Dynasty and National Pride reward combinations of trophies.",
+          "Trophies Matter rewards a card with an OVR between 75 and 84 and at least 8 trophies.",
+          "Natural Talent requires an OVR of at least 85 without special talents."
+        ]
+      },
+      {
+        "title": "Levels and rewards",
+        "items": [
+          "Your level belongs to your profile, carries over between careers and increases every 500 XP.",
+          "Each mission awards its XP only once.",
+          "Unlockable titles and card backgrounds: Classic at level 1, Emerald at 3, Sapphire at 6, Gold at 10, Aurora at 15 and Legend at 20.",
+          "Profile titles progress through Rookie, Prospect, Star Player, World Class, Icon and Legend.",
+          "Your chosen style stays saved and is also included in the PNG card.",
+          "The panel shows total XP, XP needed for the next level and the next reward.",
+          "Incomplete, Earned and All filters, with Attributes, Career and Trophies, Exploration and Secret categories.",
+          "Three missions are visible when the panel opens; the full list expands on request.",
+          "New missions, levels and rewards translated into Italian, English, Spanish and French."
+        ]
+      },
+      {
+        "title": "Progress fixes",
+        "items": [
+          "Missions are awarded only at the end of a real career, after event effects have been applied.",
+          "Card previews do not grant XP, levels or newly earned missions.",
+          "Reopening a career from the archive does not award XP or objectives again.",
+          "Fixed attribute calculations during a partial career, keeping pace, shooting, passing, dribbling, defending and physicality correctly matched.",
+          "Record Breaker now requires 900 goals, a result the wheel can reach, while preserving previously earned XP and dates.",
+          "Previous mission unlocks and dates are preserved; the archive distinguishes a career's XP from the profile level."
+        ]
+      }
+    ],
+    "historical": false
+  },
+  {
+    "id": "release-1-3-1",
+    "version": "1.3.1",
+    "title": "A dedicated lobby for online challenges",
+    "date": null,
+    "summary": "Solo and Online become separate views: the lobby lets you create or join a room, then move on to the wheel.",
+    "sections": [
+      {
+        "title": "Lobby and game",
+        "items": [
+          "An Online view with Create and Join tabs, inspired by a game lobby and adapted to Career Wheel.",
+          "Lobby name and shirt number fields linked to the footballer's identity.",
+          "Join using a room code or invitation link.",
+          "Name and number stay locked after the first spin, including in the lobby.",
+          "A button to go to the wheel, continue your career and return to the room.",
+          "Room status, participant count and the current series round are visible in the game navigation.",
+          "Scoring explained in an expandable section.",
+          "Lobby labels and controls are available in all four site languages."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "release-1-3-0",
+    "version": "1.3.0",
+    "title": "Identity, stories and new challenges",
+    "date": null,
+    "summary": "More ways to create and share a career: card customization, scenarios, code challenges, records and live rooms.",
+    "sections": [
+      {
+        "title": "Your card and your story",
+        "items": [
+          "Player setup brought together in one panel with name, shirt number and mode.",
+          "Optional card customization with an avatar, nickname and signature.",
+          "A choice of Silhouette, Captain, Playmaker, Speedster and Baller.",
+          "Upload a personal portrait in PNG, JPG or WEBP format, up to 2 MB.",
+          "Personal details lock after the first spin and are preserved in saved careers.",
+          "A final player story built from the career's actual results, with a button to copy it.",
+          "Career Points and a breakdown of their calculation included in the career summary.",
+          "Improved image preparation for card and trophy export."
+        ]
+      },
+      {
+        "title": "Scenarios and shared challenges",
+        "items": [
+          "Six special scenarios: Unstoppable Scorer, The Playmaker, The Captain, National Legend, The Wall and Complete Footballer.",
+          "Each scenario has clear conditions checked at the end of the career.",
+          "Create a custom challenge based on OVR, goals, assists, trophies or Career Points.",
+          "Share a code or link to activate the same challenge among friends.",
+          "The same code produces the same random sequence; event choices can change the outcome.",
+          "Code challenges use Normal mode for every participant.",
+          "Import a challenge, retry it or return to a free career.",
+          "Personal records for OVR, goals, assists, trophies and Career Points, updated only by new real careers."
+        ]
+      },
+      {
+        "title": "Live rooms",
+        "items": [
+          "Private rooms can be opened before starting a career.",
+          "Participants' progress and latest wheel result are visible in the room during the game.",
+          "Completed careers are submitted to the room automatically.",
+          "Choose between a single career and a series of three careers with cumulative scores.",
+          "The host opens subsequent rounds and rematches once participants have finished.",
+          "Handles provisional rankings, winners, draws, submissions to retry and expired sessions.",
+          "Previews and careers reopened from the archive cannot be submitted as a new game."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "release-1-2-0",
+    "version": "1.2.0",
+    "title": "Career Wheel enters the stadium",
+    "date": null,
+    "summary": "A football-inspired visual identity with a stadium background, dark panels and warm accents, keeping the wheel as the main feature.",
+    "sections": [
+      {
+        "title": "Atmosphere and layout",
+        "items": [
+          "Added a dedicated stadium background with a pitch and lighting at the sides.",
+          "A new dark palette with translucent panels, subtle borders and gold accents.",
+          "Clearer hierarchy for the title, player setup, wheel and tools.",
+          "Solo and Online entry points presented as two game modes.",
+          "The wheel stays central and retains the requested large size.",
+          "Secondary tools and statistics grouped into expandable sections to leave more room for the game.",
+          "Adaptations for small screens and reduced-motion preferences."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-1-0-1-1-5",
+    "version": "1.1.0–1.1.5",
+    "title": "Private rooms and Career Points",
+    "date": null,
+    "summary": "The site adopts a tidier version numbering scheme and adds challenges among friends that compare both career achievements and card strength.",
+    "sections": [
+      {
+        "title": "Tidier version numbering",
+        "items": [
+          "Version numbering moves from the long 1.0 series to 1.1 versions.",
+          "The position on the card is centred below the overall OVR.",
+          "Name and shirt number are chosen before the game and lock after the first spin.",
+          "The identity lock also applies to the name on the final card; Restart lets you choose a new footballer."
+        ]
+      },
+      {
+        "title": "Scoring and private rooms",
+        "items": [
+          "Create a private room and join using a code or invitation link.",
+          "Rooms support up to 10 participants, with rankings of their results.",
+          "Three victory criteria: most Career Points, strongest card or combined score.",
+          "Career Points calculated from goals, assists, seasons, league titles, Champions League titles, World Cups, continental cups and Ballon d'Or awards.",
+          "Goals and assists have different weights depending on the footballer's position.",
+          "Each season is worth 2 points; a league title 12, Champions League 22, World Cup 25, continental cup 15 and Ballon d'Or 20.",
+          "The card challenge compares participants' OVR with double weight and their six attributes.",
+          "Combined mode brings together 70% career score and 30% card duel score, giving trophies value too.",
+          "Handles ties in attribute rankings and distinguishes between best career, strongest card and overall winner.",
+          "A local server for rooms and shared result updates among participants."
+        ]
+      },
+      {
+        "title": "Languages",
+        "items": [
+          "Reviewed translations for the interface, wheels, results, summaries, events, archive and challenges.",
+          "Language switching in Italian, English, Spanish and French is available in the new sections too.",
+          "Improved accessible labels and logo names in the selected language."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-120-1-0-130",
+    "version": "1.0.120–1.0.130",
+    "title": "A more polished card and a clearer game",
+    "date": null,
+    "summary": "Reorganized tools and summaries, new personal choices, play styles and an animated card reveal.",
+    "sections": [
+      {
+        "title": "Interface and summary",
+        "items": [
+          "Reorganized Missions, the daily challenge, album, guide and archive to reduce repeated or scattered sections.",
+          "The final summary shows seasons, goals and assists immediately; full statistics and trophies expand on request.",
+          "Career highlights brought together in the summary.",
+          "Reviewed spacing, alignment, borders and readability across the interface."
+        ]
+      },
+      {
+        "title": "Identity and card",
+        "items": [
+          "Players choose their shirt number alongside their name instead of having it assigned by the wheel.",
+          "Added the play style wheel: Speedster, Finisher, Playmaker, Dribbler, Rock-Solid Defender and Physical Dominator.",
+          "Each style adds a bonus of 2 to its attribute and appears in the summary.",
+          "An animated card reveal at the end of the career.",
+          "The shirt number was moved down to stay inside the card.",
+          "OVR and position moved to the left corner and lowered to fit within the card border."
+        ]
+      },
+      {
+        "title": "Career modes",
+        "items": [
+          "Quick mode with shorter spins, keeping every wheel.",
+          "Normal mode for the full experience.",
+          "Realistic mode with exceptional results and major trophies appearing less often.",
+          "The mode is chosen before starting the career."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-108-1-0-119",
+    "version": "1.0.108–1.0.119",
+    "title": "Site identity and the wheel in the spotlight",
+    "date": null,
+    "summary": "A dedicated icon, a simpler wheel centre and a series of layout revisions to bring the large wheel back to the centre.",
+    "sections": [
+      {
+        "title": "Visual identity",
+        "items": [
+          "Created a dedicated Career Wheel icon for the site's identity.",
+          "Revised the wheel centre several times, settling on a minimal element without a football.",
+          "The centre covers the wedges beneath it with a single unified shape.",
+          "Reviewed site colours and surfaces while keeping the wedges recognizable."
+        ]
+      },
+      {
+        "title": "Layout and logos",
+        "items": [
+          "Explored different layouts and restored the large, central wheel requested for the game.",
+          "Fixed the wheel size when the layout made it too small.",
+          "The final card and trophies remain side by side on wide screens and adapt to smaller screens.",
+          "Updated the Serie A logo and fixed the case where only a text placeholder appeared.",
+          "Reorganized secondary tools to simplify the main screen."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-90-1-0-107",
+    "version": "1.0.90–1.0.107",
+    "title": "Better organized wheels, clearer probabilities",
+    "date": null,
+    "summary": "A review of wheel order, rarities and colours, with a preview for moving quickly between categories.",
+    "sections": [
+      {
+        "title": "Probabilities and order",
+        "items": [
+          "Reviewed probabilities to distinguish common results from exceptional ones.",
+          "Made goals and assists easier to obtain, while keeping the highest results rarer.",
+          "High attributes, large trophy totals and extreme results retain lower probabilities.",
+          "The Probability and Rarity guide shows the actual chances for each spin.",
+          "Reordered the wheels into a more coherent journey: origins, position, league and team, career and physique, attributes, statistics and trophies.",
+          "Saved careers are adapted to the new question order.",
+          "Explore the Wheels lets you choose a wheel or use Previous and Next without changing the career.",
+          "Fixed the match between the selected league and the league logo on the final card, including the Bundesliga/La Liga case."
+        ]
+      },
+      {
+        "title": "Foot, talents and seasons",
+        "items": [
+          "Preferred foot has 9 wedges: 3 Right, 3 Left and 3 Both.",
+          "Both-footed wedges are spread among the others and have a lower probability.",
+          "The same foot uses the same colour: blue for Right, red for Left and orange for Both.",
+          "The talent wheel keeps equal wedges and equally likely outcomes.",
+          "Talents already drawn are excluded from subsequent draws in the same career.",
+          "The seasons wheel keeps 18 wedges and starts at a minimum of 10 seasons, up to 27."
+        ]
+      },
+      {
+        "title": "Wedge colours",
+        "items": [
+          "Refreshed wheel colours, keeping colour families tied to their categories.",
+          "More distinct shades for attributes, cards and trophies, even within the same category.",
+          "Rarity differences are highlighted by a stronger change in shade.",
+          "Kept light wheel labels with a dark outline for readability.",
+          "Added black borders between wedges to separate results more clearly."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-83-1-0-89",
+    "version": "1.0.83–1.0.89",
+    "title": "Less clutter, more interaction",
+    "date": null,
+    "summary": "More compact sections, more vibrant wheels and new events with choices, alongside a tournament between saved careers.",
+    "sections": [
+      {
+        "title": "Organization and readability",
+        "items": [
+          "Grouped secondary tools into expandable sections to reduce page clutter.",
+          "Reviewed wheel palettes and made the wedges more vibrant.",
+          "Fixed cases where achievements were announced again as newly earned.",
+          "The version is shown centrally, removing the update count."
+        ]
+      },
+      {
+        "title": "Events and tournaments",
+        "items": [
+          "Choices in career events, with visible effects on attributes.",
+          "Decisions between focused training and fitness work, talent and studying the game, records and teamwork, cautious and early returns.",
+          "The option to stay at your club or accept a transfer within the same league.",
+          "Choices and their effects are recorded in the career summary.",
+          "A tournament between 2 and 8 saved careers, with participant selection and a knockout bracket.",
+          "Match results influenced by OVR and a random element, with progression through rounds and a final winner.",
+          "The current tournament stays saved on the device."
+        ]
+      }
+    ],
+    "historical": true
+  },
+  {
+    "id": "series-1-0-origins",
+    "version": "1.0",
+    "title": "Career Wheel is born",
+    "date": null,
+    "summary": "The first wheels build the footballer and final card. Logos, saves, languages, missions, animations and daily challenges follow.",
+    "sections": [
+      {
+        "title": "The foundations of the game",
+        "items": [
+          "A football career generator with wheels for continent, nationality, position, league, club, seasons, height and preferred foot.",
+          "Wheels for the number of special talents and individual talents, with effects on attributes.",
+          "Six card attributes: pace, finishing, passing, dribbling, defending and strength.",
+          "Career statistics for goals, assists, yellow cards and red cards.",
+          "Trophies including league titles, Champions League titles, World Cups, continental cups and Ballon d'Or awards.",
+          "Buttons to spin, move to the next wheel, restart and share the result.",
+          "Removed the provisional profile at the top to give the wheel more space and leave the summary until the end.",
+          "An example preview to see the card and trophies without completing the entire career."
+        ]
+      },
+      {
+        "title": "Card and archive",
+        "items": [
+          "A final card with OVR, position, name, player silhouette and six attributes.",
+          "Added the supplied silhouette for the footballer's portrait.",
+          "Six card types: Bronze, Silver, Gold, Hero, Icon and Hall of FUT.",
+          "OVR calculated as the rounded average of the six attributes, including bonuses.",
+          "OVR and card guide: Bronze below 65, Silver 65–74, Gold 75–84, Hero 85–89, Icon 90–94 and Hall of FUT from 95.",
+          "Light text on Hero and Hall of FUT cards to preserve readability.",
+          "National flag, league logo and team crest grouped together at the bottom of the card.",
+          "Linked the team crest to the club actually drawn.",
+          "Fixed name placement, position spacing and alignment of card elements.",
+          "Download and share the PNG card, including together with the trophies.",
+          "A local archive of completed careers, with automatic saving, reopening and removal.",
+          "Compare two saved careers, showing their attributes and results side by side.",
+          "A card album collecting rarities, nationalities and leagues from saved careers."
+        ]
+      },
+      {
+        "title": "Missions and entertainment",
+        "items": [
+          "Introduced achievements with progress preserved between careers.",
+          "Missions presented as cards with an icon, condition, progress and XP reward.",
+          "Expanded the catalogue to 43 objectives covering OVR, attributes, goals, assists, seasons, talents, foot and trophies.",
+          "Secret missions for special combinations of attributes and results.",
+          "Player level, XP and medal linked to earned missions.",
+          "Clickable missions to view their description, progress, reward and date earned.",
+          "The list shows only a few missions initially and expands on request, keeping the panel compact.",
+          "Removed percentage labels from achievements, retaining progress values and bars.",
+          "Fixed achievement panel visibility and notifications.",
+          "A career timeline with milestones, results, details and key moments.",
+          "Random events for training, scouting, records, injuries and transfers.",
+          "A daily challenge with an objective, attempts, best score and a shareable result.",
+          "Daily objectives for OVR, goals, Champions League titles, talents, attribute balance and trophy totals."
+        ]
+      },
+      {
+        "title": "Wheel, languages and stability",
+        "items": [
+          "Random draws with probabilities tied to the wheel and its wedges.",
+          "Wheel animation with gradual deceleration before stopping.",
+          "The wheel can stop at different points within a wedge, including near its edges, rather than always landing in the centre.",
+          "Reviewed interface transitions and movement for smoother animation.",
+          "Colours associated with wheel categories, with readable labels.",
+          "Flags on nationality wheels and symbols for continents.",
+          "Fixed nationality selection after drawing a continent.",
+          "A language selector at the top for Italian, English, Spanish and French, with the selected language's flag.",
+          "Reviewed layouts, overlapping elements, spacing and behaviour on small screens.",
+          "Fixed errors that prevented the site from working after some changes.",
+          "Restored the local server in cases of refused connections.",
+          "Added the site version to identify updates."
+        ]
+      }
+    ],
+    "historical": true
+  }
+]

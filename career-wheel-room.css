@@ -1,0 +1,59 @@
+.online-room-disclosure{margin:14px 0 0;border:1px solid #2d4662;border-radius:14px;background:linear-gradient(145deg,#121e2e,#0d1623);overflow:hidden}
+.online-room-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;color:#edf5ff;font-size:12px;font-weight:850;cursor:pointer;list-style:none}
+.online-room-disclosure>summary::-webkit-details-marker{display:none}
+.online-room-disclosure>summary:after{content:'＋';color:#7bc8ff;font-size:16px}
+.online-room-disclosure[open]>summary:after{content:'−'}
+.online-room-teaser{margin-left:auto;color:#8fa6c2;font-size:10px;font-weight:650;text-align:right}
+.online-room-body{padding:0 14px 14px}
+.online-room-intro{margin:0 0 12px;color:#9eb2cc;font-size:11px;line-height:1.55}
+.online-room-form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;align-items:end}
+.online-room-form label{display:grid;gap:5px;color:#a8bad0;font-size:10px;font-weight:800}
+.online-room-form select,.online-room-code-input{min-height:38px;padding:8px 10px;border:1px solid #344c68;border-radius:10px;background:#101b2a;color:#f5f8ff;font:700 11px system-ui;outline:none}
+.online-room-form select:focus,.online-room-code-input:focus{border-color:#63bfff;box-shadow:0 0 0 3px #63bfff22}
+.online-room-primary,.online-room-secondary,.online-room-copy{min-height:38px;padding:8px 12px;border:1px solid #477bb0;border-radius:10px;background:linear-gradient(135deg,#176bd3,#495cff);color:white;font:850 11px system-ui;cursor:pointer}
+.online-room-secondary,.online-room-copy{border-color:#354b67;background:#172438;color:#dbeaff}
+.online-room-primary:disabled,.online-room-secondary:disabled,.online-room-copy:disabled{cursor:wait;opacity:.58}
+.online-room-join{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;margin-top:9px}
+.online-room-code-input{text-transform:uppercase;letter-spacing:.13em}
+.online-room-feedback{min-height:16px;margin:9px 0 0;color:#9ab0c9;font-size:10px;line-height:1.45}
+.online-room-feedback[data-state="error"]{color:#ff9b9b}
+.online-room-feedback[data-state="success"]{color:#9ce5c1}
+.online-room-lobby{margin-top:12px;padding-top:12px;border-top:1px solid #2b3c52}
+.online-room-lobby[hidden]{display:none}
+.online-room-code-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.online-room-code-label{display:grid;gap:3px;color:#94a9c2;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.online-room-code{color:#fff;font-size:20px;font-weight:950;letter-spacing:.18em;font-variant-numeric:tabular-nums}
+.online-room-copy{min-height:32px;padding:6px 9px;font-size:10px}
+.online-room-statusline{margin:9px 0;color:#a6bad1;font-size:10px;line-height:1.4}
+.online-room-leaders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:10px 0}
+.online-room-leader{min-width:0;padding:8px;border:1px solid #263d57;border-radius:10px;background:#111d2d}
+.online-room-leader small{display:block;margin-bottom:4px;color:#84a0bf;font-size:8px;font-weight:850;letter-spacing:.06em;text-transform:uppercase}
+.online-room-leader strong{display:block;overflow:hidden;color:#f2f7ff;font-size:10px;text-overflow:ellipsis;white-space:nowrap}
+.online-room-leader span{display:block;margin-top:3px;color:#80caff;font-size:9px;font-variant-numeric:tabular-nums}
+.online-room-player-list{display:grid;gap:7px;margin:9px 0 0;padding:0;list-style:none}
+.online-room-player{display:grid;grid-template-columns:25px minmax(0,1fr) auto;gap:8px;align-items:center;padding:8px;border:1px solid #263b54;border-radius:10px;background:#101a28}
+.online-room-rank{display:grid;place-items:center;width:24px;height:24px;border-radius:8px;background:#1b2d43;color:#9fcfff;font-size:10px;font-weight:950}
+.online-room-player-copy{min-width:0}
+.online-room-player-name{display:block;overflow:hidden;color:#eef5ff;font-size:10px;font-weight:850;text-overflow:ellipsis;white-space:nowrap}
+.online-room-player-meta{display:block;margin-top:3px;color:#91a6c0;font-size:9px;line-height:1.35}
+.online-room-score{color:#8fceff;font-size:10px;font-weight:900;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.online-room-empty{padding:9px;border:1px dashed #344a65;border-radius:10px;color:#91a6c0;font-size:10px;text-align:center}
+.online-room-method{margin:10px 0 0;color:#8197b1;font-size:9px;line-height:1.5}
+@media(max-width:560px){.online-room-form{grid-template-columns:1fr}.online-room-primary{width:100%}.online-room-leaders{grid-template-columns:1fr}.online-room-leader{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 8px}.online-room-leader small{grid-column:1}.online-room-leader strong{grid-column:1}.online-room-leader span{grid-column:2;grid-row:1/3;text-align:right}}
+@media(prefers-reduced-motion:reduce){.online-room-disclosure *{scroll-behavior:auto}}
+.online-room-form{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) auto}
+.online-room-series-status{padding:10px 12px;margin:10px 0;border:1px solid #8e6c2d55;border-radius:10px;background:#d9961010;color:#f5cc75;font-size:11px;font-weight:800;line-height:1.5}
+.online-room-series-status[data-complete="true"]{border-color:#dba73f88;background:#dba73f18}
+.online-room-series-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.online-room-series-actions [hidden]{display:none!important}
+.online-room-player[data-self="true"]{border-color:#b28a4355}
+.online-room-live-meter{display:block;width:100%;height:4px;margin:7px 0 4px;border:0;border-radius:4px;overflow:hidden;accent-color:#e4ad48;background:#ffffff0a}
+.online-room-live-meter::-webkit-progress-bar{background:#ffffff0a}
+.online-room-live-meter::-webkit-progress-value{background:#e4ad48}
+.online-room-live-meter::-moz-progress-bar{background:#e4ad48}
+.online-room-last{display:block;color:#c5bb9b;font-size:9px;line-height:1.45}
+.online-room-player-copy{overflow-wrap:anywhere}
+.online-room-format select{min-width:0;width:100%}
+.online-room-format-note{grid-column:1/-1}
+@media(max-width:760px){.online-room-form{grid-template-columns:1fr 1fr}.online-room-form>.online-room-primary{grid-column:1/-1}.online-room-form select{width:100%;min-width:0}.online-room-player{grid-template-columns:25px minmax(0,1fr)}.online-room-player>.online-room-score{grid-column:2;justify-self:start}}
+@media(max-width:420px){.online-room-form{grid-template-columns:1fr}.online-room-code-row{align-items:flex-start;flex-wrap:wrap}.online-room-code-row>div:last-child{display:flex;flex-wrap:wrap;gap:6px}.online-room-teaser{max-width:45%;line-height:1.4}}

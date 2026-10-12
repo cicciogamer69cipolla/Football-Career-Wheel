@@ -1,0 +1,3 @@
+.realistic-wheel-context { color:#a6b8c8; font-size:11px; line-height:1.5; margin:8px 0 12px; }
+.realistic-rating-note { display:block; color:#c5b574; font-size:10px; margin:-8px 0 12px; }
+.realistic-wheel-context[hidden],.realistic-rating-note[hidden] { display:none; }
